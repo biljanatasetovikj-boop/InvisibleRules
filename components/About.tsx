@@ -23,11 +23,10 @@ export default function About() {
             <FadeIn delay={0.1}>
               <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed">
                 <p>
-                  I&apos;m from North Macedonia, and I&apos;ve spent the last
-                  18 years inside global institutions, watching the same
-                  pattern again and again. Smart people from outside the
-                  dominant culture, working twice as hard to read a room
-                  nobody briefed them on.
+                  I&apos;ve spent the last 18 years inside global
+                  institutions, watching the same pattern again and again.
+                  Smart people from outside the dominant culture, working
+                  twice as hard to read a room nobody briefed them on.
                 </p>
                 <p>
                   For most of those years I worked as a college access
@@ -52,9 +51,9 @@ export default function About() {
                 <p className="text-sm text-[#6B6B6B]/70 pt-4">
                   Past work has been recognized by U.S. Ambassadors and the
                   EducationUSA Innovative Programming Award. Lives in Ohrid,
-                  North Macedonia, with her husband and five-year-old son.
-                  Always up for a conversation about K-culture, remote work,
-                  or learning an Asian language.
+                  Macedonia, with her husband and five-year-old son. Always up
+                  for a conversation about K-culture, remote work, or learning
+                  an Asian language.
                 </p>
               </div>
             </FadeIn>
