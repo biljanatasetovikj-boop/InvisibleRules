@@ -12,10 +12,10 @@ export default function WhoIHelp() {
             Who This Is For
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-14 text-[#111111]">
-            Multilingual, talented, ambitious.
+            Competent. Several years in.
             <br />
             <span className="italic text-[#1B3557]">
-              A global generation, forming faster than the systems can adapt.
+              Reading a room nobody briefed you on.
             </span>
           </h2>
         </FadeIn>
@@ -23,29 +23,24 @@ export default function WhoIHelp() {
         <FadeIn delay={0.1}>
           <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed max-w-3xl">
             <p>
-              When I say non-Western talent, I mean people whose cultural
-              background was shaped outside the Anglo-Saxon and Nordic
-              frameworks most global organizations run on. Professionals from
-              the Global South, Eastern Europe, the Middle East, East and
-              Southeast Asia, and beyond. When I say global companies, I mean
-              organizations that operate across borders but run on a single,
-              dominant cultural logic. The gap between those two things is
-              exactly where I work, especially with hybrid and remote
-              professionals, where the informal channels for picking up
-              cultural fluency have largely collapsed.
+              If you&apos;re working inside a global company, and the people
+              calling the shots grew up in a different culture from yours
+              (North America, the UK, the Nordics), and you sense there&apos;s
+              a layer to how things work that nobody is naming, this work is
+              for you.
             </p>
             <p>
-              About a third of full-time professionals globally are now fully
-              remote. Another half are hybrid. Cultural intelligence has become
-              one of the two skills, alongside AI fluency, that decide who
-              advances. Workers with high cultural intelligence are twice as
-              likely to be promoted. The middle is hollowing out fast.
+              I work with people from the Global South, Eastern Europe, the
+              Middle East, East and Southeast Asia. People several years in.
+              Competent. Reading the room and finding it harder than it
+              should be, especially in remote and hybrid setups, where the
+              informal moments where you used to pick up the rules have
+              mostly disappeared.
             </p>
             <p className="text-[#111111] font-medium text-xl">
-              If you&apos;re navigating one of these systems and you feel like
-              you&apos;re missing the unwritten rules. How you get read in
-              your organization. How influence builds. What makes a
-              contribution land the way it should. This work was built for you.
+              If you&apos;re in one of these systems and you keep wondering
+              why visibility isn&apos;t building, why feedback contradicts
+              itself, why the promotion went somewhere else, this is the work.
             </p>
           </div>
         </FadeIn>

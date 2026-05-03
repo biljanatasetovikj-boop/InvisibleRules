@@ -12,10 +12,10 @@ export default function ForCompanies() {
             For Global Organizations
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
-            Your international team is underperforming.
+            For companies.
             <br />
             <span className="text-white/50 italic">
-              The reason probably isn&apos;t what you think.
+              If cultural friction is part of what you&apos;re seeing.
             </span>
           </h2>
         </FadeIn>
@@ -23,25 +23,11 @@ export default function ForCompanies() {
         <FadeIn delay={0.1}>
           <div className="space-y-6 text-xl text-white/70 leading-relaxed mb-10 max-w-2xl">
             <p>
-              Cultural friction isn&apos;t a soft problem. It quietly drives
-              down performance and pushes good people out, long before HR sees
-              the resignation email.
-            </p>
-            <p>
-              And it&apos;s getting harder, not easier. Hybrid work multiplies
-              cross-cultural interactions while shrinking the time anyone has
-              to read each other. The informal channels where international
-              hires used to pick up the rules have collapsed. Workers with
-              strong cultural intelligence are now twice as likely to be
-              promoted. The companies that build this skill into their teams
-              retain their international hires. The ones that don&apos;t, lose
-              them.
-            </p>
-            <p>
-              Depending on what you&apos;re seeing, we work together through a
-              focused workshop, an ongoing training program for your
-              international team, or both. Early-stage, high-touch work. I
-              take on a small number of company clients at a time.
+              Some of this work happens with companies, not individuals. If
+              you&apos;re seeing international hires stall, leave, or quietly
+              disengage, and you suspect cultural friction is part of it,
+              get in touch. We&apos;ll figure out whether there&apos;s
+              something useful I can do.
             </p>
           </div>
           <a

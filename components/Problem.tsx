@@ -38,16 +38,15 @@ export default function Problem() {
               nobody explains them.
             </p>
             <p>
-              When you can&apos;t see the rules, the only explanation left is a quiet,
-              damaging one:{" "}
+              When you can&apos;t see the rules, there&apos;s only one explanation
+              left, and it&apos;s the wrong one:{" "}
               <span className="text-[#F0EDE8] italic">
                 Maybe the problem is me. Maybe I&apos;m not as good as I thought.
-                Maybe I don&apos;t belong here.
               </span>
             </p>
             <p>
-              That slow erosion of self-belief is happening right now, inside
-              competent people. The system is what&apos;s broken, not them.
+              You are. The rules were written for someone else. That doesn&apos;t
+              mean you can&apos;t learn them.
             </p>
           </div>
         </FadeIn>
@@ -55,8 +54,8 @@ export default function Problem() {
         <FadeIn delay={0.2}>
           <blockquote className="mt-16 border-l-2 border-[#C4923A] pl-8">
             <p className="font-serif text-2xl md:text-3xl text-[#F0EDE8] italic leading-snug">
-              &ldquo;What I give people isn&apos;t just career tools. I give them
-              back an accurate picture of their own capability.&rdquo;
+              &ldquo;The work is about giving people back an accurate picture of
+              their own capability.&rdquo;
             </p>
           </blockquote>
         </FadeIn>

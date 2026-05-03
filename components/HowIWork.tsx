@@ -10,8 +10,8 @@ const cohortPillars = [
     text: "We work out what's actually driving you, what kind of career fits the person you are, and what you want to be known for. The kind of career work most advice skips entirely.",
   },
   {
-    label: "Build the bridge between them",
-    text: "What you've learned about your organization and what you've learned about yourself only matter if you can use both. So we work on using both, with strategy and cultural fluency, in a way that stays useful as workplaces and norms keep changing.",
+    label: "Use both",
+    text: "Reading the system and knowing yourself only matter if you act on both. We work on doing that, with strategy and with cultural fluency, in a way that holds up as workplaces keep changing.",
   },
 ];
 
@@ -24,20 +24,18 @@ export default function HowIWork() {
             The Approach
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-[#111111]">
-            This isn&apos;t generic career advice.
+            How I Work.
             <br />
             <span className="italic">
-              It&apos;s cultural intelligence, earned by living it.
+              Two formats. Which one fits depends on where you are.
             </span>
           </h2>
           <p className="text-lg text-[#6B6B6B] mb-16 max-w-2xl leading-relaxed">
-            I work with non-Western professionals and the organizations that
-            employ them, in three different formats. Which one fits depends on
-            where you are and what you need.
+            I work with professionals inside global organizations.
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {/* 1:1 Advisory */}
           <FadeIn delay={0}>
             <div className="border border-[#E5E2DB] rounded-2xl p-8 bg-white h-full flex flex-col">
@@ -49,14 +47,9 @@ export default function HowIWork() {
               </h3>
               <div className="space-y-4 text-[#6B6B6B] leading-relaxed flex-1">
                 <p>
-                  Private advisory sessions. We look at your specific situation:
-                  your organization, your role, the dynamics you&apos;re
-                  navigating. From there we build a clear picture of what&apos;s
-                  happening and what to do about it.
-                </p>
-                <p>
-                  This is for you if you want a thought partner who understands
-                  the cultural layer beneath the career mechanics.
+                  Private sessions. We look at your specific organization,
+                  your role, the situation in front of you, and we work out
+                  what&apos;s actually going on and what to do next.
                 </p>
               </div>
               <a
@@ -79,16 +72,12 @@ export default function HowIWork() {
               <p className="text-xs uppercase tracking-widest text-[#C4923A] font-medium mb-2 mt-2">
                 For professionals ready to stop navigating alone
               </p>
-              <h3 className="font-serif text-2xl font-bold text-[#111111] mb-1">
+              <h3 className="font-serif text-2xl font-bold text-[#111111] mb-6">
                 Global Cohort Program
               </h3>
-              <p className="font-serif text-xl italic text-[#1B3557] mb-6">
-                Read the room. Show up as yourself. Move on your terms.
-              </p>
               <p className="text-[#6B6B6B] leading-relaxed mb-8">
-                A structured program for professionals navigating global
-                organizations, alongside a cohort that&apos;s in the same
-                terrain.
+                A program for professionals working through this alongside
+                others in the same terrain.
               </p>
 
               <div className="space-y-5 flex-1">
@@ -122,38 +111,6 @@ export default function HowIWork() {
             </div>
           </FadeIn>
 
-          {/* Workshops */}
-          <FadeIn delay={0.2}>
-            <div className="border border-[#E5E2DB] rounded-2xl p-8 bg-white h-full flex flex-col">
-              <p className="text-xs uppercase tracking-widest text-[#C4923A] font-medium mb-2">
-                For organizations with international teams
-              </p>
-              <h3 className="font-serif text-2xl font-bold text-[#111111] mb-6">
-                Workshops & Training
-              </h3>
-              <div className="space-y-4 text-[#6B6B6B] leading-relaxed flex-1">
-                <p>
-                  A tailored workshop or training program for companies where
-                  cultural friction is quietly undermining the performance of
-                  international hires. I work with your team: HR, managers, or
-                  the international employees themselves.
-                </p>
-                <p>
-                  This isn&apos;t a diversity awareness session. It&apos;s a
-                  working session that produces real behavioral shifts on both
-                  sides: international employees who understand the rules better,
-                  and local managers who understand what their international
-                  colleagues are navigating.
-                </p>
-              </div>
-              <a
-                href="#lets-talk"
-                className="mt-8 text-[#1B3557] font-medium hover:text-[#C4923A] transition-colors inline-block"
-              >
-                → Let&apos;s Talk about your team
-              </a>
-            </div>
-          </FadeIn>
         </div>
       </div>
     </section>

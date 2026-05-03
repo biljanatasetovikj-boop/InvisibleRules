@@ -10,11 +10,10 @@ export default function About() {
             Who I Am
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-14 text-[#111111]">
-            I&apos;ve spent 18 years as the bridge between non-Western talent
-            and Western institutions.
+            I&apos;m Biljana.
             <br />
             <span className="italic text-[#1B3557]">
-              I know this gap from the inside.
+              I&apos;ve spent 18 years watching the same pattern.
             </span>
           </h2>
         </FadeIn>
@@ -24,27 +23,37 @@ export default function About() {
             <FadeIn delay={0.1}>
               <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed">
                 <p>
-                  I&apos;m Biljana, and I&apos;m from North Macedonia. I built my
-                  career learning how to navigate institutions that weren&apos;t
-                  designed for people like me, and teaching others to do the same.
+                  I&apos;m from North Macedonia, and I&apos;ve spent the last
+                  18 years inside global institutions, watching the same
+                  pattern again and again. Smart people from outside the
+                  dominant culture, working twice as hard to read a room
+                  nobody briefed them on.
                 </p>
                 <p>
-                  For 18 years I worked as a college access counselor. I helped
-                  students from non-Western countries get into Harvard, MIT, and
-                  other top U.S. universities, earning over $1 million in
-                  scholarships along the way. Two U.S. Ambassadors recognized my
-                  work with certificates of achievement. I received the EducationUSA
-                  Innovative Virtual Programming Award for the entire European region,
-                  one winner per world region.
+                  For most of those years I worked as a college access
+                  counselor. I helped students from non-Western countries get
+                  into U.S. universities they&apos;d been told were out of
+                  reach. The students were never the problem. The problem
+                  was always the same: nobody had translated the rules.
                 </p>
                 <p>
-                  I&apos;ve presented at international conferences across the U.S.,
-                  Spain, Turkey, Lithuania, Croatia, Ukraine, and Austria.
+                  I&apos;m building Invisible Rules because the same gap
+                  shows up at work, and the cost is higher there. People
+                  stall, doubt themselves, leave. Not because they
+                  aren&apos;t good. Because the system is one they were
+                  never let into.
                 </p>
                 <p>
-                  I didn&apos;t just study this. I lived it. I built Invisible Rules
-                  because I know what it costs to navigate an institution alone, and
-                  what becomes possible when someone finally explains the rules.
+                  I&apos;m at the start of this. Talking to people. Testing
+                  whether what I&apos;m seeing matches what they&apos;re
+                  feeling. If you recognize yourself in any of the writing
+                  on this page, I&apos;d like to hear from you.
+                </p>
+                <p className="text-sm text-[#6B6B6B]/70 pt-4">
+                  Lives in the Ohrid area with my husband and our
+                  five-year-old son. Past work has been recognized by U.S.
+                  Ambassadors and the EducationUSA Innovative Programming
+                  Award.
                 </p>
               </div>
             </FadeIn>
@@ -52,10 +61,8 @@ export default function About() {
             <FadeIn delay={0.2}>
               <blockquote className="mt-12 border-l-2 border-[#C4923A] pl-8">
                 <p className="font-serif text-2xl md:text-3xl text-[#111111] italic leading-snug">
-                  &ldquo;My real work is translation. I take what&apos;s implicit
-                  in global workplaces and make it explicit, so people can act
-                  on what they couldn&apos;t see before. I don&apos;t discover
-                  talent. I make sure the systems around it can finally see it.&rdquo;
+                  &ldquo;Nobody translated the rules when you walked in.
+                  That&apos;s the work.&rdquo;
                 </p>
               </blockquote>
             </FadeIn>

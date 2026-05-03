@@ -53,12 +53,11 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-lg text-[#6B6B6B] leading-relaxed mb-12">
-            I&apos;m not here to sell you a package. I&apos;m here to understand
-            what you&apos;re navigating and tell you honestly whether I can help.
-            If you&apos;re a professional who&apos;s been quietly wondering why
-            things aren&apos;t moving the way they should, or a company watching
-            international talent stall, reach out. Let&apos;s figure out
-            what&apos;s going on.
+            I&apos;m not here to sell you a package. I want to understand
+            what you&apos;re working through and tell you honestly whether
+            I can help. If you&apos;ve been quietly wondering why things
+            aren&apos;t moving the way they should, write to me.
+            We&apos;ll figure out what&apos;s going on.
           </p>
         </FadeIn>
 
@@ -128,7 +127,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full border border-[#E5E2DB] rounded-xl px-4 py-3.5 text-[#111111] bg-white focus:outline-none focus:border-[#1B3557] transition-colors resize-none placeholder:text-[#6B6B6B]/40"
-                  placeholder="What are you navigating? What's not moving the way it should?"
+                  placeholder="What are you working through? What's not moving the way it should?"
                 />
               </div>
 

@@ -25,9 +25,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease }}
           className="text-xl md:text-2xl text-[#6B6B6B] leading-relaxed max-w-2xl mx-auto mb-6"
         >
-          There&apos;s a gap between being good at your job and being seen as
-          someone who advances. That gap isn&apos;t your skill. It&apos;s the
-          unwritten rules global organizations run on but never explain.
+          The chill in the meeting after you spoke. The conversation you
+          weren&apos;t invited to. The promotion that went to someone with less
+          experience.
         </motion.p>
 
         <motion.p
@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.27, ease }}
           className="text-base md:text-lg font-medium text-[#111111] mb-12"
         >
-          You&apos;re not imagining it. There are rules. They come from a culture nobody taught you. That&apos;s the work.
+          None of those are in your head. There are rules. Nobody translated them when you walked in.
         </motion.p>
 
         <motion.div
