@@ -50,10 +50,11 @@ export default function About() {
                   on this page, I&apos;d like to hear from you.
                 </p>
                 <p className="text-sm text-[#6B6B6B]/70 pt-4">
-                  Lives in the Ohrid area with my husband and our
-                  five-year-old son. Past work has been recognized by U.S.
-                  Ambassadors and the EducationUSA Innovative Programming
-                  Award.
+                  Past work has been recognized by U.S. Ambassadors and the
+                  EducationUSA Innovative Programming Award. Lives in Ohrid,
+                  North Macedonia, with her husband and five-year-old son.
+                  Always up for a conversation about K-culture, remote work,
+                  or learning an Asian language.
                 </p>
               </div>
             </FadeIn>
