@@ -27,8 +27,7 @@ export default function Hero() {
         >
           There&apos;s a gap between being good at your job and being seen as
           someone who advances. That gap isn&apos;t your skill. It&apos;s the
-          unwritten rules — the ones global organizations run on, but never
-          explain.
+          unwritten rules global organizations run on but never explain.
         </motion.p>
 
         <motion.p
@@ -37,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.27, ease }}
           className="text-base md:text-lg font-medium text-[#111111] mb-12"
         >
-          I help non-Western professionals in international organizations close that gap.
+          You&apos;re not imagining it. There are rules. They come from a culture nobody taught you. That&apos;s the work.
         </motion.p>
 
         <motion.div

@@ -56,9 +56,9 @@ export default function Contact() {
             I&apos;m not here to sell you a package. I&apos;m here to understand
             what you&apos;re navigating and tell you honestly whether I can help.
             If you&apos;re a professional who&apos;s been quietly wondering why
-            things aren&apos;t moving the way they should — or a company watching
-            international talent stall — reach out. Let&apos;s figure out
-            what&apos;s actually going on.
+            things aren&apos;t moving the way they should, or a company watching
+            international talent stall, reach out. Let&apos;s figure out
+            what&apos;s going on.
           </p>
         </FadeIn>
 

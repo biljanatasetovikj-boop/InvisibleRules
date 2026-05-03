@@ -12,10 +12,10 @@ export default function WhoIHelp() {
             Who This Is For
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-14 text-[#111111]">
-            You&apos;re past the beginner stage. You&apos;re capable. You&apos;re credible.
+            Multilingual, talented, ambitious.
             <br />
             <span className="italic text-[#1B3557]">
-              And somehow, you&apos;re still stuck.
+              A global generation, forming faster than the systems can adapt.
             </span>
           </h2>
         </FadeIn>
@@ -23,24 +23,29 @@ export default function WhoIHelp() {
         <FadeIn delay={0.1}>
           <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed max-w-3xl">
             <p>
-              You&apos;ve been in your role for a few years. You do good work. You
-              get good feedback — sometimes. But you&apos;re not moving the way you
-              expected to. Peers with similar experience seem to be advancing in
-              ways that feel invisible to you.
+              When I say non-Western talent, I mean people whose cultural
+              background was shaped outside the Anglo-Saxon and Nordic
+              frameworks most global organizations run on. Professionals from
+              the Global South, Eastern Europe, the Middle East, East and
+              Southeast Asia, and beyond. When I say global companies, I mean
+              organizations that operate across borders but run on a single,
+              dominant cultural logic. The gap between those two things is
+              exactly where I work, especially with hybrid and remote
+              professionals, where the informal channels for picking up
+              cultural fluency have largely collapsed.
             </p>
             <p>
-              You&apos;re probably not missing skills. You&apos;re missing context. The
-              informal rules about how to be read in your organization. How to
-              build influence. How to make your contributions land the way they
-              deserve to.
-            </p>
-            <p>
-              You might be carrying this as a private weight — taking up enormous
-              mental space, affecting your income, affecting your confidence,
-              affecting whether you stay or leave a place that actually needs you.
+              About a third of full-time professionals globally are now fully
+              remote. Another half are hybrid. Cultural intelligence has become
+              one of the two skills, alongside AI fluency, that decide who
+              advances. Workers with high cultural intelligence are twice as
+              likely to be promoted. The middle is hollowing out fast.
             </p>
             <p className="text-[#111111] font-medium text-xl">
-              This is the work I do with you.
+              If you&apos;re navigating one of these systems and you feel like
+              you&apos;re missing the unwritten rules. How you get read in
+              your organization. How influence builds. What makes a
+              contribution land the way it should. This work was built for you.
             </p>
           </div>
         </FadeIn>

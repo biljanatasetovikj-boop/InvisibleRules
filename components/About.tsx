@@ -26,16 +26,16 @@ export default function About() {
                 <p>
                   I&apos;m Biljana, and I&apos;m from North Macedonia. I built my
                   career learning how to navigate institutions that weren&apos;t
-                  designed for people like me — and teaching others to do the same.
+                  designed for people like me, and teaching others to do the same.
                 </p>
                 <p>
-                  For 18 years I worked as a college access counselor, helping
+                  For 18 years I worked as a college access counselor. I helped
                   students from non-Western countries get into Harvard, MIT, and
-                  other top U.S. universities — earning over $1 million in
+                  other top U.S. universities, earning over $1 million in
                   scholarships along the way. Two U.S. Ambassadors recognized my
                   work with certificates of achievement. I received the EducationUSA
-                  Innovative Virtual Programming Award for the entire European region
-                  — one winner per world region.
+                  Innovative Virtual Programming Award for the entire European region,
+                  one winner per world region.
                 </p>
                 <p>
                   I&apos;ve presented at international conferences across the U.S.,
@@ -43,7 +43,7 @@ export default function About() {
                 </p>
                 <p>
                   I didn&apos;t just study this. I lived it. I built Invisible Rules
-                  because I know what it costs to navigate an institution alone — and
+                  because I know what it costs to navigate an institution alone, and
                   what becomes possible when someone finally explains the rules.
                 </p>
               </div>
@@ -52,8 +52,10 @@ export default function About() {
             <FadeIn delay={0.2}>
               <blockquote className="mt-12 border-l-2 border-[#C4923A] pl-8">
                 <p className="font-serif text-2xl md:text-3xl text-[#111111] italic leading-snug">
-                  &ldquo;I teach the rules that global organizations run on — the ones
-                  nobody tells you, but everyone expects you to know.&rdquo;
+                  &ldquo;My real work is translation. I take what&apos;s implicit
+                  in global workplaces and make it explicit, so people can act
+                  on what they couldn&apos;t see before. I don&apos;t discover
+                  talent. I make sure the systems around it can finally see it.&rdquo;
                 </p>
               </blockquote>
             </FadeIn>

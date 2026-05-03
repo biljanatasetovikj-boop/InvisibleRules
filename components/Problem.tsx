@@ -12,10 +12,10 @@ export default function Problem() {
             Why This Exists
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-14">
-            Global companies have figured out how to hire internationally.
+            You&apos;re sensing more than you can name.
             <br />
             <span className="text-[#F0EDE8]/40 italic">
-              They haven&apos;t figured out how to help those hires actually succeed.
+              And what you can&apos;t name, you can&apos;t act on.
             </span>
           </h2>
         </FadeIn>
@@ -23,15 +23,19 @@ export default function Problem() {
         <FadeIn delay={0.1}>
           <div className="space-y-6 text-lg text-[#F0EDE8]/65 leading-relaxed max-w-3xl">
             <p>
-              The gap between a talented professional from a non-Western background
-              and a visible, advancing one is almost never skill.
+              You&apos;re not imagining what you&apos;re sensing. The chill in a
+              meeting after you spoke. The conversation you didn&apos;t get
+              invited to. The promotion that went to someone with less experience.
+              The feedback that contradicted itself. There&apos;s a pattern
+              underneath all of it.
             </p>
             <p>
-              It&apos;s knowing how decisions actually get made behind closed doors.
-              How to advocate for yourself in a way that reads as confident, not
-              aggressive. What &ldquo;executive presence&rdquo; really means in these
-              cultures. How trust is built — and lost — in ways that can feel
-              completely arbitrary if nobody explains them.
+              The pattern is the unwritten rules. How decisions actually get made
+              behind closed doors. How to advocate for yourself in a way that
+              reads as confident rather than aggressive. What &ldquo;executive
+              presence&rdquo; really means in these cultures. How trust gets
+              built, and how it gets lost, in ways that can feel arbitrary when
+              nobody explains them.
             </p>
             <p>
               When you can&apos;t see the rules, the only explanation left is a quiet,
@@ -43,7 +47,7 @@ export default function Problem() {
             </p>
             <p>
               That slow erosion of self-belief is happening right now, inside
-              competent people. People who are not the problem.
+              competent people. The system is what&apos;s broken, not them.
             </p>
           </div>
         </FadeIn>
