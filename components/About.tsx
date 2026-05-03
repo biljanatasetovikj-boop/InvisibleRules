@@ -52,8 +52,9 @@ export default function About() {
                   Past work has been recognized by U.S. Ambassadors and the
                   EducationUSA Innovative Programming Award. Lives in Ohrid,
                   Macedonia, with her husband and five-year-old son. Always up
-                  for a conversation about K-culture, remote work, or learning
-                  an Asian language.
+                  for a conversation about K-culture, Claude Code, remote work,
+                  learning foreign languages, or life as a solopreneur and a
+                  parent.
                 </p>
               </div>
             </FadeIn>
