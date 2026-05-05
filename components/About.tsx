@@ -49,14 +49,15 @@ export default function About() {
                   on this page, I&apos;d like to hear from you.
                 </p>
                 <p>
-                  Students I mentored received over $1 million in financial
-                  aid and got into Harvard, MIT, and other top U.S.
-                  universities. I&apos;ve been recognized by U.S. Ambassadors
-                  and the EducationUSA Innovative Programming Award for past
-                  work. I live in Ohrid, Macedonia, with my husband and our
-                  five-year-old son. I&apos;m always up for a conversation
-                  about K-culture, Claude Code, remote work, learning foreign
-                  languages, or balancing parenting and solopreneurship.
+                  A few things for the record: students I mentored received
+                  over $1 million in financial aid and got into Harvard, MIT,
+                  and other top U.S. universities. I&apos;ve been recognized
+                  by U.S. Ambassadors and the EducationUSA Innovative
+                  Programming Award for past work. I live in Ohrid, Macedonia,
+                  with my husband and our five-year-old son. I&apos;m always
+                  up for a conversation about K-culture, Claude Code, remote
+                  work, learning foreign languages, or balancing parenting and
+                  solopreneurship.
                 </p>
               </div>
             </FadeIn>
