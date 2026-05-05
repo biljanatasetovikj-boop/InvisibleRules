@@ -43,10 +43,10 @@ export default function About() {
                   never let into.
                 </p>
                 <p>
-                  I&apos;m at the start of this. Talking to people. Testing
-                  whether what I&apos;m seeing matches what they&apos;re
-                  feeling. If you recognize yourself in any of the writing
-                  on this page, I&apos;d like to hear from you.
+                  Invisible Rules is just beginning. I&apos;m talking to
+                  people. Testing whether what I&apos;m observing matches
+                  what professionals are actually living. If you recognize
+                  yourself in any of this, I&apos;d like to hear from you.
                 </p>
                 <p>
                   A few things for the record: students I mentored received
