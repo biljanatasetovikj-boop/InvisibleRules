@@ -48,13 +48,13 @@ export default function About() {
                   feeling. If you recognize yourself in any of the writing
                   on this page, I&apos;d like to hear from you.
                 </p>
-                <p className="text-sm text-[#6B6B6B]/70 pt-4">
-                  Past work has been recognized by U.S. Ambassadors and the
-                  EducationUSA Innovative Programming Award. Lives in Ohrid,
-                  Macedonia, with her husband and five-year-old son. Always up
-                  for a conversation about K-culture, Claude Code, remote work,
-                  learning foreign languages, or life as a solopreneur and a
-                  parent.
+                <p>
+                  I&apos;ve been recognized by U.S. Ambassadors and the
+                  EducationUSA Innovative Programming Award for past work.
+                  I live in Ohrid, Macedonia, with my husband and our
+                  five-year-old son. I&apos;m always up for a conversation
+                  about K-culture, Claude Code, remote work, learning foreign
+                  languages, or life as a solopreneur and a parent.
                 </p>
               </div>
             </FadeIn>
