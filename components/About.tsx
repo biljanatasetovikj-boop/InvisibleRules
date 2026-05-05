@@ -54,7 +54,7 @@ export default function About() {
                   I live in Ohrid, Macedonia, with my husband and our
                   five-year-old son. I&apos;m always up for a conversation
                   about K-culture, Claude Code, remote work, learning foreign
-                  languages, or life as a solopreneur and a parent.
+                  languages, or balancing parenting and solopreneurship.
                 </p>
               </div>
             </FadeIn>
