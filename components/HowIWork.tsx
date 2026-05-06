@@ -2,16 +2,16 @@ import FadeIn from "./FadeIn";
 
 const cohortPillars = [
   {
-    label: "Read the room you're in",
-    text: "You learn to see what's shaping decisions in your organization. How trust gets built, how visibility happens, what 'executive presence' looks like in your specific culture. Once you can see the system, you stop guessing how to operate inside it.",
+    label: "See the system without absorbing it",
+    text: "Most cultural training treats the dominant culture as the standard and you as the deficit. We do the opposite. You learn to read it from the outside while operating inside it. The dominant culture stops being the “real” one. It becomes one room you know how to walk into.",
   },
   {
-    label: "Know what drives your work",
-    text: "We work out what's actually driving you, what kind of career fits the person you are, and what you want to be known for. The kind of career work most advice skips entirely.",
+    label: "Reclaim what you bring",
+    text: "Your original culture isn’t baggage. It’s an asset your colleagues don’t have. The warmth from a relational culture. The ability to read what isn’t being said. The precision drilled in by training abroad. The work is learning to deploy them for the room you’re in.",
   },
   {
-    label: "Use both",
-    text: "Reading the system and knowing yourself only matter if you act on both. We work on doing that, with strategy and with cultural fluency, in a way that holds up as workplaces keep changing.",
+    label: "Choose your adaptation",
+    text: "Adaptation stops being a demand. It becomes a strategic skill you choose. The way a bilingual person doesn’t feel less themselves when speaking their second language. That choice requires knowing yourself: what’s driving you, what kind of career fits, what you want to be known for. From there you draw your own line. Which adaptations are strategic. Which are who you are.",
   },
 ];
 
@@ -76,8 +76,9 @@ export default function HowIWork() {
                 Global Cohort Program
               </h3>
               <p className="text-[#6B6B6B] leading-relaxed mb-8">
-                A program for professionals working through this alongside
-                others in the same terrain.
+                Most cultural training teaches you to fit in. This program
+                teaches you to operate across cultures without disappearing
+                into any of them.
               </p>
 
               <div className="space-y-5 flex-1">
@@ -95,6 +96,14 @@ export default function HowIWork() {
                   </div>
                 ))}
               </div>
+
+              <p className="mt-8 text-[#6B6B6B] text-sm leading-relaxed">
+                The shift is from “I’m failing at being them” to “I’m
+                skilled at operating across cultures, including theirs.”
+                Not a list of cultural rules. Not a personality makeover.
+                A different relationship to adaptation, one that doesn’t
+                cost you your self.
+              </p>
 
               <div className="mt-8">
                 <a
