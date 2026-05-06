@@ -27,29 +27,26 @@ export default function About() {
                   twice as hard to read a room nobody briefed them on.
                 </p>
                 <p>
-                  For seven of those years, I ran a U.S. State Department
-                  cultural program, designing and delivering more than 4,000
-                  events across my region. The work meant operating across
-                  hierarchies — embassies, host institutions, local partners,
-                  audiences — and watching thousands of people from my region
-                  engage with American diplomats, academics, and
-                  businesspeople. I saw what worked, what got misread, and
+                  For seven of those years I ran a U.S. State Department
+                  cultural program. Four thousand events across my region.
+                  The work moved between embassies, host institutions,
+                  local partners, and audiences. I watched thousands of
+                  people from my region meet American diplomats, academics,
+                  and businesspeople. I saw what worked, what got misread,
                   where the friction points sat. Not theory. Field data.
                 </p>
                 <p>
-                  Alongside that, I spent years as a college access
-                  counselor, helping students from non-Western countries get
-                  into U.S. universities they&apos;d been told were out of
-                  reach.
+                  Alongside that, I worked for years as a college access
+                  counselor. I helped students from non-Western countries
+                  get into U.S. universities they&apos;d been told were
+                  out of reach.
                 </p>
                 <p>Different rooms. Same pattern.</p>
                 <p>
                   The students were never the problem. The professionals I
                   now work with aren&apos;t either. The problem was always
                   the same: nobody had translated the rules. Nobody had
-                  named the codes that everyone inside the system already
-                  knew. I spent seven years building bridges between those
-                  codes for thousands of people.
+                  named the codes everyone inside the system already knew.
                 </p>
                 <p>
                   I&apos;m building Invisible Rules because the same gap
