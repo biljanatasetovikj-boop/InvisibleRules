@@ -23,24 +23,38 @@ export default function WhoIHelp() {
         <FadeIn delay={0.1}>
           <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed max-w-3xl">
             <p>
-              If you&apos;re working inside a global company, and the people
-              calling the shots grew up in a different culture from yours
-              (North America, the UK, the Nordics), and you sense there&apos;s
-              a layer to how things work that nobody is naming, this work is
-              for you.
+              If you grew up and were professionally formed in Eastern
+              Europe, the Balkans, or Southeast Asia, and now work fully
+              remotely for a Western-headquartered company (North America,
+              the UK, the Nordics) that has no office in your country, this
+              work is for you.
             </p>
             <p>
-              I work with people from the Global South, Eastern Europe, the
-              Middle East, East and Southeast Asia. People several years in.
-              Competent. Reading the room and finding it harder than it
-              should be, especially in remote and hybrid setups, where the
-              informal moments where you used to pick up the rules have
-              mostly disappeared.
+              Most or all of your colleagues are in another time zone and a
+              different culture. Every meeting you take is in your second
+              or third language.
+            </p>
+            <p>
+              You are competent. Several years in. Promoted at least once
+              in this remote role, or at the level where the next promotion
+              would normally come and hasn&apos;t.
+            </p>
+            <p>
+              You&apos;ve been in this setup long enough that the novelty
+              has worn off and the structural friction has surfaced.
+              Reading the room is harder than it should be, especially in
+              remote and hybrid setups. The informal moments where you used
+              to pick up the rules have mostly disappeared.
+            </p>
+            <p>
+              You are not asking how to get hired remotely. You are asking
+              why, despite delivering, you feel drained and quietly
+              off-track.
             </p>
             <p className="text-[#111111] font-medium text-xl">
-              If you&apos;re in one of these systems and you keep wondering
-              why visibility isn&apos;t building, why feedback contradicts
-              itself, why the promotion went somewhere else, this is the work.
+              If you keep wondering why visibility isn&apos;t building, why
+              feedback contradicts itself, why the promotion went somewhere
+              else, this is the work.
             </p>
           </div>
         </FadeIn>
