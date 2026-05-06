@@ -76,9 +76,9 @@ export default function HowIWork() {
                 Global Cohort Program
               </h3>
               <p className="text-[#6B6B6B] leading-relaxed mb-8">
-                Most cultural training teaches you to fit in. This program
-                teaches you to operate across cultures without disappearing
-                into any of them.
+                Most cultural training delivers information. This program
+                delivers experience. An integrated experience of being
+                culturally fluent while staying whole.
               </p>
 
               <div className="space-y-5 flex-1">
