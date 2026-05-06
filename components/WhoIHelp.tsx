@@ -26,30 +26,26 @@ export default function WhoIHelp() {
               If you grew up and were professionally formed in Eastern
               Europe, the Balkans, or Southeast Asia, and now work fully
               remotely for a Western-headquartered company (North America,
-              the UK, the Nordics) that has no office in your country, this
+              the UK, the Nordics) with no office in your country, this
               work is for you.
             </p>
             <p>
-              Most or all of your colleagues are in another time zone and a
+              Most of your colleagues are in another time zone and a
               different culture. Every meeting you take is in your second
-              or third language.
+              or third language. The informal moments where you used to
+              pick up the rules have mostly disappeared.
             </p>
             <p>
-              You are competent. Several years in. Promoted at least once
-              in this remote role, or at the level where the next promotion
-              would normally come and hasn&apos;t.
+              You are competent. Several years in. Told you&apos;re too
+              direct, too quiet, too formal, too much. Or not quite
+              leadership material. You suspect the feedback says more
+              about the room than about you.
             </p>
             <p>
-              You&apos;ve been in this setup long enough that the novelty
-              has worn off and the structural friction has surfaced.
-              Reading the room is harder than it should be, especially in
-              remote and hybrid setups. The informal moments where you used
-              to pick up the rules have mostly disappeared.
-            </p>
-            <p>
-              You are not asking how to get hired remotely. You are asking
-              why, despite delivering, you feel drained and quietly
-              off-track.
+              You&apos;ve succeeded at adapting and you&apos;re wondering
+              why it feels hollow. You are not asking how to get hired
+              remotely. You are asking why, despite delivering, you feel
+              drained and quietly off-track.
             </p>
             <p className="text-[#111111] font-medium text-xl">
               If you keep wondering why visibility isn&apos;t building, why
