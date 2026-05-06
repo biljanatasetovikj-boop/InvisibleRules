@@ -34,23 +34,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.27, ease }}
-          className="text-base md:text-lg font-medium text-[#111111] mb-12"
+          className="text-base md:text-lg font-medium text-[#111111]"
         >
           None of those are in your head. There are rules. Nobody translated them when you walked in.
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.38, ease }}
-        >
-          <a
-            href="#lets-talk"
-            className="inline-flex items-center gap-2 bg-[#C4923A] text-white text-base font-medium px-8 py-4 rounded-full hover:bg-[#B07E2E] transition-colors"
-          >
-            Let&apos;s Talk →
-          </a>
-        </motion.div>
       </div>
     </section>
   );
