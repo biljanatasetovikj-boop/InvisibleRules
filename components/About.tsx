@@ -23,17 +23,33 @@ export default function About() {
             <FadeIn delay={0.1}>
               <div className="space-y-6 text-lg text-[#6B6B6B] leading-relaxed">
                 <p>
-                  I&apos;ve spent the last 18 years inside global
-                  institutions, watching the same pattern again and again.
                   Smart people from outside the dominant culture, working
                   twice as hard to read a room nobody briefed them on.
                 </p>
                 <p>
-                  For most of those years I worked as a college access
-                  counselor. I helped students from non-Western countries get
+                  For seven of those years, I ran a U.S. State Department
+                  cultural program, designing and delivering more than 4,000
+                  events across my region. The work meant operating across
+                  hierarchies — embassies, host institutions, local partners,
+                  audiences — and watching thousands of people from my region
+                  engage with American diplomats, academics, and
+                  businesspeople. I saw what worked, what got misread, and
+                  where the friction points sat. Not theory. Field data.
+                </p>
+                <p>
+                  Alongside that, I spent years as a college access
+                  counselor, helping students from non-Western countries get
                   into U.S. universities they&apos;d been told were out of
-                  reach. The students were never the problem. The problem
-                  was always the same: nobody had translated the rules.
+                  reach.
+                </p>
+                <p>Different rooms. Same pattern.</p>
+                <p>
+                  The students were never the problem. The professionals I
+                  now work with aren&apos;t either. The problem was always
+                  the same: nobody had translated the rules. Nobody had
+                  named the codes that everyone inside the system already
+                  knew. I spent seven years building bridges between those
+                  codes for thousands of people.
                 </p>
                 <p>
                   I&apos;m building Invisible Rules because the same gap
@@ -51,13 +67,13 @@ export default function About() {
                 <p>
                   A few things for the record: students I mentored received
                   over $1 million in financial aid and got into Harvard, MIT,
-                  and other top U.S. universities. I&apos;ve been recognized
-                  by U.S. Ambassadors and the EducationUSA Innovative
-                  Programming Award for past work. I live in Ohrid, Macedonia,
-                  with my husband and our five-year-old son. I&apos;m always
-                  up for a conversation about K-culture, Claude Code, remote
-                  work, learning foreign languages, or balancing parenting and
-                  solopreneurship.
+                  and other top U.S. universities. My cultural diplomacy
+                  work was recognized by U.S. Ambassadors and received the
+                  EducationUSA Innovative Programming Award. I live in
+                  Ohrid, Macedonia, with my husband and our five-year-old
+                  son. I&apos;m always up for a conversation about K-culture,
+                  Claude Code, remote work, learning foreign languages, or
+                  balancing parenting and solopreneurship.
                 </p>
               </div>
             </FadeIn>
