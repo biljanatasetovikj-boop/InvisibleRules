@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Crimson_Pro, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const crimsonPro = Crimson_Pro({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-crimson",
   display: "swap",
 });
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${crimsonPro.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="bg-[#FAFAF7] text-[#111111] antialiased">{children}</body>
     </html>
   );
