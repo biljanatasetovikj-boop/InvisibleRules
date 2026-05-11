@@ -7,37 +7,25 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto text-center">
         <motion.h1
           initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, ease }}
-          className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight text-[#111111] mb-8"
+          className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold leading-snug tracking-tight text-[#111111] mb-12"
         >
-          You were hired for your talent.
-          <br />
-          <span className="italic text-[#1B3557]">Nobody told you the rest.</span>
+          Do you think strong work speaks for itself? Depends where you work. If you&apos;re a remote professional inside an international organization, you already know it doesn&apos;t. The rules of who gets seen, heard, and advanced were written for someone else. They can be learned. You can thrive in a place that wasn&apos;t built for you.
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15, ease }}
-          className="text-xl md:text-2xl text-[#6B6B6B] leading-relaxed max-w-2xl mx-auto mb-6"
-        >
-          The chill in the meeting after you spoke. The conversation you
-          weren&apos;t invited to. The promotion that went to someone with less
-          experience.
-        </motion.p>
-
-        <motion.p
+        <motion.a
+          href="#how-i-work"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.27, ease }}
-          className="text-base md:text-lg font-medium text-[#111111]"
+          transition={{ duration: 0.8, delay: 0.25, ease }}
+          className="inline-flex items-center gap-2 bg-[#1B3557] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#16294A] transition-colors"
         >
-          None of those are in your head. There are rules. Nobody translated them when you walked in.
-        </motion.p>
+          Get started →
+        </motion.a>
       </div>
     </section>
   );
