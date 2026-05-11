@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Crimson_Pro, DM_Sans } from "next/font/google";
+import { Anton, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const crimsonPro = Crimson_Pro({
+const anton = Anton({
   subsets: ["latin"],
-  variable: "--font-crimson",
+  weight: "400",
+  variable: "--font-anton",
   display: "swap",
 });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${crimsonPro.variable} ${dmSans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${anton.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="bg-[#FAFAF7] text-[#111111] antialiased">{children}</body>
     </html>
   );
