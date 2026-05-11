@@ -15,13 +15,13 @@ export default function Hero() {
           className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] tracking-tight text-[#111111] mb-14"
         >
           <span className="font-normal">
-            Close the gap between what you bring and what the room sees.
+            Decode the unwritten rules and build a career you actually own.
           </span>{" "}
           <span className="font-bold">
-            Flourish in workplaces that weren&apos;t designed with you in mind.
+            Close the gap between what you bring and what the room sees.
           </span>{" "}
           <span className="italic font-medium text-[#1B3557]">
-            Decode the unwritten rules and build a career you actually own.
+            Flourish in workplaces that weren&apos;t designed with you in mind.
           </span>
         </motion.h1>
 
