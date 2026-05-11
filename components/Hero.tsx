@@ -15,13 +15,13 @@ export default function Hero() {
           className="font-serif text-2xl md:text-3xl lg:text-4xl leading-[1.25] tracking-tight text-[#111111] mb-14"
         >
           <span className="block font-normal">
-            Do you think strong work speaks for itself? Depends where you work.
+            Close the gap between what you bring and what the room sees.
           </span>
           <span className="block mt-8 md:mt-10 font-bold">
-            If you&apos;re a non-Western professional inside a global company, you already know it doesn&apos;t. The rules of who gets seen, heard, and advanced were written for someone else.
+            Flourish in workplaces that weren&apos;t designed with you in mind.
           </span>
           <span className="block mt-8 md:mt-10 italic font-medium text-[#1B3557]">
-            They can be learned. You can thrive in a place that wasn&apos;t built for you.
+            Decode the unwritten rules and build a career you actually own.
           </span>
         </motion.h1>
 
