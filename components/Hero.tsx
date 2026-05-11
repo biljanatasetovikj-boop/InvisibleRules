@@ -12,15 +12,15 @@ export default function Hero() {
           initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, ease }}
-          className="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-[#111111] mb-14"
+          className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] tracking-tight text-[#111111] mb-14"
         >
-          <span className="block font-normal">
+          <span className="font-normal">
             Close the gap between what you bring and what the room sees.
-          </span>
-          <span className="block mt-6 md:mt-8 font-bold">
+          </span>{" "}
+          <span className="font-bold">
             Flourish in workplaces that weren&apos;t designed with you in mind.
-          </span>
-          <span className="block mt-6 md:mt-8 italic font-medium text-[#1B3557]">
+          </span>{" "}
+          <span className="italic font-medium text-[#1B3557]">
             Decode the unwritten rules and build a career you actually own.
           </span>
         </motion.h1>
