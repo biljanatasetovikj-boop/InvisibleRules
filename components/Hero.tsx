@@ -12,7 +12,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, ease }}
-          className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] tracking-tight text-[#111111] mb-14"
+          className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tight text-[#111111] mb-14"
         >
           Close the gap between what you bring and what the room sees.{" "}
           <span className="font-bold">
