@@ -14,15 +14,11 @@ export default function Hero() {
           transition={{ duration: 0.85, ease }}
           className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] tracking-tight text-[#111111] mb-14"
         >
-          <span className="font-normal">
-            Decode the unwritten rules and build a career you actually own.
-          </span>{" "}
+          Close the gap between what you bring and what the room sees.{" "}
           <span className="font-bold">
-            Close the gap between what you bring and what the room sees.
-          </span>{" "}
-          <span className="italic font-medium text-[#1B3557]">
             Flourish in workplaces that weren&apos;t designed with you in mind.
-          </span>
+          </span>{" "}
+          Decode the unwritten rules and build a career you actually own.
         </motion.h1>
 
         <motion.a
