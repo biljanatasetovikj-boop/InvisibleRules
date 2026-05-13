@@ -12,7 +12,7 @@ export default function WhoIHelp() {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-                  02 — Who it&apos;s for
+                  03 — Who it&apos;s for
                 </span>
                 <span className="w-10 h-px bg-[#e0ddd5]" />
               </div>

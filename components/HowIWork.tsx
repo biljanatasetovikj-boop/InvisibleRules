@@ -25,7 +25,7 @@ export default function HowIWork() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              01 — The work
+              02 — The work
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>

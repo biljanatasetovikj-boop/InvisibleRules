@@ -7,7 +7,7 @@ export default function Contact() {
         <FadeIn>
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              03 — Start here
+              04 — Start here
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
