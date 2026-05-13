@@ -1,22 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAFAF7;
-  --foreground: #111111;
-  --navy: #1B3557;
-  --gold: #C4923A;
-  --muted: #6B6B6B;
-  --border: #E5E2DB;
-  --dark-bg: #0F1117;
-  --dark-text: #F0EDE8;
-  --cream: #F4F1EC;
+  --white: #ffffff;
+  --paper: #fafaf7;
+  --ink: #1a1a1a;
+  --ink-soft: #3a3a3a;
+  --red: #d4302a;
+  --red-deep: #a8221d;
+  --grey: #707070;
+  --grey-soft: #a8a8a8;
+  --line: #e0ddd5;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-anton);
+  --color-background: var(--white);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-raleway);
+  --font-serif: var(--font-playfair);
+  --font-body: var(--font-lora);
 }
 
 * {
@@ -28,13 +29,16 @@ html {
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--white);
+  color: var(--ink);
+  font-family: var(--font-lora), Georgia, serif;
+  font-weight: 400;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: #1B3557;
-  color: #FAFAF7;
+  background-color: var(--red);
+  color: var(--white);
 }

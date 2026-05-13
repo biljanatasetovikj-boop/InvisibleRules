@@ -1,150 +1,40 @@
-"use client";
-
-import { useState } from "react";
-import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setLoading(true);
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    try {
-      const res = await fetch("https://formsubmit.co/ajax/biljanatasetovikj@gmail.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          email: data.get("email"),
-          message: data.get("message"),
-          _subject: "New message from Invisible Rules website",
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setLoading(false);
-        return;
-      }
-    } catch {
-      // network error — still show success, message may not have sent
-    }
-    setLoading(false);
-  }
-
   return (
-    <section
-      id="lets-talk"
-      className="py-24 lg:py-32 px-6 lg:px-8 bg-[#FAFAF7]"
-    >
-      <div className="max-w-2xl mx-auto">
+    <section id="lets-talk" className="bg-white py-[130px] text-center">
+      <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <p className="text-xs uppercase tracking-widest text-[#C4923A] font-medium mb-5">
-            Let&apos;s Talk
-          </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-6 text-[#111111]">
-            Not sure if this is the right fit?
-            <br />
-            <span className="italic text-[#1B3557]">
-              Start with a conversation.
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+              03 — Start here
             </span>
+            <span className="w-10 h-px bg-[#e0ddd5]" />
+          </div>
+          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-7">
+            Let&apos;s <span className="text-[#d4302a] italic">talk</span>.
           </h2>
-          <p className="text-lg text-[#6B6B6B] leading-relaxed mb-12">
-            I&apos;m not here to sell you a package. I want to understand
-            what you&apos;re working through and tell you honestly whether
-            I can help. If you&apos;ve been quietly wondering why things
-            aren&apos;t moving the way they should, write to me.
-            We&apos;ll figure out what&apos;s going on.
+          <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mx-auto mb-13">
+            A 30-minute discovery call. No pitch, no commitment. We see if there&apos;s a fit — and
+            you leave with at least one rule you didn&apos;t have before.
           </p>
+          <div className="flex justify-center gap-3.5 flex-wrap">
+            <a
+              href="mailto:biljanatasetovikj@gmail.com?subject=Discovery%20call%20%E2%80%94%20Invisible%20Rules"
+              className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
+            >
+              Book a discovery call
+            </a>
+            <a
+              href="https://invisiblerules.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-transparent text-[#1a1a1a] border-2 border-[#1a1a1a] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#1a1a1a] hover:text-white transition-colors"
+            >
+              Read recent essays
+            </a>
+          </div>
         </FadeIn>
-
-        {submitted ? (
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-[#1B3557] text-white rounded-2xl p-10 text-center"
-          >
-            <p className="font-serif text-2xl font-bold mb-3">
-              Message received.
-            </p>
-            <p className="text-white/70 leading-relaxed">
-              I read every message personally and will be in touch within a few days.
-            </p>
-          </motion.div>
-        ) : (
-          <FadeIn delay={0.1}>
-            <form onSubmit={handleSubmit} className="space-y-6" suppressHydrationWarning>
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-[#111111] mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full border border-[#E5E2DB] rounded-xl px-4 py-3.5 text-[#111111] bg-white focus:outline-none focus:border-[#1B3557] transition-colors placeholder:text-[#6B6B6B]/40"
-                  placeholder="Your name"
-                  suppressHydrationWarning
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-[#111111] mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full border border-[#E5E2DB] rounded-xl px-4 py-3.5 text-[#111111] bg-white focus:outline-none focus:border-[#1B3557] transition-colors placeholder:text-[#6B6B6B]/40"
-                  placeholder="your@email.com"
-                  suppressHydrationWarning
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-[#111111] mb-2"
-                >
-                  Tell me a little about your situation
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  className="w-full border border-[#E5E2DB] rounded-xl px-4 py-3.5 text-[#111111] bg-white focus:outline-none focus:border-[#1B3557] transition-colors resize-none placeholder:text-[#6B6B6B]/40"
-                  placeholder="What are you working through? What's not moving the way it should?"
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full bg-[#C4923A] text-white font-medium py-4 rounded-full hover:bg-[#B07E2E] transition-colors disabled:opacity-60 cursor-pointer"
-                suppressHydrationWarning
-              >
-                {loading ? "Sending..." : "Send →"}
-              </button>
-            </form>
-            <p className="text-sm text-[#6B6B6B] text-center mt-5">
-              I read every message personally and respond within a few days.
-            </p>
-          </FadeIn>
-        )}
       </div>
     </section>
   );

@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
-import { Anton, DM_Sans } from "next/font/google";
+import { Playfair_Display, Lora, Raleway } from "next/font/google";
 import "./globals.css";
 
-const anton = Anton({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-anton",
+  variable: "--font-playfair",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-lora",
+  display: "swap",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-raleway",
   display: "swap",
 });
 
@@ -27,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${anton.variable} ${dmSans.variable}`} suppressHydrationWarning>
-      <body className="bg-[#FAFAF7] text-[#111111] antialiased">{children}</body>
+    <html lang="en" className={`${playfair.variable} ${lora.variable} ${raleway.variable}`} suppressHydrationWarning>
+      <body className="bg-white text-[#1a1a1a] antialiased">{children}</body>
     </html>
   );
 }

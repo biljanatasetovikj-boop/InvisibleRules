@@ -1,114 +1,108 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const links = [
-  { label: "The Problem", href: "#the-problem" },
-  { label: "Who This Is For", href: "#who-i-help" },
-  { label: "How I Work", href: "#how-i-work" },
-  { label: "About", href: "#about" },
-  { label: "For Companies", href: "#for-companies" },
+  { label: "The Work", href: "#how-i-work" },
+  { label: "Individuals", href: "#who-i-help" },
+  { label: "Companies", href: "#lets-talk" },
+  { label: "Essays", href: "https://invisiblerules.substack.com/", external: true },
 ];
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#FAFAF7]/95 backdrop-blur-sm border-b border-[#E5E2DB]"
-          : "bg-transparent"
-      }`}
-    >
-      <nav className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          className="font-serif text-lg font-bold tracking-tight text-[#111111]"
-        >
-          Invisible Rules
-        </a>
-
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-[#6B6B6B] hover:text-[#111111] transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+    <header>
+      <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
+        <nav className="py-6 flex justify-between items-center border-b-2 border-[#1a1a1a]">
           <a
-            href="#lets-talk"
-            className="text-sm bg-[#1B3557] text-white px-5 py-2.5 rounded-full hover:bg-[#16294A] transition-colors"
+            href="#"
+            className="font-serif font-black text-[26px] tracking-[-0.01em] text-[#1a1a1a]"
           >
-            Let's Talk
+            Invisible <em className="italic text-[#d4302a] font-bold">Rules</em>
           </a>
-        </div>
 
-        <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`block w-6 h-0.5 bg-[#111111] transition-all duration-200 origin-center ${
-              open ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-[#111111] transition-opacity duration-200 ${
-              open ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-[#111111] transition-all duration-200 origin-center ${
-              open ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
-        </button>
-      </nav>
+          <div className="hidden md:flex items-stretch">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                {...(link.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-5 flex items-center border-l border-[#e0ddd5]"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="mailto:biljanatasetovikj@gmail.com?subject=Discovery%20call%20%E2%80%94%20Invisible%20Rules"
+              className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-white bg-[#d4302a] hover:bg-[#a8221d] transition-colors px-5 flex items-center border-l border-[#e0ddd5]"
+            >
+              Book a call
+            </a>
+          </div>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden bg-[#FAFAF7] border-b border-[#E5E2DB] overflow-hidden"
+          <button
+            className="md:hidden flex flex-col gap-1.5 p-2"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
           >
-            <div className="px-6 py-5 flex flex-col gap-4">
-              {links.map((link) => (
+            <span
+              className={`block w-6 h-0.5 bg-[#1a1a1a] transition-transform duration-200 origin-center ${
+                open ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-[#1a1a1a] transition-opacity duration-200 ${
+                open ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-[#1a1a1a] transition-transform duration-200 origin-center ${
+                open ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </button>
+        </nav>
+
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="md:hidden overflow-hidden border-b border-[#e0ddd5]"
+            >
+              <div className="py-5 flex flex-col gap-3">
+                {links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    {...(link.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                    className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-1"
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                ))}
                 <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-base text-[#111111] py-1"
+                  href="mailto:biljanatasetovikj@gmail.com?subject=Discovery%20call%20%E2%80%94%20Invisible%20Rules"
+                  className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#d4302a] py-1"
                   onClick={() => setOpen(false)}
                 >
-                  {link.label}
+                  Book a call
                 </a>
-              ))}
-              <a
-                href="#lets-talk"
-                className="text-base font-medium text-[#C4923A] py-1"
-                onClick={() => setOpen(false)}
-              >
-                Let's Talk →
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </header>
   );
 }
