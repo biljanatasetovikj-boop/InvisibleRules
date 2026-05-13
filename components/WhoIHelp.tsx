@@ -7,7 +7,11 @@ export default function WhoIHelp() {
       className="py-28 bg-[#fafaf7] border-t-2 border-[#1a1a1a]"
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
-        <h2 className="sr-only">Who this is for</h2>
+        <FadeIn>
+          <h2 className="font-serif italic text-[#d4302a] text-[clamp(24px,3vw,36px)] mb-12">
+            This is for you if:
+          </h2>
+        </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <FadeIn delay={0} className="h-full">
             <div className="bg-white border-t-4 border-[#d4302a] p-8 h-full">
