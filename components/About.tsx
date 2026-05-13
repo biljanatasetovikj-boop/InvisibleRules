@@ -12,11 +12,11 @@ export default function About() {
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-12 max-w-[960px]">
+          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-12">
             I&apos;m Biljana.
             <br />
             <span className="italic text-[#d4302a]">
-              Eighteen years watching the same pattern.
+              I&apos;m a certified career counselor.
             </span>
           </h2>
         </FadeIn>
@@ -24,66 +24,39 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 lg:gap-16 items-start">
           <div>
             <FadeIn delay={0.1}>
-              <div className="space-y-6 font-body text-[18px] text-[#3a3a3a] leading-[1.7]">
+              <div className="space-y-6 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[700px]">
                 <p>
-                  Smart people from outside the dominant culture, working twice
-                  as hard to read a room nobody briefed them on.
+                  For 18 years, I watched the same pattern repeat itself while
+                  working in global organizations, navigating teams,
+                  supervisors, and stakeholders from all over the world. I also
+                  watched people from non-Western backgrounds step into elite
+                  international institutions and achieve their biggest dreams
+                  while quietly struggling with the cultural transition that
+                  came with it.
                 </p>
-                <p>
-                  For seven of those years I ran a U.S. State Department
-                  cultural program. Four thousand events across my region. The
-                  work moved between embassies, host institutions, local
-                  partners, and audiences. I watched thousands of people from
-                  my region meet American diplomats, academics, and
-                  businesspeople. I saw what worked, what got misread, where
-                  the friction points sat. Not theory. Field data.
-                </p>
-                <p>
-                  Alongside that, I worked for years as a college access
-                  counselor. I helped students from non-Western countries get
-                  into U.S. universities they&apos;d been told were out of
-                  reach.
-                </p>
-                <p className="font-serif italic text-[#1a1a1a] text-[22px]">
-                  Different rooms. Same pattern.
+                <p className="font-serif italic text-[#1a1a1a] text-[22px] leading-[1.4]">
+                  I saw what worked. What got misread. Where the friction
+                  points sat. Not theory. Field data.
                 </p>
                 <p>
-                  The students were never the problem. The professionals I now
-                  work with aren&apos;t either. The problem was always the same:
-                  nobody had translated the rules. Nobody had named the codes
-                  everyone inside the system already knew.
-                </p>
-                <p>
-                  I&apos;m building Invisible Rules because the same gap shows
-                  up at work, and the cost is higher there. People stall, doubt
-                  themselves, leave. Not because they aren&apos;t good. Because
-                  the system is one they were never let into.
-                </p>
-                <p>
-                  Invisible Rules is just beginning. I&apos;m talking to people.
-                  Testing whether what I&apos;m observing matches what
-                  professionals are actually living. If you recognize yourself
-                  in any of this, I&apos;d like to hear from you.
-                </p>
-                <p className="text-[#707070] text-base">
-                  A few things for the record: students I mentored received
-                  over $1 million in financial aid and got into Harvard, MIT,
-                  and other top U.S. universities. My cultural diplomacy work
-                  was recognized by U.S. Ambassadors and received the
-                  EducationUSA Innovative Programming Award. I live in Ohrid,
-                  Macedonia, with my husband and our five-year-old son.
-                  I&apos;m always up for a conversation about K-culture, Claude
-                  Code, remote work, learning foreign languages, or balancing
-                  parenting and solopreneurship.
+                  Now, I&apos;m passing that knowledge on to others walking the
+                  same path and trying to navigate the invisible rules that
+                  quietly stall careers. I want to close the gap between what
+                  you bring into the room and what others actually see, and
+                  help you build a career you truly own.
                 </p>
               </div>
-            </FadeIn>
 
-            <FadeIn delay={0.2}>
-              <blockquote className="mt-12 border-l-4 border-[#d4302a] pl-8 font-serif italic font-bold text-[#1a1a1a] text-[clamp(22px,2.6vw,32px)] leading-[1.25] max-w-[800px]">
-                &ldquo;Nobody translated the rules when you walked in.
-                That&apos;s the work.&rdquo;
-              </blockquote>
+              <div className="mt-10">
+                <a
+                  href="https://www.linkedin.com/in/biljana-kuzmanovska-tasetovikj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
+                >
+                  More about me
+                </a>
+              </div>
             </FadeIn>
           </div>
 
