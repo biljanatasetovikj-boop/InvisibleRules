@@ -35,9 +35,12 @@ export default function WhoIHelp() {
                   01
                 </span>
                 <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
-                  You&apos;re{" "}
-                  <em className="italic text-[#d4302a] font-medium">mid-career</em>, working in or
-                  near a global organization.
+                  You&apos;re highly competent, often more than your peers, yet
+                  somehow{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    less visible
+                  </em>
+                  .
                 </span>
               </li>
               <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
@@ -45,8 +48,12 @@ export default function WhoIHelp() {
                   02
                 </span>
                 <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
-                  You&apos;re competent — and somehow{" "}
-                  <em className="italic text-[#d4302a] font-medium">less visible</em> than peers.
+                  You&apos;ve built your career without ever{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    living or studying
+                  </em>{" "}
+                  in the countries where your company and Western colleagues
+                  operate.
                 </span>
               </li>
               <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
@@ -54,8 +61,11 @@ export default function WhoIHelp() {
                   03
                 </span>
                 <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
-                  You&apos;ve been read as &ldquo;too quiet,&rdquo; &ldquo;too direct,&rdquo; or
-                  &ldquo;not strategic enough.&rdquo;
+                  No one ever taught you this was a skill. You assumed{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    results would speak for themselves
+                  </em>
+                  .
                 </span>
               </li>
               <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
@@ -63,8 +73,48 @@ export default function WhoIHelp() {
                   04
                 </span>
                 <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
-                  You don&apos;t want to perform a different culture. You want to be understood in{" "}
-                  <em className="italic text-[#d4302a] font-medium">this one</em>.
+                  You navigate additional layers such as{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    accent, name, and cultural communication style
+                  </em>{" "}
+                  that make the standard playbook harder to apply.
+                </span>
+              </li>
+              <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
+                <span className="flex-none w-7 pt-1 font-sans text-[10px] font-bold tracking-[0.1em] text-[#d4302a]">
+                  05
+                </span>
+                <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
+                  No one in your corner has explained these dynamics in a way
+                  that{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    accounts for where you&apos;re starting from
+                  </em>
+                  .
+                </span>
+              </li>
+              <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
+                <span className="flex-none w-7 pt-1 font-sans text-[10px] font-bold tracking-[0.1em] text-[#d4302a]">
+                  06
+                </span>
+                <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
+                  You&apos;re done guessing and ready to work with someone{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    who has actually lived this
+                  </em>
+                  .
+                </span>
+              </li>
+              <li className="py-6 flex gap-5 items-baseline border-b border-[#e0ddd5]">
+                <span className="flex-none w-7 pt-1 font-sans text-[10px] font-bold tracking-[0.1em] text-[#d4302a]">
+                  07
+                </span>
+                <span className="font-body text-xl leading-[1.5] text-[#1a1a1a]">
+                  You don&apos;t want to sound like everyone else. You want{" "}
+                  <em className="italic text-[#d4302a] font-medium">
+                    your value to come across clearly
+                  </em>
+                  .
                 </span>
               </li>
             </ul>
