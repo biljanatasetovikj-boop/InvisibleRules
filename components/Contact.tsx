@@ -31,9 +31,20 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="inline-block bg-transparent text-[#1a1a1a] border-2 border-[#1a1a1a] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#1a1a1a] hover:text-white transition-colors"
             >
-              Read recent essays
+              From People Like You
             </a>
           </div>
+          <p className="mt-7 font-body italic text-[15px] text-[#707070]">
+            Or find me on{" "}
+            <a
+              href="https://www.linkedin.com/in/biljana-kuzmanovska-tasetovikj/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1a1a1a] hover:text-[#d4302a] transition-colors underline underline-offset-4 decoration-[#e0ddd5]"
+            >
+              LinkedIn ↗
+            </a>
+          </p>
         </FadeIn>
       </div>
     </section>
