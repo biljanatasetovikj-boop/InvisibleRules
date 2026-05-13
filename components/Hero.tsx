@@ -21,15 +21,6 @@ export default function Hero() {
           <span className="w-9 h-px bg-[#d4302a]" />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.08, ease }}
-          className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] mb-13"
-        >
-          For mid-career professionals from non-western backgrounds
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,8 +38,8 @@ export default function Hero() {
           className="font-body italic text-[clamp(18px,2.1vw,24px)] text-[#1a1a1a] leading-[1.5] tracking-[0.01em] mb-14 max-w-[900px] mx-auto"
         >
           The new fluency of global careers. What MBA graduates and CEOs absorb
-          through networks and access, here it gets decoded for people who had
-          to figure it out the hard way.
+          through networks and access, we decode for people who had to learn it
+          the hard way.
         </motion.p>
 
         <motion.div
