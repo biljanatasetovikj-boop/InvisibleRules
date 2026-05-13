@@ -4,6 +4,7 @@ import Problem from "@/components/Problem";
 import HowIWork from "@/components/HowIWork";
 import WhoIHelp from "@/components/WhoIHelp";
 import About from "@/components/About";
+import Interviews from "@/components/Interviews";
 import ForCompanies from "@/components/ForCompanies";
 import PullQuote from "@/components/PullQuote";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
         <HowIWork />
         <WhoIHelp />
         <About />
+        <Interviews />
         <ForCompanies />
         <PullQuote />
         <Contact />
