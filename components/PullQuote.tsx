@@ -12,15 +12,16 @@ export default function PullQuote() {
             </span>
             <span className="w-8 h-px bg-[#d4302a]" />
           </div>
-          <blockquote className="font-serif italic font-bold text-[clamp(34px,5vw,64px)] leading-[1.1] tracking-[-0.02em] max-w-[1060px] mx-auto mb-9 text-white">
-            I didn&apos;t need to work <span className="text-[#d4302a]">harder</span>.
-            <br />
-            I needed someone to tell me
-            <br />
-            the <span className="text-[#d4302a]">rules</span>.
+          <blockquote className="font-serif italic font-bold text-[clamp(22px,2.8vw,38px)] leading-[1.3] tracking-[-0.01em] max-w-[920px] mx-auto mb-9 text-white">
+            I had the experience. I had the results. But I still started
+            meetings by apologizing for how I spoke. What I lacked wasn&apos;t
+            talent or ambition. It was{" "}
+            <span className="text-[#d4302a]">cultural fluency</span>. Learning
+            how to communicate and lead with confidence changed the way I saw
+            myself and the way others responded to me.
           </blockquote>
           <div className="font-body italic text-[17px] text-[#a8a8a8]">
-            — after our first session
+            — after working together
           </div>
         </FadeIn>
       </div>
