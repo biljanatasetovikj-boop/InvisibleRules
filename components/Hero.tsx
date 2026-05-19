@@ -49,7 +49,7 @@ export default function Hero() {
           className="flex justify-center gap-3.5 flex-wrap"
         >
           <a
-            href="mailto:biljanatasetovikj@gmail.com?subject=Discovery%20call"
+            href="#lets-talk"
             className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
           >
             Book a discovery call

@@ -29,7 +29,7 @@ export default function ForCompanies() {
             I can do.
           </p>
           <a
-            href="mailto:biljanatasetovikj@gmail.com?subject=Companies"
+            href="#lets-talk"
             className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
           >
             Let&apos;s talk about your team
