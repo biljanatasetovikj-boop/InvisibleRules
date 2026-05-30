@@ -10,6 +10,14 @@
   --grey: #707070;
   --grey-soft: #a8a8a8;
   --line: #e0ddd5;
+
+  /* Quiz friction levels — sampled from the site's warm palette so they read
+     as native. Green is the calm pole; mild/notable are an amber→ochre warmth;
+     high is a terracotta that sits in the same hue family as --red. */
+  --quiz-friction-well: #4f7344;
+  --quiz-friction-mild: #a87a1f;
+  --quiz-friction-notable: #b05c28;
+  --quiz-friction-high: #a8362a;
 }
 
 @theme inline {

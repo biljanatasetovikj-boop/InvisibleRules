@@ -76,10 +76,17 @@ export default function Problem() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-8 font-serif italic text-[#1a1a1a] text-[15px]">
+              <a
+                href="/quiz"
+                className="group mt-8 inline-block font-serif italic text-[#1a1a1a] text-[15px] hover:text-[#d4302a] transition-colors"
+              >
                 <span className="text-[#d4302a] mr-1.5">↗</span> if three or
-                more land, this work is for you.
-              </p>
+                more land,{" "}
+                <span className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 group-hover:decoration-[#d4302a] transition-colors">
+                  take the diagnostic
+                </span>
+                .
+              </a>
             </div>
           </FadeIn>
         </div>
