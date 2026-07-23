@@ -53,9 +53,8 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
 
           <div className="space-y-5 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[600px]">
             <p>
-              Almost there — pop your email in below and your full friction map
-              is waiting on the next screen. Take your time with it once
-              you&apos;re there.
+              Leave your email to see your results. The next screen shows you
+              where the friction sits, and where it doesn&apos;t.
             </p>
           </div>
 
@@ -99,9 +98,6 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
             )}
           </form>
 
-          <p className="mt-8 font-body italic text-[14px] text-[#707070]">
-            Your results are one click away.
-          </p>
         </FadeIn>
       </div>
     </section>
