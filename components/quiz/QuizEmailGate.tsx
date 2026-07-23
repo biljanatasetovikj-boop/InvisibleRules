@@ -53,8 +53,8 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
 
           <div className="space-y-5 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[600px]">
             <p>
-              Leave your email to see your results. The next screen shows you
-              where the friction sits, and where it doesn&apos;t.
+              Your results are waiting on the next screen. All it takes is your
+              email.
             </p>
           </div>
 
