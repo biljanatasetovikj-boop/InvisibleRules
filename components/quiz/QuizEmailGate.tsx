@@ -57,11 +57,6 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
               friction map on the next screen — and a copy so you can come back
               to it.
             </p>
-            <p className="text-[16px] text-[#707070]">
-              No newsletter, no spam. Just your results and the occasional note
-              if there&apos;s something genuinely useful for people navigating
-              the same thing.
-            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="mt-12 max-w-[520px]">
