@@ -16,6 +16,10 @@ export async function POST(request: Request) {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
+          // formsubmit rejects server-side calls that arrive without a
+          // Referer — it can't tell the request came from the real site.
+          Referer: "https://theinvisiblerules.com",
+          Origin: "https://theinvisiblerules.com",
         },
         body: JSON.stringify({
           name,
