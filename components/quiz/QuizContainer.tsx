@@ -70,19 +70,27 @@ export default function QuizContainer() {
     .map((d) => dimensionResults[d]?.name ?? d)
     .join(", ");
 
-  // Send the lead, then reveal results. We advance regardless of whether the
-  // email actually sends — a formsubmit hiccup should never wall someone off
-  // from the results they earned. Failures surface in the console only.
+  // Send the lead, then reveal results. We post straight to formsubmit from
+  // the browser — routing it through our own server gets blocked, since
+  // formsubmit refuses requests coming from datacenter IPs. We advance
+  // regardless of whether the send succeeds — a hiccup should never wall
+  // someone off from the results they earned. Failures surface in the console.
   async function handleUnlock(email: string) {
     try {
-      await fetch("/api/quiz-lead", {
+      await fetch("https://formsubmit.co/ajax/biljanatasetovikj@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
           email,
-          score: totalScore,
+          quiz_score: totalScore.toString(),
           band: getBand(totalScore).band,
-          topFrictions,
+          top_frictions: topFrictions,
+          _subject: "New quiz lead - Invisible Rules",
+          _template: "table",
+          _captcha: "false",
         }),
       });
     } catch (err) {
