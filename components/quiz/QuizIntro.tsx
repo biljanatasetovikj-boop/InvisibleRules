@@ -50,7 +50,7 @@ export default function QuizIntro({ onBegin }: QuizIntroProps) {
           </div>
 
           <p className="mt-8 font-body italic text-[14px] text-[#707070]">
-            9 questions · ~3 minutes · No email required to see your results
+            9 questions · ~3 minutes · Your results sent straight to your inbox
           </p>
         </FadeIn>
       </div>

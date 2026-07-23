@@ -5,10 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import QuizIntro from "./QuizIntro";
 import QuizQuestion from "./QuizQuestion";
 import QuizProgress from "./QuizProgress";
+import QuizEmailGate from "./QuizEmailGate";
 import QuizResults from "./QuizResults";
-import { questions } from "@/lib/quiz-data";
+import { questions, dimensionResults, getBand } from "@/lib/quiz-data";
 
-type Phase = "intro" | "quiz" | "results";
+type Phase = "intro" | "quiz" | "email" | "results";
 
 export default function QuizContainer() {
   const [phase, setPhase] = useState<Phase>("intro");
@@ -36,7 +37,7 @@ export default function QuizContainer() {
     if (currentIndex < total - 1) {
       setCurrentIndex((i) => i + 1);
     } else {
-      setPhase("results");
+      setPhase("email");
     }
   }
 
@@ -63,6 +64,32 @@ export default function QuizContainer() {
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map((d) => d.dimension);
+
+  // Readable friction names for the lead email, e.g. "Communicating, Leading".
+  const topFrictions = topThreeDimensions
+    .map((d) => dimensionResults[d]?.name ?? d)
+    .join(", ");
+
+  // Send the lead, then reveal results. We advance regardless of whether the
+  // email actually sends — a formsubmit hiccup should never wall someone off
+  // from the results they earned. Failures surface in the console only.
+  async function handleUnlock(email: string) {
+    try {
+      await fetch("/api/quiz-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          score: totalScore,
+          band: getBand(totalScore).band,
+          topFrictions,
+        }),
+      });
+    } catch (err) {
+      console.error("Quiz lead failed to send:", err);
+    }
+    setPhase("results");
+  }
 
   const screenKey = phase === "quiz" ? `quiz-${currentIndex}` : phase;
 
@@ -98,6 +125,8 @@ export default function QuizContainer() {
               />
             </div>
           )}
+
+          {phase === "email" && <QuizEmailGate onUnlock={handleUnlock} />}
 
           {phase === "results" && (
             <QuizResults
