@@ -16,15 +16,26 @@ export default function Contact() {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          email: data.get("email"),
-          message: data.get("message"),
-        }),
-      });
+      // Post straight to formsubmit from the browser. Routing through our own
+      // server gets blocked — formsubmit refuses requests from datacenter IPs.
+      const res = await fetch(
+        "https://formsubmit.co/ajax/biljanatasetovikj@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: data.get("name"),
+            email: data.get("email"),
+            message: data.get("message"),
+            _subject: "Discovery call request - Invisible Rules",
+            _template: "table",
+            _captcha: "false",
+          }),
+        }
+      );
       if (res.ok) {
         setSubmitted(true);
         setLoading(false);
