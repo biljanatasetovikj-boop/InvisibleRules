@@ -75,7 +75,11 @@ export default function QuizContainer() {
   // formsubmit refuses requests coming from datacenter IPs. We advance
   // regardless of whether the send succeeds — a hiccup should never wall
   // someone off from the results they earned. Failures surface in the console.
-  async function handleUnlock(email: string) {
+  async function handleUnlock(lead: {
+    firstName: string;
+    lastName: string;
+    email: string;
+  }) {
     try {
       await fetch("https://formsubmit.co/ajax/biljanatasetovikj@gmail.com", {
         method: "POST",
@@ -84,7 +88,10 @@ export default function QuizContainer() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          email,
+          name: `${lead.firstName} ${lead.lastName}`,
+          first_name: lead.firstName,
+          last_name: lead.lastName,
+          email: lead.email,
           quiz_score: totalScore.toString(),
           band: getBand(totalScore).band,
           top_frictions: topFrictions,
