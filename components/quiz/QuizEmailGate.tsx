@@ -74,10 +74,7 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
           </h1>
 
           <div className="space-y-5 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[600px]">
-            <p>
-              Your results are waiting on the next screen. Just your name and
-              email first.
-            </p>
+            <p>Almost there. Where should I send your results?</p>
           </div>
 
           <form onSubmit={handleSubmit} className="mt-12 max-w-[520px] space-y-3">
