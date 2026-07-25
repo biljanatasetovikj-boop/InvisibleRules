@@ -63,14 +63,14 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              Your results are ready
+              Your results
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
 
           <h1 className="font-serif font-black text-[#1a1a1a] text-[clamp(34px,4.5vw,60px)] tracking-[-0.025em] leading-[1.02] mb-8">
-            Where should we send your{" "}
-            <span className="text-[#d4302a] italic">friction map</span>?
+            Your <span className="text-[#d4302a] italic">friction map</span> is
+            ready.
           </h1>
 
           <div className="space-y-5 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[600px]">
