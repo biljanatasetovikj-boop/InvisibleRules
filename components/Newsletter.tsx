@@ -1,9 +1,5 @@
 import FadeIn from "./FadeIn";
-
-// Paste the src from your beehiiv embed snippet here.
-// beehiiv → Grow → Subscribe Forms → (create/select a form) → Embed →
-// copy the URL inside <iframe src="..."> and drop it in below.
-const BEEHIIV_EMBED_SRC = "";
+import BeehiivForm from "./BeehiivForm";
 
 export default function Newsletter() {
   return (
@@ -29,24 +25,7 @@ export default function Newsletter() {
 
         <FadeIn delay={0.1}>
           <div className="max-w-[540px]">
-            {BEEHIIV_EMBED_SRC ? (
-              <iframe
-                src={BEEHIIV_EMBED_SRC}
-                title="Subscribe to The Invisible Rules"
-                scrolling="no"
-                className="w-full border-0 bg-transparent"
-                style={{ height: 220 }}
-              />
-            ) : (
-              <a
-                href="https://theinvisiblerules.beehiiv.com/subscribe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
-              >
-                Subscribe
-              </a>
-            )}
+            <BeehiivForm />
           </div>
         </FadeIn>
       </div>
