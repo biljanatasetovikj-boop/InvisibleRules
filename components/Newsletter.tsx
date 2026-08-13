@@ -3,26 +3,27 @@ import BeehiivForm from "./BeehiivForm";
 
 export default function Newsletter() {
   return (
-    <section
-      id="newsletter"
-      className="py-16 bg-[#fafaf7] border-t-2 border-[#1a1a1a]"
-    >
+    <section id="newsletter" className="bg-[#1a1a1a] py-24 lg:py-28">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-7 md:gap-14 md:items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_400px] gap-12 md:gap-16 md:items-center">
             <div>
-              <div className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a] mb-3">
-                Newsletter
+              <div className="flex items-center gap-3 mb-6">
+                <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+                  Newsletter
+                </span>
+                <span className="w-10 h-px bg-[#4a4a4a]" />
               </div>
-              <p className="font-serif text-[#1a1a1a] text-[clamp(22px,2.4vw,30px)] leading-[1.25] tracking-[-0.01em] max-w-[560px]">
+              <h2 className="font-serif font-black text-[#fafaf7] text-[clamp(34px,4.8vw,62px)] tracking-[-0.025em] leading-[1.02] max-w-[620px]">
                 Field notes on{" "}
                 <span className="italic text-[#d4302a]">
                   working across cultures
                 </span>
                 .
-              </p>
+              </h2>
             </div>
-            <div className="w-full md:w-[380px]">
+
+            <div className="bg-[#fafaf7] p-8 lg:p-9">
               <BeehiivForm />
             </div>
           </div>
