@@ -30,7 +30,7 @@ export default function Contact() {
             name: data.get("name"),
             email: data.get("email"),
             message: data.get("message"),
-            _subject: "Discovery call request - Invisible Rules",
+            _subject: "Conversation request - Invisible Rules",
             _template: "table",
             _captcha: "false",
           }),
