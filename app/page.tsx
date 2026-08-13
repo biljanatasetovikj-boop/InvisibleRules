@@ -22,9 +22,9 @@ export default function Home() {
         <WhoIHelp />
         <About />
         <Interviews />
+        <Newsletter />
         <ForCompanies />
         <PullQuote />
-        <Newsletter />
         <Contact />
       </main>
       <Footer />

@@ -9,8 +9,8 @@ const links = [
   { label: "The Diagnostic", href: "/quiz" },
   { label: "Who Is This For", href: "#who-i-help" },
   { label: "About Me", href: "#about" },
-  { label: "For Companies", href: "#for-companies" },
   { label: "Newsletter", href: "#newsletter" },
+  { label: "For Companies", href: "#for-companies" },
   { label: "Let's Talk", href: "#lets-talk" },
 ];
 
