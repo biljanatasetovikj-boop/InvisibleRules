@@ -15,10 +15,9 @@ export default function Newsletter() {
                 Newsletter
               </div>
               <p className="font-serif text-[#1a1a1a] text-[clamp(22px,2.4vw,30px)] leading-[1.25] tracking-[-0.01em] max-w-[560px]">
-                Occasional letters on the unwritten rules of global work —
+                Field notes on{" "}
                 <span className="italic text-[#d4302a]">
-                  {" "}
-                  visibility, communication, belonging
+                  working across cultures
                 </span>
                 .
               </p>
