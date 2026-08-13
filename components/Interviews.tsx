@@ -3,24 +3,27 @@ import FadeIn from "./FadeIn";
 const interviews = [
   {
     category: "Visibility",
-    title: "On being read as “too quiet” — and what it costs over a career.",
+    title: "What being seen at work actually means — and why you can’t do it alone.",
     excerpt:
-      "The performance review feedback you've been getting isn't about your work. It's about a code you weren't taught to speak.",
-    meta: "7 min read · April",
+      "Visibility isn’t only on you. It depends on how your silence gets read across cultures — and capable people can go unseen while being fully in the room.",
+    meta: "Newsletter",
+    href: "https://theinvisiblerules.beehiiv.com/p/what-being-seen-at-work-actually-means-and-why-you-can-t-do-it-alone",
   },
   {
     category: "Communication",
-    title: "How disagreement actually works in global rooms.",
+    title: "Ask the question. Don’t assume you already know.",
     excerpt:
-      "The unspoken grammar of pushback — when, how, and to whom. The thing nobody puts in the onboarding deck.",
-    meta: "5 min read · March",
+      "So much friction in global teams comes from filling the gaps with assumptions. The quieter move — asking — is usually the stronger one.",
+    meta: "LinkedIn post",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7491376330094338049/",
   },
   {
     category: "Belonging",
-    title: "Fluency, not assimilation: a small but important distinction.",
+    title: "Invisible Rules: The First Story.",
     excerpt:
-      "You don't have to become someone else to be understood. There's another way — and it's been there all along.",
-    meta: "6 min read · February",
+      "11 questions and 11 answers about working inside a world that wasn’t built for you.",
+    meta: "Story",
+    href: "https://invisiblerules.substack.com/p/invisible-rules-the-first-story",
   },
 ];
 
@@ -47,20 +50,27 @@ export default function Interviews() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
           {interviews.map((item, i) => (
             <FadeIn key={item.category} delay={i * 0.1}>
-              <article className="border-t border-[#1a1a1a] pt-6">
-                <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-4">
-                  — {item.category}
-                </div>
-                <h3 className="font-serif font-bold text-[#1a1a1a] text-[26px] leading-[1.15] tracking-[-0.01em] mb-4">
-                  {item.title}
-                </h3>
-                <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.6] mb-6">
-                  {item.excerpt}
-                </p>
-                <p className="font-body italic text-[14px] text-[#707070]">
-                  {item.meta}
-                </p>
-              </article>
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <article className="border-t border-[#1a1a1a] pt-6">
+                  <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-4">
+                    — {item.category}
+                  </div>
+                  <h3 className="font-serif font-bold text-[#1a1a1a] text-[26px] leading-[1.15] tracking-[-0.01em] mb-4 transition-colors group-hover:text-[#d4302a]">
+                    {item.title}
+                  </h3>
+                  <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.6] mb-6">
+                    {item.excerpt}
+                  </p>
+                  <p className="font-body italic text-[14px] text-[#707070]">
+                    {item.meta}
+                  </p>
+                </article>
+              </a>
             </FadeIn>
           ))}
         </div>
