@@ -32,10 +32,10 @@ export default function HowIWork() {
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-6 max-w-[960px]">
             Most of what holds people back
             <br />
-            isn&apos;t <span className="text-[#d4302a] italic">skill</span>.
+            isn&apos;t <span className="text-[#d4302a] italic">talent</span>.
           </h2>
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-16">
-            It&apos;s the rules nobody named. There&apos;s a gap between what you can do and how
+            It&apos;s the rules nobody taught you. There&apos;s a gap between what you can do and how
             you&apos;re perceived. Between contributing and being heard. I work with you to close
             it — <em className="italic text-[#d4302a]">without losing who you are</em>.
           </p>

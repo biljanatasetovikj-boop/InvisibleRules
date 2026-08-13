@@ -63,9 +63,12 @@ export default function Contact() {
             Let&apos;s <span className="text-[#d4302a] italic">talk</span>.
           </h2>
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-16">
-            A 30-minute discovery call. No pitch, no commitment. We see if
-            there&apos;s a fit — and you leave with at least one rule you
-            didn&apos;t have before.
+            A free 30-minute conversation. Tell me where things feel harder
+            than they should, about the boss you can&apos;t quite read, the
+            meetings where your voice gets lost, the sense that everyone knows a
+            rulebook you never got. We&apos;ll make sense of it together, and
+            you&apos;ll walk away with at least one rule you didn&apos;t have
+            before.
           </p>
         </FadeIn>
 
