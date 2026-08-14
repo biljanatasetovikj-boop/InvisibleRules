@@ -17,5 +17,5 @@ export default function BeehiivForm() {
     container.appendChild(script);
   }, []);
 
-  return <div ref={ref} />;
+  return <div ref={ref} className="w-full [&_iframe]:!w-full" />;
 }
