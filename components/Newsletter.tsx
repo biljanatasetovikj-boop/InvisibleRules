@@ -15,10 +15,10 @@ export default function Newsletter() {
               <span className="w-10 h-px bg-[#4a4a4a]" />
             </div>
             <h2 className="font-serif font-black text-[#fafaf7] text-[clamp(34px,5vw,58px)] tracking-[-0.025em] leading-[1.05] mb-9">
-              Field notes,{" "}
-              <span className="italic text-[#d4302a]">in your inbox</span>.
+              Field notes on{" "}
+              <span className="italic text-[#d4302a]">working across cultures</span>.
             </h2>
-            <div className="bg-[#fafaf7] p-5 sm:p-8 lg:p-10 text-left">
+            <div className="bg-[#fafaf7] p-6 sm:p-8 max-w-[500px] mx-auto">
               <BeehiivForm />
             </div>
           </div>
