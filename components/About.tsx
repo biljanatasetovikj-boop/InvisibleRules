@@ -16,7 +16,7 @@ export default function About() {
             I&apos;m Biljana.
             <br />
             <span className="italic text-[#d4302a]">
-              I&apos;m a certified career counselor.
+              I&apos;m a cross-cultural consultant.
             </span>
           </h2>
         </FadeIn>
