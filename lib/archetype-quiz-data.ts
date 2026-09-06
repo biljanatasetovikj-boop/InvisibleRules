@@ -58,13 +58,12 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
     code: "DEC",
     name: "The Decoder",
     opening:
-      "Something happens at work and it feels like humiliation. Your first move is inward: maybe it is me. Maybe it is how I work. You replay it. You question yourself. You carry it with you.",
+      "You already sense that the rules are unwritten. You feel the gap between what is said and what is meant. You know something is off, that there is a hidden layer to how your Western workplace operates, but you cannot yet name it.",
     reframe:
-      "But often what felt like a personal attack was only a cultural habit. A way of speaking that has nothing to do with your worth. A person who is direct with you may simply be direct, because their whole environment is direct. This does not mean you excuse everything. It means there is a fork you need to see before you can choose your response.",
+      "You notice more than most people around you. You read the room, you watch for the pattern, you catch the things others miss. But sensing without naming is tiring, and it leaves you carrying a background question you can never quite answer: what is really going on here, and why can I feel it but not explain it?",
     move:
-      "When something feels like humiliation, stop before you take it inside. Ask one question. Am I reading a personal judgment, or a cultural habit I do not share? Name which one it is. You can only respond well once you know which fork you are on. Most of the time, the answer is not about you at all.",
-    line:
-      "Before you take it as your fault, ask if it was ever about you.",
+      "Stop trying to feel your way through, and start naming what you see. When something feels off, slow down and put it into words. What just happened? What was said, and what was meant underneath it? Which unwritten rule did I just bump into? The moment you can name the rule, it stops controlling you and becomes something you can work with. Your instinct was never wrong. It was only waiting for language.",
+    line: "You are sensing a code no one taught you to read.",
   },
   IEX: {
     code: "IEX",
