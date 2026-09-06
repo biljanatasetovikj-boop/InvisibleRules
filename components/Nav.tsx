@@ -3,21 +3,29 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+// Hash targets are written absolute ("/#…") so the bar also works from
+// standalone routes like /learn-the-rules, where those sections don't exist
+// on the page.
 const links = [
-  { label: "The Pattern", href: "#the-pattern" },
-  { label: "The Work", href: "#how-i-work" },
+  { label: "The Pattern", href: "/#the-pattern" },
+  { label: "The Work", href: "/#how-i-work" },
   { label: "The Diagnostic", href: "/quiz" },
-  { label: "Who Is This For", href: "#who-i-help" },
+  { label: "Who Is This For", href: "/#who-i-help" },
   { label: "Your Archetype", href: "/archetype-quiz" },
-  { label: "About Me", href: "#about" },
-  { label: "Newsletter", href: "#newsletter" },
-  { label: "For Companies", href: "#for-companies" },
+  { label: "About Me", href: "/#about" },
+  { label: "Newsletter", href: "/#newsletter" },
+  { label: "For Companies", href: "/#for-companies" },
 ];
+
+// The offer. Held out of the list and marked in red so it doesn't disappear
+// into the row — it's the one page anyone deciding whether to work with
+// Biljana actually needs to reach.
+const offer = { label: "Learn the Rules", href: "/learn-the-rules" };
 
 // Held out of the list above and rendered as a filled button. With nine
 // items the bar read as an undifferentiated wall; pulling the one action out
 // gives the eye somewhere to land.
-const cta = { label: "Let's Talk", href: "#lets-talk" };
+const cta = { label: "Let's Talk", href: "/#lets-talk" };
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -26,7 +34,7 @@ export default function Nav() {
     <header>
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <nav className="py-6 flex justify-between items-center border-b-2 border-[#1a1a1a]">
-          <a href="#" className="flex items-center" aria-label="Invisible Rules — home">
+          <a href="/" className="flex items-center" aria-label="Invisible Rules — home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
@@ -38,6 +46,12 @@ export default function Nav() {
           </a>
 
           <div className="hidden lg:flex items-stretch">
+            <a
+              href={offer.href}
+              className="font-sans text-[9px] font-bold uppercase tracking-[0.14em] text-[#d4302a] hover:text-[#1a1a1a] transition-colors px-3 flex items-center"
+            >
+              {offer.label}
+            </a>
             {links.map((link) => (
               <a
                 key={link.label}
@@ -88,6 +102,13 @@ export default function Nav() {
               className="lg:hidden overflow-hidden border-b border-[#e0ddd5]"
             >
               <div className="py-5 flex flex-col gap-3 items-start">
+                <a
+                  href={offer.href}
+                  className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#d4302a] py-1"
+                  onClick={() => setOpen(false)}
+                >
+                  {offer.label}
+                </a>
                 {links.map((link) => (
                   <a
                     key={link.label}
