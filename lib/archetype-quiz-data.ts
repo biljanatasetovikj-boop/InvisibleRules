@@ -106,9 +106,14 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
 
 // Identical on all five results.
 export const OUTRO_LINE =
-  "These patterns are fluid — most people are a blend of two or three, and they shift by room and season. For more on the Invisible Rules at work, including upcoming free webinars and the cohort, visit theinvisiblerules.com.";
+  "These patterns are fluid and most people are a blend of two or three, and they shift by room and season. For more on the Invisible Rules at work, including upcoming free webinars and the cohort, visit Learn the Rules.";
 
 export const SITE_URL = "https://theinvisiblerules.com";
+
+// Where the result screen's button sends people. Points at the homepage until
+// the "Learn the Rules" section exists; once it does, append its anchor here
+// (e.g. `${SITE_URL}/#learn-the-rules`) and nothing else needs changing.
+export const LEARN_MORE_URL = SITE_URL;
 
 // The 20 questions. Option order on screen is scrambled per question — a fixed
 // permutation baked in at authoring time rather than shuffled at runtime, so

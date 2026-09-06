@@ -2,8 +2,8 @@
 
 import FadeIn from "../FadeIn";
 import {
+  LEARN_MORE_URL,
   OUTRO_LINE,
-  SITE_URL,
   archetypeResults,
   type ArchetypeCode,
 } from "@/lib/archetype-quiz-data";
@@ -63,9 +63,10 @@ export default function ArchetypeQuizResult({
               {result.move}
             </p>
 
-            {/* The line that carries the whole result. Sized to be the last
-                thing that stays with someone. */}
-            <p className="mt-14 font-serif italic text-[var(--ink)] text-[clamp(24px,3.1vw,38px)] leading-[1.3] max-w-[620px]">
+            {/* The line that carries the whole result. Kept small and tucked
+                under the move so it reads as the conclusion of it, not as a
+                second headline competing with the archetype name. */}
+            <p className="mt-9 font-serif font-bold italic text-[var(--ink)] text-[clamp(19px,2.1vw,25px)] leading-[1.4] max-w-[560px]">
               {result.line}
             </p>
           </div>
@@ -74,16 +75,18 @@ export default function ArchetypeQuizResult({
         {/* Outro — identical on all five results */}
         <FadeIn delay={0.1}>
           <div className="mt-24 border-t-2 border-[var(--ink)] pt-12">
-            <p className="font-serif italic text-[var(--ink)] text-[clamp(20px,2.6vw,30px)] leading-[1.4] max-w-[640px]">
+            {/* Same size, face and colour as the opening and reframe above, so
+                it reads as a closing note rather than a second pull quote. */}
+            <p className="font-body text-[18px] text-[var(--ink-soft)] leading-[1.7] max-w-[640px]">
               {OUTRO_LINE}
             </p>
 
             <div className="mt-12">
               <a
-                href={SITE_URL}
+                href={LEARN_MORE_URL}
                 className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors"
               >
-                Read more at theinvisiblerules.com →
+                Read more at Learn the Rules →
               </a>
             </div>
 
