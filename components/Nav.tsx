@@ -12,8 +12,12 @@ const links = [
   { label: "About Me", href: "#about" },
   { label: "Newsletter", href: "#newsletter" },
   { label: "For Companies", href: "#for-companies" },
-  { label: "Let's Talk", href: "#lets-talk" },
 ];
+
+// Held out of the list above and rendered as a filled button. With nine
+// items the bar read as an undifferentiated wall; pulling the one action out
+// gives the eye somewhere to land.
+const cta = { label: "Let's Talk", href: "#lets-talk" };
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -22,11 +26,15 @@ export default function Nav() {
     <header>
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <nav className="py-6 flex justify-between items-center border-b-2 border-[#1a1a1a]">
-          <a
-            href="#"
-            className="font-serif font-black text-[26px] tracking-[-0.01em] text-[#1a1a1a]"
-          >
-            Invisible <em className="italic text-[#d4302a] font-bold">Rules</em>
+          <a href="#" className="flex items-center" aria-label="Invisible Rules — home">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.svg"
+              alt="Invisible Rules"
+              width={44}
+              height={44}
+              className="w-9 h-9 lg:w-11 lg:h-11"
+            />
           </a>
 
           <div className="hidden lg:flex items-stretch">
@@ -34,11 +42,17 @@ export default function Nav() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-sans text-[10px] font-bold uppercase tracking-[0.16em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-4 flex items-center border-l border-[#e0ddd5]"
+                className="font-sans text-[9px] font-bold uppercase tracking-[0.14em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-3 flex items-center border-l border-[#e0ddd5]"
               >
                 {link.label}
               </a>
             ))}
+            <a
+              href={cta.href}
+              className="ml-4 bg-[#1a1a1a] text-white font-sans text-[9px] font-bold uppercase tracking-[0.14em] px-4 flex items-center hover:bg-[#d4302a] transition-colors"
+            >
+              {cta.label}
+            </a>
           </div>
 
           <button
@@ -73,7 +87,7 @@ export default function Nav() {
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="lg:hidden overflow-hidden border-b border-[#e0ddd5]"
             >
-              <div className="py-5 flex flex-col gap-3">
+              <div className="py-5 flex flex-col gap-3 items-start">
                 {links.map((link) => (
                   <a
                     key={link.label}
@@ -84,6 +98,13 @@ export default function Nav() {
                     {link.label}
                   </a>
                 ))}
+                <a
+                  href={cta.href}
+                  className="mt-2 bg-[#1a1a1a] text-white font-sans text-[12px] font-bold uppercase tracking-[0.18em] px-5 py-3"
+                  onClick={() => setOpen(false)}
+                >
+                  {cta.label}
+                </a>
               </div>
             </motion.div>
           )}

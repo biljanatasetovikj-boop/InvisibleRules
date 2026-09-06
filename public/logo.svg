@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Invisible Rules">
+  <circle cx="512" cy="512" r="512" fill="#d4302a"/>
+  <g fill="#ffffff">
+    <rect x="285" y="358" width="455" height="54" rx="27"/>
+    <rect x="285" y="485" width="455" height="54" rx="27"/>
+    <circle cx="313" cy="632" r="31"/>
+    <circle cx="417" cy="632" r="31"/>
+    <circle cx="521" cy="632" r="31"/>
+    <circle cx="690" cy="632" r="40"/>
+  </g>
+</svg>
