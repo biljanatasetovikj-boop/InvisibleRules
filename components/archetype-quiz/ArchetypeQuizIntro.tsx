@@ -44,7 +44,7 @@ export default function ArchetypeQuizIntro({
             </p>
             <p>
               At the end you get the one that is strongest in you right now,
-              what it costs you, and three things you can start with.
+              what it costs you, and the move that changes it.
             </p>
           </div>
 
