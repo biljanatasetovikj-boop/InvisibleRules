@@ -8,6 +8,7 @@ const links = [
   { label: "The Work", href: "#how-i-work" },
   { label: "The Diagnostic", href: "/quiz" },
   { label: "Who Is This For", href: "#who-i-help" },
+  { label: "Your Archetype", href: "/archetype-quiz" },
   { label: "About Me", href: "#about" },
   { label: "Newsletter", href: "#newsletter" },
   { label: "For Companies", href: "#for-companies" },
