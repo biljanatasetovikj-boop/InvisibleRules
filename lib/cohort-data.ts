@@ -95,12 +95,14 @@ export const weeks = [
 ];
 
 export const outcomes = [
-  "Language for what this has been costing you — the thing most people can feel and cannot name.",
-  "A test you can run on any bad week: is this a rule somebody could have taught me, a rule I brought with me, or a company that is simply badly run.",
-  "Your own clash named on both sides — the room's rule, and the one you have been enforcing on yourself without seeing it.",
-  "One move you have actually run, more than once, in your own shape rather than mine.",
-  "A map of how western work culture operates, so you stop decoding incident by incident.",
-  "Written feedback from me on five pieces of your own work, plus a one-to-one on your case.",
+  "You stop carrying it as evidence that something is wrong with you. Most people arrive half-convinced the problem is them. That is the part that goes first.",
+  "Language for what this has been costing you, and for your own clash named on both sides — the room's rule, and the one you have been enforcing on yourself without ever seeing it.",
+  "A test you can run on any bad week: is this a rule somebody could have taught me, a rule I brought with me, or a company that is simply badly run. The three need completely different responses.",
+  "One move you have actually run, more than once, in your own shape rather than mine. Not a technique you were shown — something you did, and then did again.",
+  "A clear read on what you value, what you are good at, and what you actually mean by success. Plus your own pattern, and the single move that shifts it.",
+  "A method that travels. This is not a guide to one culture. It is a way of reading any room whose rules you were never given — the next company, the next country, the next client.",
+  "Five pieces of your own work read closely and written back on, and a private hour with me on your own case.",
+  "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and after five weeks you are not the only one who knows your situation.",
 ];
 
 export const forYou = [

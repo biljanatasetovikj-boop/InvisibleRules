@@ -13,7 +13,7 @@ export default function CohortOutcomes() {
             <span className="w-10 h-px bg-[#4a4a4a]" />
           </div>
           <h2 className="font-serif font-black text-white text-[clamp(38px,5.5vw,72px)] tracking-[-0.025em] leading-none mb-16 max-w-[900px]">
-            Six things, and none of them
+            Eight things, and none of them
             <br />
             is a set of <span className="text-[#d4302a] italic">slides</span>.
           </h2>
