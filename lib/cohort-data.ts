@@ -102,7 +102,8 @@ export const outcomes = [
   "A clear read on what you value, what you are good at, and what you actually mean by success. Plus your own pattern, and the single move that shifts it.",
   "A method that travels. This is not a guide to one culture. It is a way of reading any room whose rules you were never given — the next company, the next country, the next client.",
   "Five pieces of your own work read closely and written back on, and a private hour with me on your own case.",
-  "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and after five weeks you are not the only one who knows your situation.",
+  "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and for five weeks you are not the only one who knows your situation.",
+  "Belonging, past the five weeks. In the Invisible Rules community your story stops being something you got through alone and becomes the thing that makes it click for somebody else.",
 ];
 
 export const forYou = [
