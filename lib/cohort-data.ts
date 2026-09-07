@@ -19,6 +19,8 @@ export const cohortMeta = {
 export const premise = {
   heading: "A cohort, not a course.",
   body: "You can find the rules anywhere now. What is harder to find is someone who reads your specific situation, tells you which part is a rule somebody could have taught you and which part is just a badly run company, and then watches you try something new and tells you what actually happened.",
+  body2:
+    "The training already exists, and most of it stops working the moment you walk back into the actual room. The workshop ends, Monday comes, nothing about how your team runs has changed, and you are on your own with it again. That is not a content problem. It is what happens when nobody is still there on Monday.",
   note: "That is the whole difference. The information was never the scarce thing.",
 };
 
@@ -104,6 +106,7 @@ export const outcomes = [
 export const forYou = [
   "You are a non-western professional working for or with western companies or clients.",
   "You have been navigating systems that were not designed with you in mind, and you know it.",
+  "Almost all of your work happens on a screen — no corridor, no face, no tone. A message that could be read three ways gets read the worst way, and neither side ever finds out.",
   "You are doing strong work and it is not being seen — or it is being read as something other than what you meant.",
   "You have started to wonder whether the problem is you.",
   "You have begun pulling back. Gone quieter, gone colder, started looking elsewhere.",

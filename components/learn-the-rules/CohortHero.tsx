@@ -46,6 +46,9 @@ export default function CohortHero() {
               <p className="font-body text-[19px] leading-[1.7] text-[#3a3a3a] mb-6">
                 {premise.body}
               </p>
+              <p className="font-body text-[19px] leading-[1.7] text-[#3a3a3a] mb-6">
+                {premise.body2}
+              </p>
               <p className="font-serif italic text-[#d4302a] text-[22px] leading-[1.4]">
                 {premise.note}
               </p>
