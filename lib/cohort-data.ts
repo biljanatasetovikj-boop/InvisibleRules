@@ -104,7 +104,7 @@ export const outcomes = [
   "Five pieces of your own work read closely and written back on, and a private hour with me on your own case.",
   "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and for five weeks you are not the only one who knows your situation.",
   "Belonging, past the five weeks. In the Invisible Rules community your story stops being something you got through alone and becomes the thing that makes it click for somebody else.",
-  "A written report at the end: what you actually did across the five weeks, and where you now stand on working across cultures. It describes work you did, not sessions you attended — so it can go to a manager, into a performance review, or behind a line on your CV or your LinkedIn skills.",
+  "A portfolio at the end. Because you work on your own real situations rather than exercises, you finish with a written record of how you handled them — across communication, visibility, planning and the other areas this work covers. It says what you did and what changed, which is what makes it hold up with a manager, in a review, or on your CV and your LinkedIn skills.",
 ];
 
 export const forYou = [
