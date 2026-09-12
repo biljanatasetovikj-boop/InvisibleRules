@@ -38,7 +38,7 @@ export default function CohortApply() {
             it is not, I will say what would be.
           </p>
           <p className="font-serif italic text-[#d4302a] text-[22px] mb-14">
-            Applications close 9 October. Eight seats.
+            Applications close 9 October. Eight places.
           </p>
         </FadeIn>
 

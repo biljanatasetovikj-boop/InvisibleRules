@@ -13,7 +13,7 @@ export default function CohortFit() {
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(38px,5.5vw,72px)] tracking-[-0.025em] leading-none mb-16 max-w-[900px]">
-            Eight seats. They should go
+            Eight places. They should go
             <br />
             to the <span className="text-[#d4302a] italic">right</span> eight.
           </h2>

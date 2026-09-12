@@ -6,7 +6,7 @@ export const cohortMeta = {
   kicker: "The cohort — October 2026",
   title: "Learn the Rules",
   standfirst:
-    "Five weeks. Eight people. We name what this is costing you, learn to tell a cultural rule apart from ordinary company dysfunction, and build one move you can make on a Tuesday — in front of someone who reads what you send back.",
+    "Five weeks. Eight people. We name what this is costing you, learn to tell a cultural rule apart from ordinary company dysfunction, and build one move you can actually use at work — with someone who reads what you send back.",
   strip: [
     "Starts Monday 12 October",
     "Five Mondays",
@@ -20,7 +20,7 @@ export const premise = {
   heading: "A cohort, not a course.",
   body: "You can find the rules anywhere now. What is harder to find is someone who reads your specific situation, tells you which part is a rule somebody could have taught you and which part is just a badly run company, and then watches you try something new and tells you what actually happened.",
   body2:
-    "The training already exists, and most of it stops working the moment you walk back into the actual room. The workshop ends, Monday comes, nothing about how your team runs has changed, and you are on your own with it again. That is not a content problem. It is what happens when nobody is still there on Monday.",
+    "The training already exists, and most of it stops working the moment you walk back into your own workplace. The workshop ends, Monday comes, nothing about how your team works has changed, and you are on your own with it again. That is not because the training was poor. It is what happens when nobody is still there on Monday.",
   note: "That is the whole difference. The information was never the scarce thing.",
 };
 
@@ -31,7 +31,7 @@ export const weekShape = [
   },
   {
     label: "Materials",
-    text: "One-pagers, tests, maps, book and video recommendations, held on a platform you keep access to. The live hour is never spent reading things at you.",
+    text: "Short guides, tests, maps, book and video recommendations, held on a platform you keep access to. The live hour is never spent reading things out to you.",
   },
   {
     label: "Homework",
@@ -62,7 +62,7 @@ export const weeks = [
     date: "19 October",
     title: "The method",
     teaches:
-      "Name the moment — the scene, not the pattern. Then the four tests that separate a cultural rule from ordinary company dysfunction: does it repeat, are insiders bored by it, does it bite even when everyone is kind, was the cost ever stated anywhere. Then the clash — the room's rule and the one you brought, side by side, without agreeing with either. Then the move, which is yours and not mine.",
+      "Name the moment — the scene, not the pattern. Then the four tests that separate a cultural rule from ordinary company dysfunction: does it repeat, are insiders bored by it, does it still cost you even when everyone is kind, was the cost ever stated anywhere. Then the clash — the room's rule and the one you brought, side by side, without agreeing with either. Then the move, which is yours and not mine.",
     homework:
       "One scene, written out properly. Three things that have been bothering you at work, sorted into rule, noise, or mine.",
   },
@@ -71,7 +71,7 @@ export const weeks = [
     date: "26 October",
     title: "The archetypes",
     teaches:
-      "Five patterns: the Held-Back Voice, the Decoder, the Invisible Expert, the Over-Preparer, the Half-Self at Work. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here — the same behaviour can be a wound or a strength, depending on whether you come through it intact.",
+      "Five patterns: the Held-Back Voice, the Decoder, the Invisible Expert, the Over-Preparer, the Half-Self at Work. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here — the same behaviour can be an injury or a strength, depending on whether you are still yourself at the end of it.",
     homework:
       "Run your archetype's move once this week. Write what happened. Not whether it worked — what happened.",
   },
@@ -89,28 +89,28 @@ export const weeks = [
     date: "9 November",
     title: "How the other side works, and where the line is",
     teaches:
-      "The dimensions of western work culture, so you stop decoding one incident at a time and start seeing the map underneath them. And then the question this whole programme raises: where is the line between adapting and disappearing? The answer is neither be yourself nor play the game. This is also the week you get a one-to-one with me on your own case.",
+      "The dimensions of western work culture, so you stop decoding one incident at a time and start seeing the map underneath them. And then the question this whole programme raises: where is the line between adapting and disappearing? The answer is not simply be yourself, and not simply do what they do. This is also the week you get a one-to-one with me on your own case.",
     homework: "Your move, run twice. What held, and what did not.",
   },
 ];
 
 export const outcomes = [
-  "You stop carrying it as evidence that something is wrong with you. Most people arrive half-convinced the problem is them. That is the part that goes first.",
-  "Language for what this has been costing you, and for your own clash named on both sides — the room's rule, and the one you have been enforcing on yourself without ever seeing it.",
-  "A test you can run on any bad week: is this a rule somebody could have taught me, a rule I brought with me, or a company that is simply badly run. The three need completely different responses.",
-  "One move you have actually run, more than once, in your own shape rather than mine. Not a technique you were shown — something you did, and then did again.",
-  "A clear read on what you value, what you are good at, and what you actually mean by success. Plus your own pattern, and the single move that shifts it.",
-  "A method that travels. This is not a guide to one culture. It is a way of reading any room whose rules you were never given — the next company, the next country, the next client.",
-  "Five pieces of your own work read closely and written back on, and a private hour with me on your own case.",
+  "You stop carrying it as proof that something is wrong with you. Most people arrive half-convinced the problem is them. That belief is the first thing to go.",
+  "Better relationships with the people around you — colleagues, managers, supervisors and clients. When you can see what is actually happening between you and another person, you stop reading it as their character or your own failure, and you can do something about it.",
+  "A test you can use in any difficult week: is this a rule somebody could have taught me, a rule I brought with me, or a company that is simply badly run. The three need completely different responses.",
+  "Becoming a good fit in your company or organisation — without becoming a different person. You try real moves in your own workplace, more than once, until the way you work is understood as belonging there instead of being treated as a difference.",
+  "A clear picture of what you value, what you are good at, and what you actually mean by success. Plus your own pattern, and the single move that changes it.",
+  "A method you can take with you. This is not a guide to one culture. It is a way of reading any workplace whose rules you were never given — the next company, the next country, the next client.",
+  "Five pieces of your own work read closely and answered in writing, and a private hour with me on your own case.",
   "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and for five weeks you are not the only one who knows your situation.",
-  "Belonging, past the five weeks. In the Invisible Rules community your story stops being something you got through alone and becomes the thing that makes it click for somebody else.",
-  "A portfolio at the end. Because you work on your own real situations rather than exercises, you finish with a written record of how you handled them — across communication, visibility, planning and the other areas this work covers. It says what you did and what changed, which is what makes it hold up with a manager, in a review, or on your CV and your LinkedIn skills.",
+  "Belonging, past the five weeks. In the Invisible Rules community your story stops being something you got through alone and becomes the thing that helps somebody else understand their own.",
+  "A portfolio at the end. Because you work on your own real situations rather than exercises, you finish with a written record of how you handled them — across communication, visibility, planning and the other areas this work covers. It says what you did and what changed, so it can be given to a manager, used in a performance review, or support a line on your CV and your LinkedIn skills.",
 ];
 
 export const forYou = [
   "You are a non-western professional working for or with western companies or clients.",
   "You have been navigating systems that were not designed with you in mind, and you know it.",
-  "Almost all of your work happens on a screen — no corridor, no face, no tone. A message that could be read three ways gets read the worst way, and neither side ever finds out.",
+  "Almost all of your work happens on a screen. There is no corridor, no face to read, no tone of voice. A message that could be understood in three ways is understood in the worst one, and neither side ever finds out.",
   "You are doing strong work and it is not being seen — or it is being read as something other than what you meant.",
   "You have started to wonder whether the problem is you.",
   "You have begun pulling back. Gone quieter, gone colder, started looking elsewhere.",

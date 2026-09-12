@@ -20,7 +20,7 @@ export default function CohortShape() {
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-16">
             A move you make once is a story. A move you repeat is a different
             career. What holds the repetition is not the system you go back
-            into — it is having someone watch you run it, badly at first, and
+            into — it is having someone watch you try it, badly at first, and
             tell you what they saw.
           </p>
         </FadeIn>
