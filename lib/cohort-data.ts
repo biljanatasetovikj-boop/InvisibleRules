@@ -71,7 +71,7 @@ export const weeks = [
     date: "26 October",
     title: "The archetypes",
     teaches:
-      "Five patterns: the Held-Back Voice, the Decoder, the Invisible Expert, the Over-Preparer, the Half-Self at Work. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here — the same behaviour can be an injury or a strength, depending on whether you are still yourself at the end of it.",
+      "Five patterns: the Doubter, the Decoder, the Uncounted, the Rehearser, the “Professional”. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here — the same behaviour can be an injury or a strength, depending on whether you are still yourself at the end of it.",
     homework:
       "Run your archetype's move once this week. Write what happened. Not whether it worked — what happened.",
   },

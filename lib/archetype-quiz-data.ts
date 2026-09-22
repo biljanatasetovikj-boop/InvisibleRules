@@ -44,9 +44,9 @@ export interface ArchetypeResult {
 export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
   HBV: {
     code: "HBV",
-    name: "The Held-Back Voice",
+    name: "The Doubter",
     opening:
-      "You stay quiet in meetings where you have something worth saying. The thought is not missing. But the moment you might speak, a worry stops you: what if I have to say something, and it is not important enough?",
+      "You stay quiet in meetings where you have something worth saying. The thought is not missing. But the moment you might speak, a doubt stops you: what if I have to say something, and it is not important enough?",
     reframe:
       "Here is what changes it. The weight is not the speaking. It is the belief that speaking means showing something big or clever. It does not. Most of what people say in a meeting is small and useful, not brilliant.",
     move:
@@ -67,7 +67,7 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
   },
   IEX: {
     code: "IEX",
-    name: "The Invisible Expert",
+    name: "The Uncounted",
     opening:
       "You do real, skilled work, and it is not seen. You watch your effort disappear into the background while smaller and louder things get noticed. So you work harder, hoping the amount will finally be counted. It will not.",
     reframe:
@@ -79,9 +79,9 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
   },
   OVP: {
     code: "OVP",
-    name: "The Over-Preparer",
+    name: "The Rehearser",
     opening:
-      "You prepare too much. Not because the work needs it, but because of the feeling that comes when you imagine being asked something you cannot answer. The preparation is protection against that exposure. And the sign is physical. A sick feeling in your stomach before the room.",
+      "You prepare too much. You rehearse every question you might be asked, and every answer. Not because the work needs it, but because of the feeling that comes when you imagine being asked something you cannot answer. The preparation is protection against that exposure. And the sign is physical. A sick feeling in your stomach before the room.",
     reframe:
       "Here is the trap. That feeling is not telling you that you are not ready. It is the same fear the preparation is trying to silence. This means more preparation can never end it, because it feeds the very thing it is running from. You cannot prepare your way out of a fear of not knowing.",
     move:
@@ -91,7 +91,9 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
   },
   HSW: {
     code: "HSW",
-    name: "The Half-Self at Work",
+    // The quotation marks are part of the name: they carry the irony. Without
+    // them it reads as praise.
+    name: "The “Professional”",
     opening:
       "You keep part of yourself out of your work. Your real opinion, your true personality, the way you actually think. You give the safe version instead. Dry, neutral, without passion. It feels safer to hand over clean and quiet answers than to show the person behind them.",
     reframe:

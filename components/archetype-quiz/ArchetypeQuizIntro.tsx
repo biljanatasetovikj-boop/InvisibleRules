@@ -33,8 +33,8 @@ export default function ArchetypeQuizIntro({
               don't give the scoring away — options are scrambled and never name
               an archetype. */}
           <p className="font-serif font-bold text-[var(--ink)] text-[clamp(18px,2vw,23px)] leading-[1.45] mb-7">
-            The Held-Back Voice. The Decoder. The Invisible Expert. The
-            Over-Preparer. The Half-Self at Work.
+            The Doubter. The Decoder. The Uncounted. The Rehearser. The
+            “Professional”.
           </p>
 
           <div className="space-y-5 font-body text-[18px] text-[var(--ink-soft)] leading-[1.7]">

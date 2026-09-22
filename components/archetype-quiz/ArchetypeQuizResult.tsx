@@ -19,7 +19,7 @@ export default function ArchetypeQuizResult({
 }: ArchetypeQuizResultProps) {
   const result = archetypeResults[archetype];
 
-  // "The Held-Back Voice" reads better with the article set small above the
+  // "The Rehearser" reads better with the article set small above the
   // name, the way the site handles its other headlines.
   const [article, ...rest] = result.name.split(" ");
   const name = rest.join(" ");
