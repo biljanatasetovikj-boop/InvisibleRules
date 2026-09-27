@@ -26,7 +26,8 @@ export default function ArchetypeQuizIntro({
           </h1>
 
           <p className="font-serif italic text-[var(--red)] text-[clamp(20px,2.3vw,29px)] leading-[1.35] mb-11">
-            Discover your foreigner-at-work archetype.
+            Discover your archetype as a non-Western professional in a Western
+            workplace.
           </p>
 
           {/* The five names land as a drumbeat before any explanation. They
@@ -43,8 +44,8 @@ export default function ArchetypeQuizIntro({
               another culture.
             </p>
             <p>
-              At the end you get the one that is strongest in you right now,
-              what it costs you, and the move that changes it.
+              At the end you get your archetype, what it means for your work,
+              what it is costing you, and one small place to start.
             </p>
           </div>
 

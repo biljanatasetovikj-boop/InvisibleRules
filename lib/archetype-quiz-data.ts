@@ -35,8 +35,10 @@ export const ARCHETYPE_ORDER: ArchetypeCode[] = [
 export interface ArchetypeResult {
   code: ArchetypeCode;
   name: string;
-  opening: string;
-  reframe: string;
+  // Both render as several short paragraphs, the way Biljana writes. Keep the
+  // breaks: the rhythm is the voice.
+  opening: string[];
+  reframe: string[];
   move: string;
   line: string;
 }
@@ -45,47 +47,74 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
   HBV: {
     code: "HBV",
     name: "The Doubter",
-    opening:
-      "You stay quiet in meetings where you have something worth saying. The thought is not missing. But the moment you might speak, a doubt stops you: what if I have to say something, and it is not important enough?",
-    reframe:
-      "Here is what changes it. The weight is not the speaking. It is the belief that speaking means showing something big or clever. It does not. Most of what people say in a meeting is small and useful, not brilliant.",
+    opening: [
+      "You have something useful and you keep it inside.",
+      "In a meeting you wait for the right moment, and the moment passes. In an email you write it, read it again, and delete the last line. You see a small thing that would make the weekly report easier to read, and you decide someone more senior has surely noticed already. Two months later a colleague says it out loud and people thank them.",
+      "You did not lack the idea. You had it first. You were waiting until it felt big enough to be worth their time.",
+    ],
+    reframe: [
+      "You did not become like this at work. You learned it earlier, in a place where you speak when you are certain, or when you are invited. An unfinished thought is not offered. That is respect, not fear.",
+      "Your Western colleague does not do this. Not because they are braver or more capable. In their rooms people think out loud, and half an idea is treated as a normal contribution. They absorbed that. Nobody had to teach them.",
+      "So your care is read here as having nothing to say. And it costs you. Projects you would have been good at. Credit that goes to whoever said it first. The slow feeling that you are only a listener in this company. If nobody told you the rule was different here, you start to think the problem is you.",
+      "It is not.",
+    ],
     move:
-      "Before you speak, read the meeting itself. What is it for? What are these people trying to reach? Then say only the one useful thing your part adds. Not the impressive thing. The needed thing. Take part, do not perform. The shaking voice becomes quiet when the task becomes that small.",
-    line:
-      "You do not need to be brilliant to speak. You only need to be useful.",
+      "This week, take one thing that feels too small to mention. Send it to one person in two sentences. Not in a meeting. Not polished. Just sent. You are not testing whether the idea is good. You are testing what happens when you offer something unfinished. Almost always nothing happens, and that is the information you need.",
+    line: "It does not have to be brilliant. It only has to be useful.",
   },
   DEC: {
     code: "DEC",
     name: "The Decoder",
-    opening:
-      "You already sense that the rules are unwritten. You feel the gap between what is said and what is meant. You know something is off, that there is a hidden layer to how your Western workplace operates, but you cannot yet name it.",
-    reframe:
-      "You notice more than most people around you. You read the room, you watch for the pattern, you catch the things others miss. But sensing without naming is tiring, and it leaves you carrying a background question you can never quite answer: what is really going on here, and why can I feel it but not explain it?",
+    opening: [
+      "You understand the words. You are still translating something else.",
+      "A meeting ends faster than it should and you replay it that evening. A message says “interesting” and you know it is not a compliment. Someone is asked, someone else is told, and you notice the difference. You read tone in emails and silences on calls.",
+      "You can feel there is another layer under the work. You cannot yet name it.",
+    ],
+    reframe: [
+      "You are not imagining it and you are not too sensitive. You are moving between two sets of rules. The ones you grew up with, which felt like common sense. And the ones this company runs on, which nobody wrote down, because to them they are common sense too.",
+      "You see them because they are not yours. That is a real skill, and very few people in the room have it.",
+      "It also costs you. You are doing two jobs. The work, and the reading of the room where the work happens. The second job appears nowhere. It leaves you one step behind people who simply act, and some of your energy goes on finding danger in things that hold none.",
+      "Your reading is not the problem. The silence around the rules is.",
+    ],
     move:
-      "Stop trying to feel your way through, and start naming what you see. When something feels off, slow down and put it into words. What just happened? What was said, and what was meant underneath it? Which unwritten rule did I just bump into? The moment you can name the rule, it stops controlling you and becomes something you can work with. Your instinct was never wrong. It was only waiting for language.",
+      "Start writing them down. One short list. On the left, the sentence or the moment. On the right, what it turned out to mean. “Let us take this offline” meant this is not for this audience. “Be more strategic” meant show the thinking, not the task list. Once a rule has words you decode it once instead of every time, and you can ask a colleague you trust whether you read it correctly.",
     line: "You are sensing a code no one taught you to read.",
   },
   IEX: {
     code: "IEX",
     name: "The Uncounted",
-    opening:
-      "You do real, skilled work, and it is not seen. You watch your effort disappear into the background while smaller and louder things get noticed. So you work harder, hoping the amount will finally be counted. It will not.",
-    reframe:
-      "The problem is not the work. The problem is that your work is invisible in the unit your environment counts. Every workplace measures success in something. Numbers, size, finished projects, things with a name. If your work is not expressed in that unit, it does not register, no matter how good it is.",
+    opening: [
+      "You do the work and the work does not appear anywhere.",
+      "You fix the thing before it breaks. You keep the relationship with the difficult client. You do the careful version nobody asked for. Then the summary goes around and your part is not in it. You do not write the update. You do not put your name on the result. You solve the problem so quietly that nobody knows there was one.",
+      "You were recruited for this ability. You know you are good at it. So you do more of it, and you wait.",
+    ],
+    reframe: [
+      "Where many of us learned to work, speaking about your own work is not modesty. It is what a person does when they are unsure. Good work is supposed to be noticed by someone above you.",
+      "In most Western companies nobody is doing that noticing. Here work is counted in what gets said and written. Saying it is not boasting to them. It is information.",
+      "The cost is that you stay invisible to the exact people who decide projects, promotions and salaries. Working harder makes it worse, because more uncounted work is still uncounted. If nobody told you that the counting works differently here, you start to think you are simply not good enough yet.",
+      "You are.",
+    ],
     move:
-      "Find out what your environment actually counts as success. Then make your existing work fit that unit. Not more work. The same work, said in their language. Ten separate visits become one named project with engagement numbers. The effort does not change. Only whether it can be seen.",
+      "After your next piece of work, send two sentences to one person who matters. What it was. What changed because of it. No adjectives, no selling. If it still feels like boasting, write it as a report and not as a claim. You are not asking anyone to admire you. You are giving them something they cannot see from where they sit.",
     line:
       "Good work is not enough. It has to be counted in the language they count in.",
   },
   OVP: {
     code: "OVP",
     name: "The Rehearser",
-    opening:
-      "You prepare too much. You rehearse every question you might be asked, and every answer. Not because the work needs it, but because of the feeling that comes when you imagine being asked something you cannot answer. The preparation is protection against that exposure. And the sign is physical. A sick feeling in your stomach before the room.",
-    reframe:
-      "Here is the trap. That feeling is not telling you that you are not ready. It is the same fear the preparation is trying to silence. This means more preparation can never end it, because it feeds the very thing it is running from. You cannot prepare your way out of a fear of not knowing.",
+    opening: [
+      "You prepare much more than the work needs.",
+      "A fifteen minute call gets an hour of notes. A short email is rewritten five times. You rehearse the questions you might be asked, then the answers, then the answers to the answers. You do it before the informal things too. A coffee. A quick introduction. A call with someone friendly.",
+      "The preparation is not really about the work. It is about one picture you keep away from yourself. Being asked something in front of people, and having nothing.",
+    ],
+    reframe: [
+      "There is a weight here that your colleagues do not carry. When they do not know something, it is a gap. When you do not know something, it feels like evidence about people like you. So not knowing has to be prevented, never shown.",
+      "In this environment asking early and showing unfinished work is normal. It is how people are expected to work. Your preparation is protecting you from a danger that is much smaller here than it was where you learned it.",
+      "And it never ends. Every hour of preparing proves to you that the exposure would have been unbearable, so next time the fear asks for more hours. It takes your evenings, your weekends, and in the end your energy for the work itself.",
+      "You cannot prepare your way out of a fear of not knowing.",
+    ],
     move:
-      "Stop trying to prepare the feeling away. It cannot be done. Instead, decide in advance that when you are asked something you cannot answer, you will say it simply. I do not know. Let me find out. Then see what it costs. It costs almost nothing. Authority never came from having every answer. It came from being trusted to find them. One clear “I do not know” that goes fine is worth more than a hundred hours of preparation, because it is the only thing that touches the real belief.",
+      "Choose one small, safe moment this week and answer honestly. I do not know. Let me find out. Then notice what it costs, which is almost always nothing. Authority here does not come from having every answer. It comes from being the person who is trusted to find them.",
     line:
       "Your authority is not in having every answer. It is in being trusted to find them.",
   },
@@ -94,12 +123,19 @@ export const archetypeResults: Record<ArchetypeCode, ArchetypeResult> = {
     // The quotation marks are part of the name: they carry the irony. Without
     // them it reads as praise.
     name: "The “Professional”",
-    opening:
-      "You keep part of yourself out of your work. Your real opinion, your true personality, the way you actually think. You give the safe version instead. Dry, neutral, without passion. It feels safer to hand over clean and quiet answers than to show the person behind them.",
-    reframe:
-      "The cost is quiet but real. The distance between who you are and who you show at work is tiring. Over time it can turn into a flat, mechanical way of working, far from the work you once cared about.",
+    opening: [
+      "You send a smaller version of yourself to work.",
+      "The opinion gets softer. The humour stays at home. The way you would really explain this, to someone you trust, in your own language, becomes something short and correct and flat. It is in your writing first. Then in the camera you leave off, the small talk you avoid, the story you do not tell.",
+      "You are not lying to anyone. You are simply not there.",
+    ],
+    reframe: [
+      "This started as good judgement. Early on you understood that the whole of you would not be read well here. Maybe you tried once and it did not go well. So you offered the part that felt safe, and it worked well enough to keep doing.",
+      "Now you are doing two things at the same time. The work, and the holding of a second self, all day.",
+      "It makes you tired in a way that rest does not fix. The recognition you do get feels strange, because it is aimed at someone who is not quite you. And people cannot trust a person they cannot see, so the part you removed in order to be accepted is the part that would have made you known.",
+      "The flatness was not protecting you. It was erasing you.",
+    ],
     move:
-      "Take one part of yourself that you usually keep hidden, your real opinion or your honest read, and let it show once, in a moment that matters. Say what you actually think, with the conviction you normally filter out. Very often the part you hid, because you thought it made you less professional, is the exact part that makes people take you seriously. People move from being unknown in a company to being known by name for this reason. The flatness was not protecting you. It was erasing you.",
+      "Let one real thing through. Once. Somewhere small. Your actual opinion in a message. A joke that is genuinely yours. The sentence you would say if these were your own people. Then watch what it costs. It is nearly always less than you expect, and very often it is the moment someone starts speaking to you like a person and not a role.",
     line:
       "The part you hide to seem professional is often the part that makes you matter.",
   },

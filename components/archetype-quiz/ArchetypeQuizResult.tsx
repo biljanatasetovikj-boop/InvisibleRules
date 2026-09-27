@@ -44,8 +44,9 @@ export default function ArchetypeQuizResult({
           </h1>
 
           <div className="space-y-5 font-body text-[18px] text-[var(--ink-soft)] leading-[1.75]">
-            <p>{result.opening}</p>
-            <p>{result.reframe}</p>
+            {[...result.opening, ...result.reframe].map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
           </div>
         </FadeIn>
 
