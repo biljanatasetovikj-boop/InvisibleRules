@@ -25,9 +25,6 @@ export default function CohortWeeks() {
                   <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-2">
                     {week.number}
                   </div>
-                  <div className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-[#707070]">
-                    {week.date}
-                  </div>
                 </div>
 
                 <div>
