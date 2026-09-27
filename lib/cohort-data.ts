@@ -37,7 +37,7 @@ export const weekShape = [
     text: "Every week, sent to me privately. I read all of it and write back. This is the part that does the work.",
   },
   {
-    label: "Slack",
+    label: "WhatsApp",
     text: "A space to share what you are finding, if you want it. Optional, always.",
   },
   {
@@ -164,7 +164,7 @@ export const faqs = [
   },
   {
     q: "Do I have to share my situation with the group?",
-    a: "No. Homework comes to me privately and I write back to you. There is a Slack space if you want to share what you are finding with the others, and it is entirely optional.",
+    a: "This is optional. The work stays confidential: we do not share names or other identifying details. What we work with are specific moments from your work, described so we can decode the cultural pattern behind them, not full case histories. If you would rather not share yours with the group, you can do all of it through homework, sent to me privately, and I write back to you. There is a WhatsApp space if you want to share what you are finding with the others, and it is entirely optional.",
   },
   {
     q: "Why only eight people?",
@@ -180,11 +180,11 @@ export const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: "420 euro, the founding members' price. On the call I will also tell you honestly whether this is the right thing for you at all.",
+    a: "420 euro, the founding members' price. If that is not workable for you right now, write to me and we will find a way to make it work. On the call I will also tell you honestly whether this is the right thing for you at all.",
   },
   {
     q: "How do I join?",
-    a: "Book a short conversation with me. If it is a fit, I will say so.",
+    a: "Book a short conversation with me. It will help you decide whether this is the right program for you.",
   },
 ];
 
