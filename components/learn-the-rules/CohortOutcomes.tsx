@@ -8,7 +8,7 @@ export default function CohortOutcomes() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              03 — What you leave with
+              03 / What you leave with
             </span>
             <span className="w-10 h-px bg-[#4a4a4a]" />
           </div>

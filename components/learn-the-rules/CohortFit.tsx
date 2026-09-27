@@ -8,7 +8,7 @@ export default function CohortFit() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              04 — Who this is for
+              04 / Who this is for
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>

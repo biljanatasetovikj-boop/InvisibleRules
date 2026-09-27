@@ -56,7 +56,7 @@ export default function CohortWebinars() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              06 — Come and see first
+              06 / Come and see first
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
@@ -65,7 +65,7 @@ export default function CohortWebinars() {
           </h2>
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-16">
             One hour each, before the cohort starts. You do not have to be
-            thinking about joining anything to come to one — they stand on
+            thinking about joining anything to come to one. They stand on
             their own, and you will leave with at least one rule you did not
             have before.
           </p>
@@ -128,7 +128,7 @@ export default function CohortWebinars() {
                       id="webinar-name"
                       name="name"
                       required
-                      placeholder="—"
+                      placeholder=""
                       className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
                       suppressHydrationWarning
                     />
@@ -146,7 +146,7 @@ export default function CohortWebinars() {
                       id="webinar-email"
                       name="email"
                       required
-                      placeholder="—"
+                      placeholder=""
                       className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
                       suppressHydrationWarning
                     />
@@ -168,7 +168,7 @@ export default function CohortWebinars() {
                       suppressHydrationWarning
                     >
                       {webinars.map((w) => (
-                        <option key={w.date} value={`${w.date} — ${w.title}`}>
+                        <option key={w.date} value={`${w.date}: ${w.title}`}>
                           {w.date}
                         </option>
                       ))}

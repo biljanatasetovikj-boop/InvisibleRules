@@ -23,7 +23,7 @@ export default function CohortApply() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              08 — How you join
+              08 / How you join
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
@@ -34,11 +34,11 @@ export default function CohortApply() {
           </h2>
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-4">
             Book a short conversation. Tell me what has been happening. I will
-            tell you honestly whether this is the right thing for you — and if
+            tell you honestly whether this is the right thing for you. And if
             it is not, I will say what would be.
           </p>
           <p className="font-serif italic text-[#d4302a] text-[22px] mb-14">
-            Applications close 9 October. Eight places.
+            Apply by booking a brief call with me. Eight places.
           </p>
         </FadeIn>
 

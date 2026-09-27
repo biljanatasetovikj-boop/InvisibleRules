@@ -3,16 +3,15 @@
 // `curriculum/cohort-5-weeks.md` and the framework it was built from.
 
 export const cohortMeta = {
-  kicker: "The cohort — October 2026",
+  kicker: "The cohort, October 2026",
   title: "Learn the Rules",
   standfirst:
-    "Five weeks. Eight people. We name what this is costing you, learn to tell a cultural rule apart from ordinary company dysfunction, and build one move you can actually use at work — with someone who reads what you send back.",
+    "Five weeks. Eight people. We name what this is costing you, learn to tell a cultural rule apart from ordinary company dysfunction, and build one move you can actually use at work, with someone who reads what you send back.",
   strip: [
-    "Starts Monday 12 October",
     "Five Mondays",
-    "One live hour a week",
+    "Two live hours a week",
     "Eight people",
-    "Applications close 9 October",
+    "Apply by booking a call",
   ],
 };
 
@@ -27,11 +26,11 @@ export const premise = {
 export const weekShape = [
   {
     label: "Live",
-    text: "One hour, once a week. Small enough that everyone speaks.",
+    text: "Two hours, once a week. Small enough that everyone speaks.",
   },
   {
     label: "Materials",
-    text: "Short guides, tests, maps, book and video recommendations, held on a platform you keep access to. The live hour is never spent reading things out to you.",
+    text: "Short guides, tests, maps, book and video recommendations, held on a platform you keep access to. The live time is never spent reading things out to you.",
   },
   {
     label: "Homework",
@@ -53,7 +52,7 @@ export const weeks = [
     date: "12 October",
     title: "Who you are professionally, and what you actually want",
     teaches:
-      "Where you actually are right now — your values, your strengths, what you mean by success. We use the Career Cycle: four phases, and most people are in two at once. The part that does the work is naming the thing you are currently doing that belongs to a different phase, because that mismatch is usually why you feel stuck. We open with ten minutes on what this has been costing you, because naming it is most of the relief.",
+      "Where you actually are right now: your values, your strengths, what you mean by success. We use the Career Cycle: four phases, and most people are in two at once. The part that does the work is naming the thing you are currently doing that belongs to a different phase, because that mismatch is usually why you feel stuck. We open with ten minutes on what this has been costing you, because naming it is most of the relief.",
     homework:
       "Your Career Cycle placement, the values exercise, and one sentence naming your cost.",
   },
@@ -62,7 +61,7 @@ export const weeks = [
     date: "19 October",
     title: "The method",
     teaches:
-      "Name the moment — the scene, not the pattern. Then the four tests that separate a cultural rule from ordinary company dysfunction: does it repeat, are insiders bored by it, does it still cost you even when everyone is kind, was the cost ever stated anywhere. Then the clash — the room's rule and the one you brought, side by side, without agreeing with either. Then the move, which is yours and not mine.",
+      "Name the moment: the scene, not the pattern. Then the four tests that separate a cultural rule from ordinary company dysfunction: does it repeat, are insiders bored by it, does it still cost you even when everyone is kind, was the cost ever stated anywhere. Then the clash: the room's rule and the one you brought, side by side, without agreeing with either. Then the move, which is yours and not mine.",
     homework:
       "One scene, written out properly. Three things that have been bothering you at work, sorted into rule, noise, or mine.",
   },
@@ -71,9 +70,9 @@ export const weeks = [
     date: "26 October",
     title: "The archetypes",
     teaches:
-      "Five patterns: the Doubter, the Decoder, the Uncounted, the Rehearser, the “Professional”. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here — the same behaviour can be an injury or a strength, depending on whether you are still yourself at the end of it.",
+      "Five patterns: the Doubter, the Decoder, the Uncounted, the Rehearser, the “Professional”. You take the quiz before we meet, so the hour goes on what your result got right and where it was wrong. Each one comes with a single move. And the thing that matters most here: the same behaviour can be an injury or a strength, depending on whether you are still yourself at the end of it.",
     homework:
-      "Run your archetype's move once this week. Write what happened. Not whether it worked — what happened.",
+      "Run your archetype's move once this week. Write what happened. Not whether it worked. What happened.",
   },
   {
     number: "Week four",
@@ -82,7 +81,7 @@ export const weeks = [
     teaches:
       "We decode other people's situations together, which is where the method stops being mine and becomes yours. The core case is four versions of the same scene: passed over for promotion, no explanation given. In one of them there is no rule at all, and the honest answer is that it is a place worth leaving. Then real situations from the interviews, and one of my own that I lost.",
     homework:
-      "Decode a second situation — your own or a colleague's — and send me both rules.",
+      "Decode a second situation, your own or a colleague's, and send me both rules.",
   },
   {
     number: "Week five",
@@ -96,22 +95,22 @@ export const weeks = [
 
 export const outcomes = [
   "You stop carrying it as proof that something is wrong with you. Most people arrive half-convinced the problem is them. That belief is the first thing to go.",
-  "Better relationships with the people around you — colleagues, managers, supervisors and clients. When you can see what is actually happening between you and another person, you stop reading it as their character or your own failure, and you can do something about it.",
+  "Better relationships with the people around you: colleagues, managers, supervisors and clients. When you can see what is actually happening between you and another person, you stop reading it as their character or your own failure, and you can do something about it.",
   "A test you can use in any difficult week: is this a rule somebody could have taught me, a rule I brought with me, or a company that is simply badly run. The three need completely different responses.",
-  "Becoming a good fit in your company or organisation — without becoming a different person. You try real moves in your own workplace, more than once, until the way you work is understood as belonging there instead of being treated as a difference.",
+  "Becoming a good fit in your company or organisation, without becoming a different person. You try real moves in your own workplace, more than once, until the way you work is understood as belonging there instead of being treated as a difference.",
   "A clear picture of what you value, what you are good at, and what you actually mean by success. Plus your own pattern, and the single move that changes it.",
-  "A method you can take with you. This is not a guide to one culture. It is a way of reading any workplace whose rules you were never given — the next company, the next country, the next client.",
+  "A method you can take with you. This is not a guide to one culture. It is a way of reading any workplace whose rules you were never given: the next company, the next country, the next client.",
   "Five pieces of your own work read closely and answered in writing, and a private hour with me on your own case.",
   "Seven other people who do not need any of it explained to them. You cannot learn this in a mirror, and for five weeks you are not the only one who knows your situation.",
   "Belonging, past the five weeks. In the Invisible Rules community your story stops being something you got through alone and becomes the thing that helps somebody else understand their own.",
-  "A portfolio at the end. Because you work on your own real situations rather than exercises, you finish with a written record of how you handled them — across communication, visibility, planning and the other areas this work covers. It says what you did and what changed, so it can be given to a manager, used in a performance review, or support a line on your CV and your LinkedIn skills.",
+  "A portfolio at the end. Because you work on your own real situations rather than exercises, you finish with a written record of how you handled them, across communication, visibility, planning and the other areas this work covers. It says what you did and what changed, so it can be given to a manager, used in a performance review, or support a line on your CV and your LinkedIn skills.",
 ];
 
 export const forYou = [
   "You are a non-western professional working for or with western companies or clients.",
   "You have been navigating systems that were not designed with you in mind, and you know it.",
   "Almost all of your work happens on a screen. There is no corridor, no face to read, no tone of voice. A message that could be understood in three ways is understood in the worst one, and neither side ever finds out.",
-  "You are doing strong work and it is not being seen — or it is being read as something other than what you meant.",
+  "You are doing strong work and it is not being seen, or it is being read as something other than what you meant.",
   "You have started to wonder whether the problem is you.",
   "You have begun pulling back. Gone quieter, gone colder, started looking elsewhere.",
   "You do not want to figure out the rules alone, the hard way, over another five years.",
@@ -126,15 +125,14 @@ export const notForYou = [
 ];
 
 export const details = [
-  { label: "Starts", value: "Monday 12 October 2026" },
-  { label: "Runs", value: "Five Mondays — 12, 19, 26 October, 2 and 9 November" },
-  { label: "Live sessions", value: "One hour a week" },
-  { label: "Your own work", value: "Two to three hours a week" },
+  { label: "Runs", value: "October & November 2026" },
+  { label: "Live sessions", value: "Two hours a week" },
+  { label: "Your own work", value: "Four to five hours a week" },
   { label: "Group size", value: "Eight people" },
   { label: "One-to-one", value: "Week five, with each person" },
   { label: "Where", value: "Online" },
-  { label: "Applications close", value: "9 October 2026" },
-  { label: "Price", value: "Shared in the conversation" },
+  { label: "Apply", value: "By booking a brief call with me" },
+  { label: "Price", value: "420 euro (founding members' price)" },
 ];
 
 export const webinars = [
@@ -146,23 +144,23 @@ export const webinars = [
   {
     date: "Monday 28 September",
     time: "18:00 CET",
-    title: "The clash — their rules, and the ones you brought",
+    title: "The clash: their rules, and the ones you brought",
   },
   {
     date: "Wednesday 7 October",
     time: "18:00 CET",
-    title: "The move — being visible without performing",
+    title: "The move: being visible without performing",
   },
 ];
 
 export const faqs = [
   {
     q: "What actually happens in a week?",
-    a: "One live hour together. Materials to work through on your own. A piece of homework you send me privately, which I read and write back on. In week five, a one-to-one on your own case.",
+    a: "Two live hours together. Materials to work through on your own. A piece of homework you send me privately, which I read and write back on. In week five, a one-to-one on your own case.",
   },
   {
     q: "How much time will this take?",
-    a: "One live hour, plus two to three hours of your own work. The homework is the part that matters, so that is where the time should go.",
+    a: "Two live hours, plus four to five hours of your own work. The homework is the part that matters, so that is where the time should go.",
   },
   {
     q: "Do I have to share my situation with the group?",
@@ -170,7 +168,7 @@ export const faqs = [
   },
   {
     q: "Why only eight people?",
-    a: "Because the material is your specific situation, and I read and respond to every piece of it. More than eight and the feedback stops being real. Fewer and it is not a cohort — you cannot learn this in a mirror.",
+    a: "Because the material is your specific situation, and I read and respond to every piece of it. More than eight and the feedback stops being real. Fewer and it is not a cohort. You cannot learn this in a mirror.",
   },
   {
     q: "What is the difference between the free sessions and this?",
@@ -182,11 +180,11 @@ export const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: "I would rather tell you in the conversation, where I can also tell you whether this is the right thing for you at all.",
+    a: "420 euro, the founding members' price. On the call I will also tell you honestly whether this is the right thing for you at all.",
   },
   {
     q: "How do I join?",
-    a: "Book a short conversation with me. If it is a fit, I will say so. Applications close on 9 October.",
+    a: "Book a short conversation with me. If it is a fit, I will say so.",
   },
 ];
 

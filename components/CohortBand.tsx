@@ -19,9 +19,9 @@ export default function CohortBand() {
                 Learn the <span className="text-[#d4302a] italic">Rules</span>.
               </h2>
               <p className="font-body text-[19px] leading-[1.65] text-[#e8e5de] max-w-[620px]">
-                Five weeks, eight people, starting 12 October. You cannot learn
-                this in a mirror — so you run the moves in front of someone who
-                reads what you send back.
+                Five weeks, eight people, running October and November. You
+                cannot learn this in a mirror — so you run the moves in front
+                of someone who reads what you send back.
               </p>
             </div>
 
@@ -33,7 +33,7 @@ export default function CohortBand() {
                 See the five weeks →
               </a>
               <p className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-[#a8a8a8] mt-5">
-                Applications close 9 October
+                Apply by booking a call
               </p>
             </div>
           </div>

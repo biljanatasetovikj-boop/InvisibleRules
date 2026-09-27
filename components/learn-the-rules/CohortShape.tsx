@@ -8,7 +8,7 @@ export default function CohortShape() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              01 — How a week works
+              01 / How a week works
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
@@ -20,7 +20,7 @@ export default function CohortShape() {
           <p className="font-body text-[21px] leading-[1.65] text-[#3a3a3a] max-w-[740px] mb-16">
             A move you make once is a story. A move you repeat is a different
             career. What holds the repetition is not the system you go back
-            into — it is having someone watch you try it, badly at first, and
+            into. It is having someone watch you try it, badly at first, and
             tell you what they saw.
           </p>
         </FadeIn>
@@ -30,7 +30,7 @@ export default function CohortShape() {
             <FadeIn key={item.label} delay={i * 0.07} className="h-full">
               <div className="bg-white border-t-4 border-[#d4302a] p-7 h-full">
                 <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-3.5">
-                  — {item.label}
+                  {item.label}
                 </div>
                 <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.65]">
                   {item.text}
