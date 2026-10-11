@@ -55,7 +55,7 @@ export default function Contact() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              04 — Start here
+              Start here
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
@@ -160,6 +160,16 @@ export default function Contact() {
                   >
                     {loading ? "Sending…" : "Send request →"}
                   </button>
+                  <p className="font-body text-[13px] text-[#707070] mt-4">
+                    By signing up you agree to the{" "}
+                    <a
+                      href="/privacy"
+                      className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 hover:decoration-[#d4302a] transition-colors"
+                    >
+                      privacy policy
+                    </a>
+                    .
+                  </p>
                 </div>
               </form>
             )}

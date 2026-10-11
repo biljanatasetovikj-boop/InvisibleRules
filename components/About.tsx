@@ -12,13 +12,12 @@ export default function About() {
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-12">
+          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-4">
             I&apos;m Biljana.
-            <br />
-            <span className="italic text-[#d4302a]">
-              I&apos;m a cross-cultural consultant.
-            </span>
           </h2>
+          <p className="font-serif italic text-[#d4302a] text-[22px] mb-12">
+            Career specialist for non-Western professionals.
+          </p>
         </FadeIn>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 lg:gap-16 items-start">
@@ -26,24 +25,44 @@ export default function About() {
             <FadeIn delay={0.1}>
               <div className="space-y-6 font-body text-[18px] text-[#3a3a3a] leading-[1.7] max-w-[700px]">
                 <p>
-                  For 18 years, I watched the same pattern repeat itself while
-                  working in global organizations, navigating teams,
-                  supervisors, and stakeholders from all over the world. I also
-                  watched people from non-Western backgrounds step into elite
-                  international institutions and achieve their biggest dreams
-                  while quietly struggling with the cultural transition that
-                  came with it.
-                </p>
-                <p className="font-serif italic text-[#1a1a1a] text-[22px] leading-[1.4]">
-                  I saw what worked. What got misread. Where the friction
-                  points sat. Not theory. Field data.
+                  For more than 18 years, I built my career helping people
+                  make their dreams come true: getting into the top
+                  universities in the world, winning full scholarships, and
+                  understanding cultures they had only read about or seen on
+                  screen. I was good at it, too. Country coordinator,
+                  European trainer for new advisers, one of the 15% of
+                  advisers in a global network of 400 to reach senior status,
+                  and recipient of the Honorary Ambassador Award. But
+                  somewhere between writing the same monthly reports and
+                  missing yet another chance to build something I truly
+                  cared about, I realised I was building someone else&apos;s
+                  dream, not my own. So I left to work directly with
+                  clients.
                 </p>
                 <p>
-                  Now, I&apos;m passing that knowledge on to others walking the
-                  same path and trying to navigate the invisible rules that
-                  quietly stall careers. I want to close the gap between what
-                  you bring into the room and what others actually see, and
-                  help you build a career you truly own.
+                  My work has always centred on the same passion: helping
+                  people reach their goals and their full potential. I would
+                  love my app and my program to reach users all over the
+                  world, but what I truly enjoy are 1:1 conversations. I see
+                  people&apos;s faces light up, their attitude towards
+                  opportunities changes, and they leave with a plan and a
+                  next step. The teacher in me smiles every time.
+                </p>
+                <p>
+                  These days, I offer the same support to professionals
+                  working across cultures. I was one of them, and I know the
+                  frustration, the surprise and the disappointment
+                  first-hand. I also know that you can navigate complex
+                  cultural systems and build a successful global career,
+                  especially if you work in a Western-led workplace.
+                </p>
+                <p>
+                  I like mornings with my son, freedom, learning about new
+                  cultures, and following whatever seems interesting now
+                  instead of postponing it until I have time. I dislike
+                  scheduled meetings where I&apos;m only there to nod, posts
+                  that make a topic much more complicated than it is, and AI
+                  trainings that promise more than they deliver.
                 </p>
               </div>
 
@@ -63,8 +82,8 @@ export default function About() {
           <FadeIn delay={0.15} className="lg:sticky lg:top-12">
             <div className="relative overflow-hidden bg-[#e0ddd5] aspect-[3/4]">
               <Image
-                src="/biljana.jpg"
-                alt="Biljana Kuzmanovska Tasetovikj"
+                src="/biljana-new.png"
+                alt="Biljana Kuzmanovska Tasetovikj, founder of Invisible Rules"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 380px"

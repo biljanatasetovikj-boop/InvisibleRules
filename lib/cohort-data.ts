@@ -3,7 +3,7 @@
 // `curriculum/cohort-5-weeks.md` and the framework it was built from.
 
 export const cohortMeta = {
-  kicker: "The cohort, October 2026",
+  kicker: "The cohort, Spring 2027",
   title: "Learn the Rules",
   standfirst:
     "Five weeks. Eight people. We name what this is costing you, learn to tell a cultural rule apart from ordinary company dysfunction, and build one move you can actually use at work, with someone who reads what you send back.",
@@ -125,7 +125,7 @@ export const notForYou = [
 ];
 
 export const details = [
-  { label: "Runs", value: "October & November 2026" },
+  { label: "Runs", value: "Spring 2027" },
   { label: "Live sessions", value: "Two hours a week" },
   { label: "Your own work", value: "Four to five hours a week" },
   { label: "Group size", value: "Eight people" },
@@ -133,24 +133,6 @@ export const details = [
   { label: "Where", value: "Online" },
   { label: "Apply", value: "By booking a brief call with me" },
   { label: "Price", value: "420 euro (founding members' price)" },
-];
-
-export const webinars = [
-  {
-    date: "Monday 14 September",
-    time: "18:00 CET",
-    title: "What it is costing you, and telling a rule from noise",
-  },
-  {
-    date: "Monday 28 September",
-    time: "18:00 CET",
-    title: "The clash: their rules, and the ones you brought",
-  },
-  {
-    date: "Wednesday 7 October",
-    time: "18:00 CET",
-    title: "The move: being visible without performing",
-  },
 ];
 
 export const faqs = [

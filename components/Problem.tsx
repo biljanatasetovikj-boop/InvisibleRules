@@ -15,7 +15,7 @@ export default function Problem() {
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              01 — The pattern
+              The pattern
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>

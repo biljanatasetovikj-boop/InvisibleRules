@@ -1,8 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import HowIWork from "@/components/HowIWork";
-import CohortBand from "@/components/CohortBand";
+import HowIHelp from "@/components/HowIHelp";
+import FreeTools from "@/components/FreeTools";
 import WhoIHelp from "@/components/WhoIHelp";
 import About from "@/components/About";
 import Interviews from "@/components/Interviews";
@@ -18,11 +17,10 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <Problem />
-        <HowIWork />
         <WhoIHelp />
+        <HowIHelp />
+        <FreeTools />
         <About />
-        <CohortBand />
         <Interviews />
         <Newsletter />
         <ForCompanies />

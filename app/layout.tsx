@@ -22,9 +22,21 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://theinvisiblerules.com"),
   title: "Invisible Rules — Career Advisory for Non-Western Professionals",
   description:
-    "Helping non-Western professionals in international organizations close the gap between talent and visibility.",
+    "Helping non-Western professionals in international organisations close the gap between talent and visibility.",
+  openGraph: {
+    title: "Invisible Rules — Career Advisory for Non-Western Professionals",
+    description:
+      "Helping non-Western professionals in international organisations close the gap between talent and visibility.",
+    images: [
+      {
+        url: "/biljana-new.png",
+        alt: "Biljana Kuzmanovska Tasetovikj, founder of Invisible Rules",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

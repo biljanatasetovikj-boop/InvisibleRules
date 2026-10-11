@@ -5,8 +5,22 @@ export default function Footer() {
         <div className="font-serif italic text-lg text-[#1a1a1a]">
           — Built quietly. <em className="italic">Ohrid &amp; beyond.</em>
         </div>
-        <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070]">
-          © Invisible Rules · Biljana
+        <div className="flex items-center gap-5">
+          <a
+            href="/privacy"
+            className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
+          >
+            Privacy
+          </a>
+          <a
+            href="/privacy#remove-me"
+            className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
+          >
+            Unsubscribe
+          </a>
+          <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070]">
+            © Invisible Rules · Biljana
+          </div>
         </div>
       </footer>
     </div>

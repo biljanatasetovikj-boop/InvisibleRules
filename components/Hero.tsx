@@ -31,22 +31,23 @@ export default function Hero() {
           <span className="block italic text-[clamp(88px,15vw,200px)]">rules</span>
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease }}
-          className="font-body italic text-[clamp(18px,2.1vw,24px)] text-[#1a1a1a] leading-[1.5] tracking-[0.01em] mb-14 max-w-[900px] mx-auto"
+          className="font-body italic text-[clamp(18px,2.1vw,24px)] text-[#1a1a1a] leading-[1.5] tracking-[0.01em] mb-14 max-w-[900px] mx-auto space-y-5"
         >
-          The new fluency of global careers. What MBA graduates and CEOs absorb
-          through networks and access, we decode for people who had to learn it
-          the hard way.
-        </motion.p>
+          <p>
+            Your work is good. The culture around you just reads it
+            differently. I help you close that gap.
+          </p>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45, ease }}
-          className="flex justify-center gap-3.5 flex-wrap"
+          className="flex flex-col items-center gap-5"
         >
           <a
             href="#lets-talk"
@@ -55,12 +56,10 @@ export default function Hero() {
             Tell me your story
           </a>
           <a
-            href="https://invisiblerules.substack.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-transparent text-[#1a1a1a] border-2 border-[#1a1a1a] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#1a1a1a] hover:text-white transition-colors"
+            href="#free-tools"
+            className="inline-block font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
           >
-            Stories from people like you
+            Or start with the free guide →
           </a>
         </motion.div>
       </div>
