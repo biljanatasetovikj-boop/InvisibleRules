@@ -16,12 +16,11 @@ export default function WhoIHelp() {
           <FadeIn delay={0} className="h-full">
             <div className="bg-white border-t-8 border-[#d4302a] p-10 h-full">
               <p className="font-body text-[21px] leading-[1.55] text-[#1a1a1a]">
-                You&apos;re highly competent, often more than your peers, yet
-                somehow{" "}
+                Your work is strong, but it does not bring you the{" "}
                 <em className="italic text-[#d4302a] font-bold">
-                  less visible
-                </em>
-                .
+                  visibility and recognition
+                </em>{" "}
+                it deserves.
               </p>
             </div>
           </FadeIn>
@@ -29,12 +28,11 @@ export default function WhoIHelp() {
           <FadeIn delay={0.07} className="h-full">
             <div className="bg-white border-t-8 border-[#d4302a] p-10 h-full">
               <p className="font-body text-[21px] leading-[1.55] text-[#1a1a1a]">
-                You&apos;ve built your career without ever{" "}
+                You have never{" "}
                 <em className="italic text-[#d4302a] font-bold">
-                  living or studying
-                </em>{" "}
-                in the countries where your company and Western colleagues
-                operate.
+                  lived or studied in the West
+                </em>
+                , but your company and colleagues are Western.
               </p>
             </div>
           </FadeIn>
@@ -42,9 +40,9 @@ export default function WhoIHelp() {
           <FadeIn delay={0.14} className="h-full">
             <div className="bg-white border-t-8 border-[#d4302a] p-10 h-full">
               <p className="font-body text-[21px] leading-[1.55] text-[#1a1a1a]">
-                No one ever taught you this was a skill. You assumed{" "}
+                No one ever taught you this was a skill. You assumed that{" "}
                 <em className="italic text-[#d4302a] font-bold">
-                  results would speak for themselves
+                  good work would be noticed
                 </em>
                 .
               </p>
