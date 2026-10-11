@@ -23,14 +23,10 @@ export default function Newsletter() {
                 </span>
                 .
               </h2>
-              <p className="font-body text-[17px] text-[#e8e5de] leading-[1.65] mb-3 max-w-[500px] mx-auto lg:mx-0">
+              <p className="font-body text-[17px] text-[#e8e5de] leading-[1.65] mb-9 max-w-[500px] mx-auto lg:mx-0">
                 One rule nobody explains, every two weeks. A real moment
                 from work, what was really going on, and what you can do
                 next time.
-              </p>
-              <p className="font-body italic text-[15px] text-[#a8a8a8] mb-9 max-w-[500px] mx-auto lg:mx-0">
-                New subscribers also get Asking Your Manager: A Short Guide,
-                free.
               </p>
               <div className="bg-[#fafaf7] p-6 sm:p-8 max-w-[500px] mx-auto lg:mx-0">
                 <BeehiivForm />
