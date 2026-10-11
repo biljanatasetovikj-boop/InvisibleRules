@@ -25,8 +25,10 @@ export default function GuideForm() {
             Accept: "application/json",
           },
           body: JSON.stringify({
-            name,
-            email: data.get("email"),
+            "This is a": "Free guide download from theinvisiblerules.com",
+            "Guide requested": "Asking Your Manager: A Short Guide",
+            Name: name,
+            Email: data.get("email"),
             "Also wants the newsletter": wantsNewsletter,
             _subject: `Guide download — ${name}`,
             _template: "table",

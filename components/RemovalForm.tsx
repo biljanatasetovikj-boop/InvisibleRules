@@ -23,8 +23,12 @@ export default function RemovalForm() {
             Accept: "application/json",
           },
           body: JSON.stringify({
-            email,
-            note: data.get("note") || "(no note)",
+            "This is a":
+              "Request to be deleted from your lists, from theinvisiblerules.com",
+            "Action needed":
+              "Delete this address from your records and any list it is on",
+            Email: email,
+            Note: data.get("note") || "(none)",
             _subject: `Removal request — ${email}`,
             _template: "table",
             _captcha: "false",

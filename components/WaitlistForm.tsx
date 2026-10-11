@@ -5,11 +5,17 @@ import { useState } from "react";
 interface WaitlistFormProps {
   // The visible call-to-action before the form opens, e.g. "Join the Decoder waitlist →".
   triggerLabel: string;
-  // Used to build the email subject line, e.g. "Decoder" or "Spring cohort".
+  // Short tag for the email subject line, e.g. "Decoder" or "Spring 2027 cohort".
   subjectTag: string;
+  // Spelled out inside the email body, so the message says what it is on its own.
+  signedUpFor: string;
 }
 
-export default function WaitlistForm({ triggerLabel, subjectTag }: WaitlistFormProps) {
+export default function WaitlistForm({
+  triggerLabel,
+  subjectTag,
+  signedUpFor,
+}: WaitlistFormProps) {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -35,8 +41,10 @@ export default function WaitlistForm({ triggerLabel, subjectTag }: WaitlistFormP
             Accept: "application/json",
           },
           body: JSON.stringify({
-            name,
-            email: data.get("email"),
+            "This is a": "Waitlist sign-up from theinvisiblerules.com",
+            "Waitlist for": signedUpFor,
+            Name: name,
+            Email: data.get("email"),
             _subject: `Waitlist: ${subjectTag} — ${name}`,
             _template: "table",
             _captcha: "false",

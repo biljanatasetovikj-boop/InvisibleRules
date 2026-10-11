@@ -41,6 +41,7 @@ export default function HowIHelp() {
                 <WaitlistForm
                   triggerLabel="Join the Decoder waitlist →"
                   subjectTag="Decoder"
+                  signedUpFor="The Decoder — the app, not yet released"
                 />
               </div>
             </div>
@@ -71,7 +72,8 @@ export default function HowIHelp() {
               <div className="mt-auto">
                 <WaitlistForm
                   triggerLabel="Join the cohort waitlist →"
-                  subjectTag="Spring cohort"
+                  subjectTag="Spring 2027 cohort"
+                  signedUpFor="Learn the Rules — the Spring 2027 cohort, five weeks, eight people"
                 />
                 <a
                   href="/learn-the-rules"
