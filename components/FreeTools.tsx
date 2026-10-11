@@ -70,7 +70,7 @@ export default function FreeTools() {
         {/* The guide anchors the section: inverted panel, so it reads as the
             one thing here that asks for something back. */}
         <FadeIn delay={0.1}>
-          <div className="bg-[#1a1a1a] p-10 lg:p-16">
+          <div className="bg-[#1a1a1a] -mx-6 lg:-mx-12 px-6 py-10 lg:px-12 lg:py-16">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-20">
               <div>
                 <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
