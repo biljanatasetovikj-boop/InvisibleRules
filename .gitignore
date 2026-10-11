@@ -42,3 +42,6 @@ next-env.d.ts
 
 # playwright site-check screenshots
 /playwright-report-shots/
+
+# impeccable critique snapshots and live-server state (local only)
+/.impeccable/
