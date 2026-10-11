@@ -37,25 +37,27 @@ export default function FreeTools() {
         <div className="border-t-2 border-[#1a1a1a] mb-20">
           {quizzes.map((q, i) => (
             <FadeIn key={q.title} delay={i * 0.08}>
+              {/* Red by default on touch, where there is no hover to reveal
+                  it. From md up it starts plain and floods on hover. */}
               <a
                 href={q.href}
-                className="group block border-b-2 border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors duration-300 hover:bg-[#d4302a]"
+                className="group block border-b-2 border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors duration-300 bg-[#d4302a] md:bg-transparent md:hover:bg-[#d4302a]"
               >
                 <div className="py-11 grid grid-cols-[1fr_auto] gap-8 items-center">
                   <div>
-                    <h3 className="font-serif font-black text-[#1a1a1a] text-[clamp(32px,5.4vw,72px)] tracking-[-0.03em] leading-[0.98] mb-4 transition-colors duration-300 group-hover:text-white">
+                    <h3 className="font-serif font-black text-white md:text-[#1a1a1a] text-[clamp(32px,5.4vw,72px)] tracking-[-0.03em] leading-[0.98] mb-4 transition-colors duration-300 md:group-hover:text-white">
                       {q.title}
                     </h3>
-                    <p className="font-body text-[17px] text-[#3a3a3a] leading-[1.6] max-w-[620px] mb-4 transition-colors duration-300 group-hover:text-white/85">
+                    <p className="font-body text-[17px] text-white/85 md:text-[#3a3a3a] leading-[1.6] max-w-[620px] mb-4 transition-colors duration-300 md:group-hover:text-white/85">
                       {q.body}
                     </p>
-                    <span className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] transition-colors duration-300 group-hover:text-white/70">
+                    <span className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-white/70 md:text-[#707070] transition-colors duration-300 md:group-hover:text-white/70">
                       {q.meta}
                     </span>
                   </div>
                   <span
                     aria-hidden
-                    className="font-serif text-[clamp(34px,5vw,64px)] leading-none text-[#d4302a] transition-all duration-300 group-hover:text-white group-hover:translate-x-3"
+                    className="font-serif text-[clamp(34px,5vw,64px)] leading-none text-white md:text-[#d4302a] transition-all duration-300 md:group-hover:text-white md:group-hover:translate-x-3"
                   >
                     →
                   </span>
