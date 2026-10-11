@@ -11,7 +11,7 @@ export default function Newsletter() {
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
                 <span className="w-10 h-px bg-[#4a4a4a]" />
-                <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
                   Newsletter
                 </span>
                 <span className="w-10 h-px bg-[#4a4a4a]" />
@@ -30,7 +30,7 @@ export default function Newsletter() {
               </p>
               <div className="bg-[#fafaf7] p-6 sm:p-8 max-w-[500px] mx-auto lg:mx-0">
                 <BeehiivForm />
-                <p className="font-body text-[13px] text-[#707070] mt-4 text-center">
+                <p className="font-body text-[14px] text-[#707070] mt-4 text-center">
                   By signing up you agree to the{" "}
                   <a
                     href="/privacy"

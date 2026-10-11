@@ -62,7 +62,7 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
       <div className="max-w-[760px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               Your results
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -138,7 +138,7 @@ export default function QuizEmailGate({ onUnlock }: QuizEmailGateProps) {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full sm:w-auto bg-[#1a1a1a] text-white px-8 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-default whitespace-nowrap"
+              className="w-full sm:w-auto bg-[#1a1a1a] text-white px-8 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-default whitespace-nowrap"
             >
               {status === "sending" ? "One moment…" : "Show my results →"}
             </button>

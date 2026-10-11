@@ -24,7 +24,7 @@ export default function HowIWork() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               02 — The work
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -45,7 +45,7 @@ export default function HowIWork() {
           {phases.map((p, i) => (
             <FadeIn key={p.title} delay={i * 0.1}>
               <div className="border-t-4 border-[#d4302a] pt-7">
-                <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-3.5">
+                <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-3.5">
                   — {p.phase}
                 </div>
                 <h3 className="font-serif italic font-black text-[36px] text-[#1a1a1a] tracking-[-0.02em] leading-none mb-4">

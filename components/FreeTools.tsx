@@ -25,39 +25,39 @@ export default function FreeTools() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               Free tools
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
         </FadeIn>
 
-        {/* Each quiz is one oversized row. The whole row is the link, and the
-            red flood is pulled out to the gutters so it reads edge to edge. */}
-        <div className="border-t-2 border-[#1a1a1a] mb-20">
+        {/* Each quiz is one oversized row, pulled out to the gutters so the
+            red reads edge to edge. */}
+        <div className="mb-20">
           {quizzes.map((q, i) => (
             <FadeIn key={q.title} delay={i * 0.08}>
-              {/* Red by default on touch, where there is no hover to reveal
-                  it. From md up it starts plain and floods on hover. */}
               <a
                 href={q.href}
-                className="group block border-b-2 border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 transition-colors duration-300 bg-[#d4302a] md:bg-transparent md:hover:bg-[#d4302a]"
+                className={`group block bg-[#d4302a] border-b-[3px] border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 ${
+                  i === 0 ? "border-t-[3px]" : ""
+                }`}
               >
                 <div className="py-11 grid grid-cols-[1fr_auto] gap-8 items-center">
                   <div>
-                    <h3 className="font-serif font-black text-white md:text-[#1a1a1a] text-[clamp(32px,5.4vw,72px)] tracking-[-0.03em] leading-[0.98] mb-4 transition-colors duration-300 md:group-hover:text-white">
+                    <h3 className="font-serif font-black text-white text-[clamp(32px,5.4vw,72px)] tracking-[-0.03em] leading-[0.98] mb-4">
                       {q.title}
                     </h3>
-                    <p className="font-body text-[17px] text-white/85 md:text-[#3a3a3a] leading-[1.6] max-w-[620px] mb-4 transition-colors duration-300 md:group-hover:text-white/85">
+                    <p className="font-body text-[17px] text-white/90 leading-[1.6] max-w-[620px] mb-4">
                       {q.body}
                     </p>
-                    <span className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-white/70 md:text-[#707070] transition-colors duration-300 md:group-hover:text-white/70">
+                    <span className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-white/75">
                       {q.meta}
                     </span>
                   </div>
                   <span
                     aria-hidden
-                    className="font-serif text-[clamp(34px,5vw,64px)] leading-none text-white md:text-[#d4302a] transition-all duration-300 md:group-hover:text-white md:group-hover:translate-x-3"
+                    className="font-serif text-[clamp(34px,5vw,64px)] leading-none text-white transition-transform duration-300 group-hover:translate-x-3"
                   >
                     →
                   </span>
@@ -73,7 +73,7 @@ export default function FreeTools() {
           <div className="bg-[#1a1a1a] p-10 lg:p-16">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-20">
               <div>
-                <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
                   The free guide
                 </span>
                 <h3 className="font-serif font-black text-white text-[clamp(30px,3.6vw,48px)] tracking-[-0.025em] leading-[1.02] mt-5 mb-5">

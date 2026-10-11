@@ -7,7 +7,7 @@ export default function HowIHelp() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               How I help
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -105,7 +105,7 @@ export default function HowIHelp() {
               <div className="mt-auto">
                 <a
                   href="#lets-talk"
-                  className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
+                  className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
                 >
                   Book a free session →
                 </a>

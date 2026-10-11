@@ -12,7 +12,7 @@ export default function QuizIntro({ onBegin }: QuizIntroProps) {
       <div className="max-w-[760px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               00 — The diagnostic
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -43,7 +43,7 @@ export default function QuizIntro({ onBegin }: QuizIntroProps) {
             <button
               type="button"
               onClick={onBegin}
-              className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer"
+              className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer"
             >
               Begin →
             </button>

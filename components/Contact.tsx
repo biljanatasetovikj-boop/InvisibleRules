@@ -54,7 +54,7 @@ export default function Contact() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               Start here
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -98,7 +98,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
+                    className="block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
                   >
                     Your name
                   </label>
@@ -115,7 +115,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
+                    className="block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
                   >
                     Email
                   </label>
@@ -132,7 +132,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
+                    className="block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
                   >
                     What would you like to discuss?
                   </label>
@@ -155,12 +155,12 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
+                    className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
                     suppressHydrationWarning
                   >
                     {loading ? "Sending…" : "Send request →"}
                   </button>
-                  <p className="font-body text-[13px] text-[#707070] mt-4">
+                  <p className="font-body text-[14px] text-[#707070] mt-4">
                     By signing up you agree to the{" "}
                     <a
                       href="/privacy"
@@ -186,7 +186,7 @@ export default function Contact() {
                     href="https://invisiblerules.substack.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
                   >
                     Substack <span className="text-[#d4302a]">↗</span>
                   </a>
@@ -199,7 +199,7 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/biljana-kuzmanovska-tasetovikj/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
                   >
                     LinkedIn <span className="text-[#d4302a]">↗</span>
                   </a>
@@ -210,7 +210,7 @@ export default function Contact() {
                 <li>
                   <a
                     href="mailto:biljanatasetovikj@gmail.com"
-                    className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
                   >
                     Email <span className="text-[#d4302a]">↗</span>
                   </a>

@@ -7,7 +7,7 @@ export default function CohortShape() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               01 / How a week works
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -29,7 +29,7 @@ export default function CohortShape() {
           {weekShape.map((item, i) => (
             <FadeIn key={item.label} delay={i * 0.07} className="h-full">
               <div className="bg-white border-t-4 border-[#d4302a] p-7 h-full">
-                <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-3.5">
+                <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-3.5">
                   {item.label}
                 </div>
                 <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.65]">

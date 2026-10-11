@@ -14,7 +14,7 @@ export default function ArchetypeQuizIntro({
       <div className="max-w-[760px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-12">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
               00 — The archetype quiz
             </span>
             <span className="w-10 h-px bg-[var(--line)]" />
@@ -77,7 +77,7 @@ export default function ArchetypeQuizIntro({
             <button
               type="button"
               onClick={onBegin}
-              className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors cursor-pointer"
+              className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors cursor-pointer"
             >
               Begin →
             </button>

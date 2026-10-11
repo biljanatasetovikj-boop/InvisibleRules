@@ -45,7 +45,7 @@ export default function ArchetypeQuizQuestion({
       onKeyDown={handleKeyDown}
       className="max-w-[760px] mx-auto px-6 lg:px-12"
     >
-      <p className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--grey)] mb-3">
+      <p className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[var(--grey)] mb-3">
         Question {questionNumber} of {totalQuestions}
       </p>
 
@@ -81,7 +81,7 @@ export default function ArchetypeQuizQuestion({
                   className="sr-only"
                 />
                 <span
-                  className={`flex-none flex items-center justify-center w-7 h-7 rounded-full border-2 font-sans text-[12px] font-bold transition-colors ${
+                  className={`flex-none flex items-center justify-center w-7 h-7 rounded-full border-2 font-sans text-[13px] font-bold transition-colors ${
                     selected
                       ? "border-[var(--red)] bg-[var(--red)] text-[var(--white)]"
                       : "border-[var(--grey-soft)] text-[var(--grey)] group-hover:border-[var(--grey)]"
@@ -104,7 +104,7 @@ export default function ArchetypeQuizQuestion({
           type="button"
           onClick={onBack}
           disabled={!canGoBack}
-          className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--ink)] hover:text-[var(--red)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-[var(--ink)] cursor-pointer"
+          className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[var(--ink)] hover:text-[var(--red)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:text-[var(--ink)] cursor-pointer"
         >
           ← Back
         </button>
@@ -112,7 +112,7 @@ export default function ArchetypeQuizQuestion({
           type="button"
           onClick={onNext}
           disabled={!hasSelection}
-          className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-[var(--ink)] cursor-pointer"
+          className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-[var(--ink)] cursor-pointer"
         >
           {isLast ? "Finish →" : "Next →"}
         </button>

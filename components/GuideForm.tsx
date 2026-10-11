@@ -72,7 +72,7 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
           href="/guides/asking-your-manager.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className={`inline-block font-sans text-[11px] font-bold uppercase tracking-[0.18em] underline decoration-1 underline-offset-4 transition-colors ${
+          className={`inline-block font-sans text-[13px] font-bold uppercase tracking-[0.18em] underline decoration-1 underline-offset-4 transition-colors ${
             inverted
               ? "text-white hover:text-[#d4302a]"
               : "text-[#d4302a] hover:text-[#1a1a1a]"
@@ -120,7 +120,7 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
         </span>
       </label>
       {error && (
-        <p className="font-body italic text-[13px] text-[#d4302a]">
+        <p className="font-body italic text-[14px] text-[#d4302a]">
           Something went wrong. Please try again, or email me directly at
           biljanatasetovikj@gmail.com.
         </p>
@@ -129,7 +129,7 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
         <button
           type="submit"
           disabled={loading}
-          className={`inline-block px-8 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] transition-colors disabled:opacity-60 cursor-pointer ${
+          className={`inline-block px-8 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] transition-colors disabled:opacity-60 cursor-pointer ${
             inverted
               ? "bg-white text-[#1a1a1a] hover:bg-[#d4302a] hover:text-white"
               : "bg-[#1a1a1a] text-white hover:bg-[#d4302a]"
@@ -139,7 +139,7 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
           {loading ? "Sending…" : "Send me the guide"}
         </button>
         <p
-          className={`font-body text-[12px] ${
+          className={`font-body text-[13px] ${
             inverted ? "text-white/55" : "text-[#707070]"
           }`}
         >

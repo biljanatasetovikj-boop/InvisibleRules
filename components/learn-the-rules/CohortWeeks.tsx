@@ -7,7 +7,7 @@ export default function CohortWeeks() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               02 / The five weeks
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -22,7 +22,7 @@ export default function CohortWeeks() {
             <FadeIn key={week.number} delay={i * 0.05}>
               <article className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-6 lg:gap-16 border-t-2 border-[#1a1a1a] py-12">
                 <div>
-                  <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-2">
+                  <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-2">
                     {week.number}
                   </div>
                 </div>
@@ -35,7 +35,7 @@ export default function CohortWeeks() {
                     {week.teaches}
                   </p>
                   <div className="border-l-4 border-[#d4302a] pl-6 max-w-[720px]">
-                    <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-2">
+                    <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-2">
                       Homework
                     </div>
                     <p className="font-body text-[17px] text-[#1a1a1a] leading-[1.65]">

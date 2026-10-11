@@ -7,7 +7,7 @@ export default function PullQuote() {
         <FadeIn>
           <div className="flex items-center justify-center gap-4 mb-11">
             <span className="w-8 h-px bg-[#d4302a]" />
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               A client, paraphrased
             </span>
             <span className="w-8 h-px bg-[#d4302a]" />

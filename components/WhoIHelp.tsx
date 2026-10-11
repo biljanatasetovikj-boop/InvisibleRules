@@ -3,17 +3,24 @@ import FadeIn from "./FadeIn";
 const cards = [
   <>
     Your work is strong, but it does not bring you the{" "}
-    <em className="italic text-[#1a1a1a]">visibility and recognition</em> it
-    deserves.
+    <em className="italic font-black text-[#1a1a1a]">
+      visibility and recognition
+    </em>{" "}
+    it deserves.
   </>,
   <>
     You have never{" "}
-    <em className="italic text-[#1a1a1a]">lived or studied in the West</em>,
-    but your company and colleagues are Western.
+    <em className="italic font-black text-[#1a1a1a]">
+      lived or studied in the West
+    </em>
+    , but your company and colleagues are Western.
   </>,
   <>
     No one ever taught you this was a skill. You assumed that{" "}
-    <em className="italic text-[#1a1a1a]">good work would be noticed</em>.
+    <em className="italic font-black text-[#1a1a1a]">
+      good work would be noticed
+    </em>
+    .
   </>,
 ];
 
@@ -29,7 +36,7 @@ export default function WhoIHelp() {
             This is for you if:
           </h2>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-3 border border-[#1a1a1a] divide-y md:divide-y-0 md:divide-x divide-[#1a1a1a]">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-[3px] border-[#1a1a1a] divide-y-[3px] md:divide-y-0 md:divide-x-[3px] divide-[#1a1a1a]">
           {cards.map((card, i) => (
             <FadeIn key={i} delay={i * 0.08} className="h-full">
               <div className="bg-[#d4302a] h-full px-9 py-14 lg:px-10 lg:py-16">

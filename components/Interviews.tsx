@@ -36,7 +36,7 @@ export default function Interviews() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-8">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               From people like you
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -57,7 +57,7 @@ export default function Interviews() {
                 className="group block"
               >
                 <article className="border-t border-[#1a1a1a] pt-6">
-                  <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-4">
+                  <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-4">
                     — {item.category}
                   </div>
                   <h3 className="font-serif font-bold text-[#1a1a1a] text-[26px] leading-[1.15] tracking-[-0.01em] mb-4 transition-colors group-hover:text-[#d4302a]">

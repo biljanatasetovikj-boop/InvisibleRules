@@ -8,7 +8,7 @@ export default function CohortDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-start">
           <FadeIn>
             <div className="flex items-center gap-3 mb-5">
-              <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+              <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
                 05 / The details
               </span>
               <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -20,7 +20,7 @@ export default function CohortDetails() {
             </h2>
             <a
               href="#apply"
-              className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
+              className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
             >
               Book a conversation →
             </a>
@@ -33,7 +33,7 @@ export default function CohortDetails() {
                   key={row.label}
                   className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-8 py-5 border-b border-[#e0ddd5] last:border-b-0"
                 >
-                  <dt className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] sm:w-[170px] shrink-0">
+                  <dt className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070] sm:w-[170px] shrink-0">
                     {row.label}
                   </dt>
                   <dd className="font-body text-[18px] text-[#1a1a1a] leading-[1.5] m-0">

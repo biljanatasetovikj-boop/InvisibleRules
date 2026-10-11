@@ -8,17 +8,17 @@ export default function Footer() {
         <div className="flex items-center gap-5">
           <a
             href="/privacy"
-            className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
+            className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
           >
             Privacy
           </a>
           <a
             href="/privacy#remove-me"
-            className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
+            className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors"
           >
             Unsubscribe
           </a>
-          <div className="font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#707070]">
+          <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070]">
             © Invisible Rules · Biljana
           </div>
         </div>

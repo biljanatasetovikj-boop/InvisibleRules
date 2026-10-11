@@ -10,7 +10,7 @@ export default function CohortBand() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-20 items-end">
             <div>
               <div className="flex items-center gap-3 mb-5">
-                <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
                   The cohort — October 2026
                 </span>
                 <span className="w-10 h-px bg-[#4a4a4a]" />
@@ -28,11 +28,11 @@ export default function CohortBand() {
             <div className="lg:text-right">
               <a
                 href="/learn-the-rules"
-                className="inline-block bg-white text-[#1a1a1a] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] hover:text-white transition-colors"
+                className="inline-block bg-white text-[#1a1a1a] px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] hover:text-white transition-colors"
               >
                 See the five weeks →
               </a>
-              <p className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-[#a8a8a8] mt-5">
+              <p className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#a8a8a8] mt-5">
                 Apply by booking a call
               </p>
             </div>

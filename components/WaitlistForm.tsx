@@ -78,7 +78,7 @@ export default function WaitlistForm({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer"
+        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer"
       >
         {triggerLabel}
       </button>
@@ -108,7 +108,7 @@ export default function WaitlistForm({
         />
       </div>
       {error && (
-        <p className="font-body italic text-[13px] text-[#d4302a]">
+        <p className="font-body italic text-[14px] text-[#d4302a]">
           Something went wrong. Please try again, or email me directly at
           biljanatasetovikj@gmail.com.
         </p>
@@ -116,12 +116,12 @@ export default function WaitlistForm({
       <button
         type="submit"
         disabled={loading}
-        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
+        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
         suppressHydrationWarning
       >
         {loading ? "Joining…" : "Join the waitlist"}
       </button>
-      <p className="font-body text-[12px] text-[#707070]">
+      <p className="font-body text-[13px] text-[#707070]">
         By signing up you agree to the{" "}
         <a
           href="/privacy"

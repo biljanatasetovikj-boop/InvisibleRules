@@ -18,7 +18,7 @@ export default function ForCompanies() {
           </p>
           <a
             href="/for-companies"
-            className="group inline-flex items-center gap-2 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
+            className="group inline-flex items-center gap-2 font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
           >
             How I work with companies
             <span className="text-[#d4302a] group-hover:translate-x-1 transition-transform">

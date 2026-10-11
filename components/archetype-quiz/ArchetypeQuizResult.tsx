@@ -30,7 +30,7 @@ export default function ArchetypeQuizResult({
         {/* The result itself */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-10">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
               01 — Your pattern
             </span>
             <span className="w-10 h-px bg-[var(--line)]" />
@@ -54,7 +54,7 @@ export default function ArchetypeQuizResult({
         <FadeIn delay={0.1}>
           <div className="mt-20 border-t-2 border-[var(--ink)] pt-12">
             <div className="flex items-center gap-3 mb-10">
-              <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
+              <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[var(--red)]">
                 02 — The move
               </span>
               <span className="w-10 h-px bg-[var(--line)]" />
@@ -85,7 +85,7 @@ export default function ArchetypeQuizResult({
             <div className="mt-12">
               <a
                 href={LEARN_MORE_URL}
-                className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors"
+                className="inline-block bg-[var(--ink)] text-[var(--white)] px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[var(--red)] transition-colors"
               >
                 Read more at Learn the Rules →
               </a>
@@ -95,7 +95,7 @@ export default function ArchetypeQuizResult({
               <button
                 type="button"
                 onClick={onRetake}
-                className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--ink)] hover:text-[var(--red)] transition-colors cursor-pointer"
+                className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[var(--ink)] hover:text-[var(--red)] transition-colors cursor-pointer"
               >
                 ↺ Retake the quiz
               </button>

@@ -68,7 +68,7 @@ export default function RemovalForm() {
         <div>
           <label
             htmlFor="removal-email"
-            className="block font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
+            className="block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
           >
             Your email
           </label>
@@ -85,7 +85,7 @@ export default function RemovalForm() {
         <div>
           <label
             htmlFor="removal-note"
-            className="block font-sans text-[10px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
+            className="block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-2"
           >
             Anything to add (optional)
           </label>
@@ -107,7 +107,7 @@ export default function RemovalForm() {
         <button
           type="submit"
           disabled={loading}
-          className="inline-block bg-[#1a1a1a] text-white px-8 py-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
+          className="inline-block bg-[#1a1a1a] text-white px-8 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
           suppressHydrationWarning
         >
           {loading ? "Sending…" : "Remove me from your lists"}

@@ -41,14 +41,14 @@ export default function Nav() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-sans text-[9px] font-bold uppercase tracking-[0.14em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-3 flex items-center border-l border-[#e0ddd5]"
+                className="font-sans text-[12px] font-bold uppercase tracking-[0.14em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-3 flex items-center border-l border-[#e0ddd5]"
               >
                 {link.label}
               </a>
             ))}
             <a
               href={cta.href}
-              className="ml-4 bg-[#1a1a1a] text-white font-sans text-[9px] font-bold uppercase tracking-[0.14em] px-4 flex items-center hover:bg-[#d4302a] transition-colors"
+              className="ml-4 bg-[#1a1a1a] text-white font-sans text-[12px] font-bold uppercase tracking-[0.14em] px-4 flex items-center hover:bg-[#d4302a] transition-colors"
             >
               {cta.label}
             </a>
@@ -91,7 +91,7 @@ export default function Nav() {
                   <a
                     key={link.label}
                     href={link.href}
-                    className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-1"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-1"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
@@ -99,7 +99,7 @@ export default function Nav() {
                 ))}
                 <a
                   href={cta.href}
-                  className="mt-2 bg-[#1a1a1a] text-white font-sans text-[12px] font-bold uppercase tracking-[0.18em] px-5 py-3"
+                  className="mt-2 bg-[#1a1a1a] text-white font-sans text-[13px] font-bold uppercase tracking-[0.18em] px-5 py-3"
                   onClick={() => setOpen(false)}
                 >
                   {cta.label}

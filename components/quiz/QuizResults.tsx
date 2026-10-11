@@ -58,7 +58,7 @@ export default function QuizResults({
         {/* Layer 1 — the overall picture */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-10">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               01 — What this paints
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -82,7 +82,7 @@ export default function QuizResults({
                       {result.name}
                     </span>
                     <span
-                      className="font-sans text-[10px] font-bold uppercase tracking-[0.18em]"
+                      className="font-sans text-[12px] font-bold uppercase tracking-[0.18em]"
                       style={{ color }}
                     >
                       {frictionLevels[score]}
@@ -110,7 +110,7 @@ export default function QuizResults({
         <FadeIn delay={0.1}>
           <div className="mt-24 border-t-2 border-[#1a1a1a] pt-12">
             <div className="flex items-center gap-3 mb-10">
-              <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+              <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
                 02 — Where to go from here
               </span>
               <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -149,7 +149,7 @@ export default function QuizResults({
               <button
                 type="button"
                 onClick={onRetake}
-                className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors cursor-pointer"
+                className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors cursor-pointer"
               >
                 ↺ Retake the quiz
               </button>

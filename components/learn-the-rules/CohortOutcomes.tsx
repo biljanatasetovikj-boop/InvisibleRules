@@ -7,7 +7,7 @@ export default function CohortOutcomes() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               03 / What you leave with
             </span>
             <span className="w-10 h-px bg-[#4a4a4a]" />
@@ -23,7 +23,7 @@ export default function CohortOutcomes() {
           {outcomes.map((item, i) => (
             <FadeIn key={item} delay={i * 0.05}>
               <div className="flex gap-5">
-                <span className="font-sans text-[11px] font-bold text-[#d4302a] pt-1.5 shrink-0">
+                <span className="font-sans text-[13px] font-bold text-[#d4302a] pt-1.5 shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="font-body text-[18px] text-[#e8e5de] leading-[1.65]">

@@ -7,7 +7,7 @@ export default function CohortHero() {
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-6">
-            <span className="font-sans text-[10px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
+            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
               {cohortMeta.kicker}
             </span>
             <span className="w-10 h-px bg-[#e0ddd5]" />
@@ -27,7 +27,7 @@ export default function CohortHero() {
             {cohortMeta.strip.map((item) => (
               <li
                 key={item}
-                className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a]"
+                className="font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a]"
               >
                 {item}
               </li>
