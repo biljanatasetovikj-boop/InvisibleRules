@@ -161,7 +161,7 @@ export default function Contact() {
                     {loading ? "Sending…" : "Send request →"}
                   </button>
                   <p className="font-body text-[14px] text-[#707070] mt-4">
-                    By signing up you agree to the{" "}
+                    By sending this, you agree to the{" "}
                     <a
                       href="/privacy"
                       className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 hover:decoration-[#d4302a] transition-colors"

@@ -66,8 +66,17 @@ export default function HowIHelp() {
                 You leave with the Decoder method, practised on your own
                 cases, and recordings to come back to.
               </p>
+              <a
+                href="/learn-the-rules"
+                className="group self-start mb-4 inline-block font-serif italic text-[#1a1a1a] text-[16px] hover:text-[#d4302a] transition-colors"
+              >
+                <span className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 group-hover:decoration-[#d4302a] transition-colors">
+                  See how the five weeks work
+                </span>{" "}
+                →
+              </a>
               <p className="font-serif italic text-[#d4302a] text-[16px] mb-6">
-                Enrolment opens in January.
+                Enrolment opens in January 2027.
               </p>
               <div className="mt-auto">
                 <WaitlistForm
@@ -75,15 +84,6 @@ export default function HowIHelp() {
                   subjectTag="Spring 2027 cohort"
                   signedUpFor="Learn the Rules — the Spring 2027 cohort, five weeks, eight people"
                 />
-                <a
-                  href="/learn-the-rules"
-                  className="group mt-5 inline-block font-serif italic text-[#1a1a1a] text-[15px] hover:text-[#d4302a] transition-colors"
-                >
-                  <span className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 group-hover:decoration-[#d4302a] transition-colors">
-                    See how the five weeks work
-                  </span>{" "}
-                  →
-                </a>
               </div>
             </div>
           </FadeIn>
@@ -104,10 +104,12 @@ export default function HowIHelp() {
               </p>
               <div className="mt-auto">
                 <a
-                  href="#lets-talk"
-                  className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
+                  href="https://cal.com/biljana-tasetovikj-wblqwh/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
                 >
-                  Book a free session →
+                  Book a free session ↗
                 </a>
               </div>
             </div>

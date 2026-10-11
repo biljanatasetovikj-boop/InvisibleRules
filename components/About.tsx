@@ -73,7 +73,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
                 >
-                  More about me
+                  More about me ↗
                 </a>
               </div>
             </FadeIn>

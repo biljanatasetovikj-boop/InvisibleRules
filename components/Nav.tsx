@@ -7,8 +7,8 @@ import { AnimatePresence, motion } from "framer-motion";
 // standalone routes like /learn-the-rules, where those sections don't exist
 // on the page.
 const links = [
-  { label: "How I Help", href: "/#how-i-help" },
   { label: "Free Tools", href: "/#free-tools" },
+  { label: "How I Help", href: "/#how-i-help" },
   { label: "About", href: "/#about" },
   { label: "For Companies", href: "/for-companies" },
 ];

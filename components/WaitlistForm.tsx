@@ -78,7 +78,7 @@ export default function WaitlistForm({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors cursor-pointer"
+        className="inline-block text-left font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors cursor-pointer"
       >
         {triggerLabel}
       </button>

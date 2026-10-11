@@ -18,14 +18,14 @@ export default function Home() {
       <main>
         <Hero />
         <WhoIHelp />
-        <HowIHelp />
         <FreeTools />
+        <HowIHelp />
         <About />
-        <Interviews />
         <Newsletter />
-        <ForCompanies />
+        <Interviews />
         <PullQuote />
         <Contact />
+        <ForCompanies />
       </main>
       <Footer />
     </>

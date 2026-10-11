@@ -50,16 +50,16 @@ export default function Hero() {
           className="flex flex-col items-center gap-5"
         >
           <a
-            href="#lets-talk"
+            href="#free-tools"
             className="inline-block bg-[#1a1a1a] text-white px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors"
           >
-            Tell me your story
+            Start with a free quiz
           </a>
           <a
-            href="#free-tools"
+            href="#lets-talk"
             className="inline-block font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
           >
-            Or start with the free guide →
+            Or let&apos;s talk first →
           </a>
         </motion.div>
       </div>

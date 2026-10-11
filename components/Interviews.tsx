@@ -42,7 +42,7 @@ export default function Interviews() {
             <span className="w-10 h-px bg-[#e0ddd5]" />
           </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-[1] mb-16 max-w-[1100px]">
-            Interviews on career growth, visibility and the{" "}
+            Stories on career growth, visibility and the{" "}
             <span className="italic text-[#d4302a]">rules nobody named</span>.
           </h2>
         </FadeIn>
