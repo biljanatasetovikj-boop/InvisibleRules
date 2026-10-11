@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="py-28 border-t-2 border-[#1a1a1a]">
+    <section id="about" className="py-20 md:py-28 border-t-2 border-[#1a1a1a]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">

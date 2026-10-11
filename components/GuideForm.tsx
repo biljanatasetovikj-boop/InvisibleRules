@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 interface GuideFormProps {
   // Restyles the form for a dark panel.
@@ -11,6 +11,14 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const id = useId();
+  const doneRef = useRef<HTMLDivElement>(null);
+
+  // The form is replaced on success; send focus to the download so it is
+  // the next thing a keyboard or screen-reader user reaches.
+  useEffect(() => {
+    if (submitted) doneRef.current?.focus();
+  }, [submitted]);
 
   async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -55,12 +63,15 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
   }
 
   const inputClass = inverted
-    ? "w-full bg-transparent border-0 border-b-2 border-white/35 py-3 font-body text-[17px] text-white focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-white/45"
-    : "w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-2.5 font-body text-[16px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]";
+    ? "w-full bg-transparent border-0 border-b-2 border-white/35 py-3 font-body text-[17px] text-white focus:border-[#d4302a] transition-colors"
+    : "w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-2.5 font-body text-[16px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors";
+  const labelClass = `block font-sans text-[12px] font-bold uppercase tracking-[0.22em] mb-1 ${
+    inverted ? "text-white/75" : "text-[#1a1a1a]"
+  }`;
 
   if (submitted) {
     return (
-      <div>
+      <div ref={doneRef} tabIndex={-1} role="status">
         <p
           className={`font-serif italic text-[20px] leading-[1.4] mb-3 ${
             inverted ? "text-white" : "text-[#1a1a1a]"
@@ -87,22 +98,34 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-5" suppressHydrationWarning>
       <div className={inverted ? "grid sm:grid-cols-2 gap-5" : "space-y-4"}>
-        <input
-          type="text"
-          name="name"
-          required
-          placeholder="First name"
-          className={inputClass}
-          suppressHydrationWarning
-        />
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="Email"
-          className={inputClass}
-          suppressHydrationWarning
-        />
+        <div>
+          <label htmlFor={`${id}-name`} className={labelClass}>
+            First name
+          </label>
+          <input
+            id={`${id}-name`}
+            type="text"
+            name="name"
+            required
+            autoComplete="given-name"
+            className={inputClass}
+            suppressHydrationWarning
+          />
+        </div>
+        <div>
+          <label htmlFor={`${id}-email`} className={labelClass}>
+            Email
+          </label>
+          <input
+            id={`${id}-email`}
+            type="email"
+            name="email"
+            required
+            autoComplete="email"
+            className={inputClass}
+            suppressHydrationWarning
+          />
+        </div>
       </div>
       <label className="flex items-start gap-2.5 cursor-pointer">
         <input
@@ -120,7 +143,12 @@ export default function GuideForm({ inverted = false }: GuideFormProps) {
         </span>
       </label>
       {error && (
-        <p className="font-body italic text-[14px] text-[#d4302a]">
+        <p
+          role="alert"
+          className={`font-body italic text-[14px] ${
+            inverted ? "text-white" : "text-[#d4302a]"
+          }`}
+        >
           Something went wrong. Please try again, or email me directly at
           biljanatasetovikj@gmail.com.
         </p>

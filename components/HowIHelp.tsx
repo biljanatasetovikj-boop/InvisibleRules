@@ -3,7 +3,7 @@ import WaitlistForm from "./WaitlistForm";
 
 export default function HowIHelp() {
   return (
-    <section id="how-i-help" className="py-28 border-t-2 border-[#1a1a1a]">
+    <section id="how-i-help" className="py-20 md:py-28 border-t-2 border-[#1a1a1a]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
@@ -68,7 +68,7 @@ export default function HowIHelp() {
               </p>
               <a
                 href="/learn-the-rules"
-                className="group self-start mb-4 inline-block font-serif italic text-[#1a1a1a] text-[16px] hover:text-[#d4302a] transition-colors"
+                className="group self-start mb-2 py-2.5 inline-block font-serif italic text-[#1a1a1a] text-[16px] hover:text-[#d4302a] transition-colors"
               >
                 <span className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 group-hover:decoration-[#d4302a] transition-colors">
                   See how the five weeks work
@@ -107,7 +107,7 @@ export default function HowIHelp() {
                   href="https://cal.com/biljana-tasetovikj-wblqwh/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
+                  className="inline-block py-3 font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
                 >
                   Book a free session ↗
                 </a>

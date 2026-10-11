@@ -41,7 +41,7 @@ export default function PrivacyPage() {
       <Nav />
       <main>
         <section className="py-28 border-t-2 border-[#1a1a1a]">
-          <div className="max-w-[820px] mx-auto px-6 lg:px-12">
+          <div className="max-w-[720px] mx-auto px-6 lg:px-12">
             <div className="mb-10 font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#707070]">
               Last updated 11 October 2026
             </div>

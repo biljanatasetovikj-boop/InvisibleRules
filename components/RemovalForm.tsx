@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function RemovalForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const doneRef = useRef<HTMLDivElement>(null);
+
+  // The form is replaced by the confirmation; move focus there so it is read out.
+  useEffect(() => {
+    if (submitted) doneRef.current?.focus();
+  }, [submitted]);
 
   async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -50,7 +56,12 @@ export default function RemovalForm() {
 
   if (submitted) {
     return (
-      <div className="bg-[#fafaf7] border-t-4 border-[#d4302a] p-8">
+      <div
+        ref={doneRef}
+        tabIndex={-1}
+        role="status"
+        className="bg-[#fafaf7] border-t-4 border-[#d4302a] p-8"
+      >
         <p className="font-serif italic text-[#1a1a1a] text-[20px] leading-[1.3] mb-3">
           Sent. Your details will be removed.
         </p>
@@ -78,7 +89,7 @@ export default function RemovalForm() {
             name="email"
             required
             placeholder="The address you used"
-            className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
+            className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors placeholder:text-[#707070]"
             suppressHydrationWarning
           />
         </div>
@@ -94,12 +105,12 @@ export default function RemovalForm() {
             id="removal-note"
             name="note"
             placeholder="For example, which list"
-            className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
+            className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors placeholder:text-[#707070]"
             suppressHydrationWarning
           />
         </div>
         {error && (
-          <p className="font-body italic text-[15px] text-[#d4302a]">
+          <p role="alert" className="font-body italic text-[15px] text-[#d4302a]">
             Something went wrong. Please write to
             biljanatasetovikj@gmail.com instead and I will remove you.
           </p>

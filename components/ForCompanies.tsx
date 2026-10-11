@@ -4,7 +4,7 @@ export default function ForCompanies() {
   return (
     <section
       id="for-companies"
-      className="py-28 bg-[#fafaf7] border-t-2 border-[#1a1a1a]"
+      className="py-20 md:py-28 bg-[#fafaf7] border-t-2 border-[#1a1a1a]"
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
 
@@ -8,6 +8,12 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const doneRef = useRef<HTMLDivElement>(null);
+
+  // The form is replaced by the thank-you; move focus there so it is read out.
+  useEffect(() => {
+    if (submitted) doneRef.current?.focus();
+  }, [submitted]);
 
   async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -50,7 +56,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="lets-talk" className="bg-white py-[130px]">
+    <section id="lets-talk" className="bg-white py-20 md:py-[130px]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center gap-3 mb-5">
@@ -76,10 +82,13 @@ export default function Contact() {
           <FadeIn delay={0.1}>
             {submitted ? (
               <motion.div
+                ref={doneRef}
+                tabIndex={-1}
+                role="status"
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="border-l-4 border-[#d4302a] pl-8 py-6"
+                className="border-t-4 border-[#d4302a] pt-6"
               >
                 <p className="font-serif italic text-[#1a1a1a] text-[clamp(24px,3vw,34px)] leading-[1.2] mb-4">
                   Got it. Thank you.
@@ -107,8 +116,8 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[18px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
-                    placeholder="—"
+                    autoComplete="name"
+                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[18px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors"
                     suppressHydrationWarning
                   />
                 </div>
@@ -124,8 +133,8 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[18px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
-                    placeholder="—"
+                    autoComplete="email"
+                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[18px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors"
                     suppressHydrationWarning
                   />
                 </div>
@@ -141,12 +150,12 @@ export default function Contact() {
                     name="message"
                     rows={4}
                     required
-                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] leading-[1.65] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8] resize-none"
+                    className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-3 font-body text-[17px] text-[#1a1a1a] leading-[1.65] focus:border-[#d4302a] transition-colors placeholder:text-[#707070] resize-none"
                     placeholder="A sentence or two is enough."
                   />
                 </div>
                 {error && (
-                  <p className="font-body italic text-[15px] text-[#d4302a]">
+                  <p role="alert" className="font-body italic text-[15px] text-[#d4302a]">
                     Something went wrong. Please try again, or email me
                     directly at biljanatasetovikj@gmail.com.
                   </p>

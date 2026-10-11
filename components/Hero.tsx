@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45, ease }}
-          className="flex flex-col items-center gap-5"
+          className="flex flex-col items-center gap-2"
         >
           <a
             href="#free-tools"
@@ -57,7 +57,7 @@ export default function Hero() {
           </a>
           <a
             href="#lets-talk"
-            className="inline-block font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
+            className="inline-block py-3 font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
           >
             Or let&apos;s talk first →
           </a>

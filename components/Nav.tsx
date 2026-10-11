@@ -55,9 +55,10 @@ export default function Nav() {
           </div>
 
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col items-center justify-center gap-1.5 w-11 h-11 -mr-2.5"
             onClick={() => setOpen(!open)}
-            aria-label="Toggle menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
           >
             <span
               className={`block w-6 h-0.5 bg-[#1a1a1a] transition-transform duration-200 origin-center ${
@@ -86,12 +87,12 @@ export default function Nav() {
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="lg:hidden overflow-hidden border-b border-[#e0ddd5]"
             >
-              <div className="py-5 flex flex-col gap-3 items-start">
+              <div className="py-3 flex flex-col items-start">
                 {links.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
-                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-1"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-3"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
@@ -99,7 +100,7 @@ export default function Nav() {
                 ))}
                 <a
                   href={cta.href}
-                  className="mt-2 bg-[#1a1a1a] text-white font-sans text-[13px] font-bold uppercase tracking-[0.18em] px-5 py-3"
+                  className="mt-3 mb-2 bg-[#1a1a1a] text-white font-sans text-[13px] font-bold uppercase tracking-[0.18em] px-5 py-3.5"
                   onClick={() => setOpen(false)}
                 >
                   {cta.label}

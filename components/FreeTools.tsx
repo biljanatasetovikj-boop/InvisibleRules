@@ -20,7 +20,7 @@ export default function FreeTools() {
   return (
     <section
       id="free-tools"
-      className="py-28 bg-[#fafaf7] border-t-2 border-[#1a1a1a] overflow-hidden"
+      className="py-20 md:py-28 bg-[#fafaf7] border-t-2 border-[#1a1a1a] overflow-hidden"
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
@@ -39,7 +39,7 @@ export default function FreeTools() {
             <FadeIn key={q.title} delay={i * 0.08}>
               <a
                 href={q.href}
-                className={`group block bg-[#d4302a] border-b-[3px] border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 ${
+                className={`group block bg-[#d4302a] border-b-[3px] border-[#1a1a1a] -mx-6 px-6 lg:-mx-12 lg:px-12 focus-visible:outline-white focus-visible:outline-offset-[-10px] ${
                   i === 0 ? "border-t-[3px]" : ""
                 }`}
               >
@@ -51,7 +51,7 @@ export default function FreeTools() {
                     <p className="font-body text-[17px] text-white/90 leading-[1.6] max-w-[620px] mb-4">
                       {q.body}
                     </p>
-                    <span className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-white/75">
+                    <span className="font-sans text-[13px] font-bold uppercase tracking-[0.22em] text-white">
                       {q.meta}
                     </span>
                   </div>

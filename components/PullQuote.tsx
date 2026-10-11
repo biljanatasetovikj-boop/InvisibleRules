@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 
 export default function PullQuote() {
   return (
-    <section className="bg-[#1a1a1a] text-white py-[140px] text-center">
+    <section className="bg-[#1a1a1a] text-white py-24 md:py-[140px] text-center">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
           <div className="flex items-center justify-center gap-4 mb-11">

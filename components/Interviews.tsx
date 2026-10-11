@@ -31,7 +31,7 @@ export default function Interviews() {
   return (
     <section
       id="interviews"
-      className="py-28 border-t-2 border-[#1a1a1a]"
+      className="py-20 md:py-28 border-t-2 border-[#1a1a1a]"
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
@@ -66,8 +66,8 @@ export default function Interviews() {
                   <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.6] mb-6">
                     {item.excerpt}
                   </p>
-                  <p className="font-body italic text-[14px] text-[#707070]">
-                    {item.meta}
+                  <p className="font-body italic text-[14px] text-[#707070] transition-colors group-hover:text-[#d4302a]">
+                    {item.meta} ↗
                   </p>
                 </article>
               </a>

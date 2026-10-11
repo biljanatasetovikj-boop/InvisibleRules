@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 interface WaitlistFormProps {
   // The visible call-to-action before the form opens, e.g. "Join the Decoder waitlist →".
@@ -20,6 +20,14 @@ export default function WaitlistForm({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const id = useId();
+  const doneRef = useRef<HTMLParagraphElement>(null);
+
+  // The form disappears on success, so move focus to the confirmation or
+  // keyboard and screen-reader users are left on nothing.
+  useEffect(() => {
+    if (submitted) doneRef.current?.focus();
+  }, [submitted]);
 
   async function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -66,7 +74,12 @@ export default function WaitlistForm({
 
   if (submitted) {
     return (
-      <p className="font-serif italic text-[#1a1a1a] text-[17px] leading-[1.4]">
+      <p
+        ref={doneRef}
+        tabIndex={-1}
+        role="status"
+        className="font-serif italic text-[#1a1a1a] text-[17px] leading-[1.4]"
+      >
         You&apos;re on the list. I&apos;ll write to you as soon as it&apos;s
         ready.
       </p>
@@ -78,49 +91,74 @@ export default function WaitlistForm({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-block text-left font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors cursor-pointer"
+        className="inline-block py-3 text-left font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors cursor-pointer"
       >
         {triggerLabel}
       </button>
     );
   }
 
+  const label =
+    "block font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#1a1a1a] mb-1";
+  const field =
+    "w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-2.5 font-body text-[16px] text-[#1a1a1a] focus:border-[#d4302a] transition-colors";
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-[320px]" suppressHydrationWarning>
       <div>
+        <label htmlFor={`${id}-name`} className={label}>
+          First name
+        </label>
         <input
+          id={`${id}-name`}
           type="text"
           name="name"
           required
-          placeholder="First name"
-          className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-2.5 font-body text-[16px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
+          autoComplete="given-name"
+          className={field}
           suppressHydrationWarning
         />
       </div>
       <div>
+        <label htmlFor={`${id}-email`} className={label}>
+          Email
+        </label>
         <input
+          id={`${id}-email`}
           type="email"
           name="email"
           required
-          placeholder="Email"
-          className="w-full bg-transparent border-0 border-b-2 border-[#1a1a1a] py-2.5 font-body text-[16px] text-[#1a1a1a] focus:outline-none focus:border-[#d4302a] transition-colors placeholder:text-[#a8a8a8]"
+          autoComplete="email"
+          className={field}
           suppressHydrationWarning
         />
       </div>
       {error && (
-        <p className="font-body italic text-[14px] text-[#d4302a]">
+        <p role="alert" className="font-body italic text-[14px] text-[#d4302a]">
           Something went wrong. Please try again, or email me directly at
           biljanatasetovikj@gmail.com.
         </p>
       )}
-      <button
-        type="submit"
-        disabled={loading}
-        className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
-        suppressHydrationWarning
-      >
-        {loading ? "Joining…" : "Join the waitlist"}
-      </button>
+      <div className="flex items-center gap-5 flex-wrap">
+        <button
+          type="submit"
+          disabled={loading}
+          className="inline-block bg-[#1a1a1a] text-white px-7 py-3.5 font-sans text-[13px] font-bold uppercase tracking-[0.18em] hover:bg-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer"
+          suppressHydrationWarning
+        >
+          {loading ? "Joining…" : "Join the waitlist"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setOpen(false);
+            setError(false);
+          }}
+          className="py-3 font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#707070] hover:text-[#1a1a1a] transition-colors cursor-pointer"
+        >
+          Cancel
+        </button>
+      </div>
       <p className="font-body text-[13px] text-[#707070]">
         By signing up you agree to the{" "}
         <a
