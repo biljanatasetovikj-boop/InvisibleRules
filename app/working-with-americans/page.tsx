@@ -19,9 +19,9 @@ const hand = Caveat_Brush({
   display: "swap",
 });
 
-const title = "Working with Americans – 4-week starter course and free webinar | Invisible Rules";
+const title = "Working with Americans – 4-week starter course | Invisible Rules";
 const description =
-  "Stop guessing what Americans expect from you, and start feeling at ease at work. A 4-week starter course from 30 November, in a small group, online. Or start with a free one-hour webinar in November.";
+  "Stop guessing what Americans expect from you, and start feeling at ease at work. A 4-week starter course from 30 November, in a small group, online.";
 
 export const metadata: Metadata = {
   title,

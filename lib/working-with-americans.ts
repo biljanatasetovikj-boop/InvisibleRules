@@ -66,7 +66,7 @@ export const WWA = {
     title: "Working with Americans: A 4-Week Starter Course",
     startText: "30 November",
     datesText: "30 November – 25 December",
-    price: 139,
+    price: 249,
     // What the course will cost when it runs again in the spring.
     springPrice: 420,
   },

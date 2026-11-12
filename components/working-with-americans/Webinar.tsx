@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useId, useState } from "react";
 import FadeIn from "../FadeIn";
 import {
@@ -11,7 +10,7 @@ import {
   type WebinarSession,
 } from "@/lib/working-with-americans";
 import { useNow } from "./useNow";
-import { Container, PageTop, StepDot, btnPrimary } from "./ui";
+import { Container, PageTop, btnPrimary } from "./ui";
 import {
   ConsentBox,
   Honeypot,
@@ -25,11 +24,6 @@ import {
   useRegistrationForm,
 } from "./forms";
 
-const learn = [
-  "Why polite habits from home can look like hesitation to Americans",
-  "The three moments where the invisible rules matter most: asking, speaking up and showing your results",
-  "How to write a short, direct request, and you’ll write one during the webinar",
-];
 
 function confirmationEmail(name: string, s: WebinarSession) {
   return [
@@ -141,104 +135,34 @@ function WebinarForm({ sessions }: { sessions: readonly WebinarSession[] }) {
   );
 }
 
+
+// A small second option at the very end, for people not ready to register.
 export default function Webinar() {
   const now = useNow();
   // Before the browser knows the time, show every date; finished ones drop
-  // out straight after.
+  // out straight after. Once all have passed, the section disappears.
   const sessions = now === null ? WWA.webinar.sessions : upcomingSessions(now);
-  const over = sessions.length === 0;
+  if (sessions.length === 0) return null;
 
   return (
-    <section id="webinar" className="py-20 lg:py-28 border-t-2 border-[#1a1a1a]">
+    <section id="webinar" className="py-20 lg:py-24 border-t-2 border-[#1a1a1a]">
       <Container>
-        <PageTop
-          label={`Free webinar · ${WWA.webinar.timeText} · Online`}
-          right="08 / 08"
-        />
-        <FadeIn>
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(36px,5.6vw,66px)] leading-[1.02] tracking-[-0.02em] max-w-[900px]">
-            The unwritten rules of working with{" "}
-            <span className="italic text-[#a8221d]">Americans.</span>
-          </h2>
-          <p className="mt-7 mb-14 font-body text-[19px] sm:text-[21px] leading-[1.6] text-[#3a3a3a] max-w-[680px]">
-            In one hour, I&apos;ll show you the rules nobody says out loud, and
-            you&apos;ll leave with one message you can send the next morning.
-          </p>
-        </FadeIn>
-        <div className="grid lg:grid-cols-[1fr_1.05fr] gap-12 lg:gap-16 items-start">
+        <PageTop label={`Free webinar · ${WWA.webinar.timeText} · Online`} right="08 / 08" />
+        <div className="grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-16 items-start">
           <FadeIn>
-            <h3 className="font-serif font-black text-[#1a1a1a] text-[clamp(28px,3.6vw,40px)] leading-[1.05] tracking-[-0.015em]">
-              What you&apos;ll learn in{" "}
-              <span className="italic text-[#a8221d]">one hour.</span>
-            </h3>
-            <ol className="mt-10 space-y-7">
-              {learn.map((item, i) => (
-                <li key={item} className="flex items-start gap-5">
-                  <StepDot n={i + 1} className="h-12 w-12 text-[24px]" />
-                  <span className="pt-2 font-body text-[19px] leading-[1.55] text-[#1a1a1a]">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-10 rounded-2xl border-2 border-dashed border-[#1a1a1a] px-6 py-5">
-              <p className="font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-[#a8221d]">
-                {WWA.webinar.timeTextLong} · Online · Free
-              </p>
-              {!over && (
-                <ul className="mt-3 flex flex-wrap gap-2">
-                  {sessions.map((s) => (
-                    <li
-                      key={s.id}
-                      className="rounded-full border-2 border-[#1a1a1a] bg-white px-3.5 py-1 font-body text-[15px] text-[#1a1a1a]"
-                    >
-                      {s.dayText}
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <p className="mt-3 font-body text-[16px] leading-[1.55] text-[#3a3a3a]">
-                Same topic on every date, so pick the one that suits you.
-                Can&apos;t join live? Register anyway and I&apos;ll send you the
-                recording.
-              </p>
-            </div>
-            <div className="mt-8 flex items-center gap-5">
-              <Image
-                src="/working-with-americans/zine-cover.webp"
-                alt="Cover of the zine: Learning a culture is like learning a language."
-                width={800}
-                height={1000}
-                sizes="96px"
-                className="w-24 h-auto shrink-0 -rotate-3 rounded-md border-2 border-[#1a1a1a] shadow-[4px_4px_0_#1a1a1a]"
-              />
-              <p className="font-hand text-[23px] leading-[1.25] text-[#a8221d]">
-                After the session, you get my free zine: Learning a culture is
-                like learning a language.
-              </p>
-            </div>
+            <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(32px,4.6vw,52px)] leading-[1.05] tracking-[-0.02em]">
+              Not sure if this is{" "}
+              <span className="italic text-[#a8221d]">for you?</span>
+            </h2>
+            <p className="mt-6 font-body text-[19px] sm:text-[21px] leading-[1.6] text-[#3a3a3a] max-w-[560px]">
+              Join one of the free webinars first. In one hour, I&apos;ll show
+              you the unwritten rules of working with Americans. Every date
+              starts at {WWA.webinar.timeTextLong}. Can&apos;t join live?
+              Register anyway and I&apos;ll send you the recording.
+            </p>
           </FadeIn>
-
           <div id="webinar-form" className="scroll-mt-6">
-            {over ? (
-              <div className="rounded-2xl bg-[#1a1a1a] p-7 sm:p-9 text-white">
-                <p className="font-serif font-bold text-[28px] leading-[1.25]">
-                  The webinars have finished.
-                </p>
-                <p className="mt-4 font-body text-[18px] leading-[1.6] text-white/85">
-                  Want the recording? Write to me at{" "}
-                  <a
-                    href={`mailto:${WWA.contactEmail}?subject=Webinar%20recording`}
-                    className="underline decoration-[#ff8a80] decoration-2 underline-offset-4 hover:text-[#ff8a80]"
-                  >
-                    {WWA.contactEmail}
-                  </a>
-                  .
-                </p>
-              </div>
-            ) : (
-              <WebinarForm sessions={sessions} />
-            )}
+            <WebinarForm sessions={sessions} />
           </div>
         </div>
       </Container>

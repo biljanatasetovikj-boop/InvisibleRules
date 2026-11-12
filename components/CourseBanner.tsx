@@ -58,18 +58,12 @@ export default function CourseBanner() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-9 flex flex-col sm:flex-row sm:items-center gap-x-7 gap-y-3">
+              <div className="mt-9">
                 <a
                   href={WWA.pagePath}
-                  className="inline-block self-start whitespace-nowrap bg-[#d4302a] text-white px-6 sm:px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] hover:bg-[#1a1a1a] transition-colors"
+                  className="inline-block whitespace-nowrap bg-[#d4302a] text-white px-6 sm:px-9 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] hover:bg-[#1a1a1a] transition-colors"
                 >
                   See the full course →
-                </a>
-                <a
-                  href={`${WWA.pagePath}#webinar`}
-                  className="self-start py-2 font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors"
-                >
-                  Or join a free webinar
                 </a>
               </div>
             </div>

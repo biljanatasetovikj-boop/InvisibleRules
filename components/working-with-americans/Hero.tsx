@@ -59,15 +59,9 @@ export default function Hero() {
               ))}
             </dl>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <div className="mt-9">
               <a href="#course-form" className={btnPrimary}>
                 Register for the course
-              </a>
-              <a
-                href="#webinar"
-                className="py-2 font-sans text-[13px] font-bold uppercase tracking-[0.14em] text-[#1a1a1a] underline decoration-[#d4302a] decoration-2 underline-offset-[6px] hover:text-[#a8221d]"
-              >
-                Or join a free webinar ↓
               </a>
             </div>
           </div>
