@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import CourseBanner from "@/components/CourseBanner";
 import HowIHelp from "@/components/HowIHelp";
 import FreeTools from "@/components/FreeTools";
 import WhoIHelp from "@/components/WhoIHelp";
@@ -17,6 +18,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <CourseBanner />
         <WhoIHelp />
         <FreeTools />
         <HowIHelp />

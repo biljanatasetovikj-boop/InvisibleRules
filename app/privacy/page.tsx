@@ -30,6 +30,10 @@ const sections = [
     body: "The form for Asking Your Manager: A Short Guide, the Decoder waitlist and the Spring cohort waitlist each collect your first name and email address (the guide form also records whether you ticked “Also send me the newsletter”). This information is sent to biljanatasetovikj@gmail.com, using formsubmit.co.",
   },
   {
+    title: "Course and webinar forms (/working-with-americans)",
+    body: "The course registration form collects your first name and email address. The webinar registration form collects your first name, email address, the webinar date you choose and which description fits you best. In both cases this information is sent to biljanatasetovikj@gmail.com, using formsubmit.co, and formsubmit.co sends you one automatic confirmation email. It is used to send you details about the course, or the webinar link, reminders and the zine that follows the session, and news about the webinar and the course. You can ask to be removed at any time using the form at the bottom of this page.",
+  },
+  {
     title: "Booking a call (/learn-the-rules)",
     body: "The scheduling calendar used to book a call is provided directly by Cal.com. When you book a time, your name, email address and chosen time are handled by Cal.com under its own privacy policy and are not separately stored by Invisible Rules.",
   },
@@ -43,7 +47,7 @@ export default function PrivacyPage() {
         <section className="py-28 border-t-2 border-[#1a1a1a]">
           <div className="max-w-[720px] mx-auto px-6 lg:px-12">
             <div className="mb-10 font-sans text-[12px] font-bold uppercase tracking-[0.18em] text-[#707070]">
-              Last updated 11 October 2026
+              Last updated 12 November 2026
             </div>
             <h1 className="font-serif font-black text-[#1a1a1a] text-[clamp(38px,6vw,64px)] tracking-[-0.025em] leading-none mb-10">
               Privacy policy.

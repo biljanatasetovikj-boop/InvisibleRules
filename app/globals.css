@@ -26,6 +26,8 @@
   --font-sans: var(--font-raleway);
   --font-serif: var(--font-playfair);
   --font-body: var(--font-lora);
+  /* Only defined on /working-with-americans, where Caveat Brush is loaded. */
+  --font-hand: var(--font-caveat-brush), "Comic Sans MS", cursive;
 }
 
 * {
