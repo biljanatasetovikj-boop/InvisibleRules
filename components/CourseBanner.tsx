@@ -26,11 +26,11 @@ export default function CourseBanner() {
               className="relative block min-h-[280px] md:min-h-0 border-b-[3px] md:border-b-0 md:border-r-[3px] border-[#1a1a1a] overflow-hidden"
             >
               <Image
-                src="/working-with-americans/biljana-teaching.webp"
+                src="/working-with-americans/library.webp"
                 alt=""
                 fill
                 sizes="(min-width: 768px) 480px, 100vw"
-                className="object-cover object-[50%_35%]"
+                className="object-cover object-center"
               />
             </a>
             <div className="px-7 py-10 md:px-10 md:py-14 lg:px-14">
