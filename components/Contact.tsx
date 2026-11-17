@@ -59,12 +59,6 @@ export default function Contact() {
     <section id="lets-talk" className="bg-white py-20 md:py-[130px]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              Start here
-            </span>
-            <span className="w-10 h-px bg-[#e0ddd5]" />
-          </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-7">
             Let&apos;s <span className="text-[#d4302a] italic">talk</span>.
           </h2>
@@ -186,7 +180,7 @@ export default function Contact() {
 
           <FadeIn delay={0.2}>
             <div className="lg:border-l-2 lg:border-[#e0ddd5] lg:pl-12">
-              <p className="font-serif italic text-[#d4302a] text-[22px] mb-7">
+              <p className="font-serif font-bold text-[#1a1a1a] text-[22px] mb-7">
                 Or find me here
               </p>
               <ul className="space-y-6 list-none">
@@ -195,11 +189,11 @@ export default function Contact() {
                     href="https://invisiblerules.substack.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2 min-h-[44px]"
                   >
                     Substack <span className="text-[#d4302a]">↗</span>
                   </a>
-                  <p className="font-body italic text-[14px] text-[#707070] mt-1.5">
+                  <p className="font-body italic text-[14px] text-[#707070]">
                     Stories from people like you.
                   </p>
                 </li>
@@ -208,18 +202,18 @@ export default function Contact() {
                     href="https://www.linkedin.com/in/biljana-kuzmanovska-tasetovikj/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2 min-h-[44px]"
                   >
                     LinkedIn <span className="text-[#d4302a]">↗</span>
                   </a>
-                  <p className="font-body italic text-[14px] text-[#707070] mt-1.5">
+                  <p className="font-body italic text-[14px] text-[#707070]">
                     Connect professionally.
                   </p>
                 </li>
                 <li>
                   <a
                     href="mailto:biljanatasetovikj@gmail.com"
-                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2"
+                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors inline-flex items-center gap-2 min-h-[44px]"
                   >
                     Email <span className="text-[#d4302a]">↗</span>
                   </a>

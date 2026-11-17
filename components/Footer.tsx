@@ -1,6 +1,6 @@
 export default function Footer() {
   const link =
-    "inline-block py-3 font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors";
+    "inline-flex items-center min-h-[44px] font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070] hover:text-[#d4302a] transition-colors";
 
   return (
     <div className="max-w-[1240px] mx-auto px-6 lg:px-12">

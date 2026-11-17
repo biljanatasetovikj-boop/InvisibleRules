@@ -9,13 +9,6 @@ export default function Newsletter() {
         <FadeIn>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-12 lg:gap-16 items-center">
             <div className="text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-                <span className="w-10 h-px bg-[#4a4a4a]" />
-                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-                  Newsletter
-                </span>
-                <span className="w-10 h-px bg-[#4a4a4a]" />
-              </div>
               <h2 className="font-serif font-black text-[#fafaf7] text-[clamp(34px,5vw,58px)] tracking-[-0.025em] leading-[1.05] mb-6">
                 Field notes on{" "}
                 <span className="italic text-[#d4302a]">

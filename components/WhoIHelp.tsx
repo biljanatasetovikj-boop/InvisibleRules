@@ -9,18 +9,10 @@ const cards = [
     it deserves.
   </>,
   <>
-    You have never{" "}
-    <em className="italic font-black text-[#d4302a]">
-      lived or studied in the West
-    </em>
-    , but your company and colleagues are Western.
+    You have never lived or studied in the West, but your company and colleagues are Western.
   </>,
   <>
-    No one ever taught you this was a skill. You assumed that{" "}
-    <em className="italic font-black text-[#d4302a]">
-      good work would be noticed
-    </em>
-    .
+    No one ever taught you this was a skill. You assumed that good work would be noticed.
   </>,
 ];
 
@@ -32,7 +24,7 @@ export default function WhoIHelp() {
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <h2 className="font-serif italic text-[#d4302a] text-[clamp(30px,4vw,52px)] mb-14">
+          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(32px,4.4vw,56px)] tracking-[-0.02em] leading-[1.05] mb-12">
             This is for you if:
           </h2>
         </FadeIn>

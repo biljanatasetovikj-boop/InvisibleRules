@@ -24,12 +24,9 @@ export default function FreeTools() {
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-12">
-            <h2 className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              Free tools
-            </h2>
-            <span className="w-10 h-px bg-[#e0ddd5]" />
-          </div>
+          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-12">
+            Free tools
+          </h2>
         </FadeIn>
 
         {/* Each quiz is one oversized row, pulled out to the gutters so the
@@ -48,7 +45,7 @@ export default function FreeTools() {
                     <h3 className="font-serif font-black text-white text-[clamp(32px,5.4vw,72px)] tracking-[-0.03em] leading-[0.98] mb-4">
                       {q.title}
                     </h3>
-                    <p className="font-body text-[17px] text-white/90 leading-[1.6] max-w-[620px] mb-4">
+                    <p className="font-body text-[17px] text-white leading-[1.6] max-w-[620px] mb-4">
                       {q.body}
                     </p>
                     <span className="font-sans text-[13px] font-bold uppercase tracking-[0.22em] text-white">
@@ -73,10 +70,7 @@ export default function FreeTools() {
           <div className="bg-[#1a1a1a] -mx-6 lg:-mx-12 px-6 py-10 lg:px-12 lg:py-16">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 lg:gap-20">
               <div>
-                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-                  The free guide
-                </span>
-                <h3 className="font-serif font-black text-white text-[clamp(30px,3.6vw,48px)] tracking-[-0.025em] leading-[1.02] mt-5 mb-5">
+                <h3 className="font-serif font-black text-white text-[clamp(30px,3.6vw,48px)] tracking-[-0.025em] leading-[1.02] mb-5">
                   Asking Your Manager.
                 </h3>
                 <p className="font-body text-[17px] text-[#e8e5de] leading-[1.65] max-w-[520px]">

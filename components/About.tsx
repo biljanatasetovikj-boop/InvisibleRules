@@ -6,12 +6,6 @@ export default function About() {
     <section id="about" className="py-20 md:py-28 border-t-2 border-[#1a1a1a]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              About me
-            </span>
-            <span className="w-10 h-px bg-[#e0ddd5]" />
-          </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-4">
             I&apos;m Biljana.
           </h2>

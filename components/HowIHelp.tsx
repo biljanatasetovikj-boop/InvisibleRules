@@ -6,12 +6,6 @@ export default function HowIHelp() {
     <section id="how-i-help" className="py-20 md:py-28 border-t-2 border-[#1a1a1a]">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-5">
-            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              How I help
-            </span>
-            <span className="w-10 h-px bg-[#e0ddd5]" />
-          </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-none mb-6 max-w-[960px]">
             Three ways to work with me.
           </h2>
@@ -24,7 +18,7 @@ export default function HowIHelp() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-13">
           <FadeIn delay={0}>
             <div className="border-t-4 border-[#d4302a] pt-7 flex flex-col h-full">
-              <h3 className="font-serif italic font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
+              <h3 className="font-serif font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
                 The Decoder
               </h3>
               <p className="font-body text-base text-[#3a3a3a] leading-[1.7] mb-4">
@@ -34,7 +28,7 @@ export default function HowIHelp() {
                 then choose your move and hold it when it feels
                 uncomfortable.
               </p>
-              <p className="font-serif italic text-[#d4302a] text-[16px] mb-6">
+              <p className="font-body font-bold text-[#1a1a1a] text-[16px] mb-6">
                 I&apos;m building it now.
               </p>
               <div className="mt-auto">
@@ -49,7 +43,7 @@ export default function HowIHelp() {
 
           <FadeIn delay={0.1}>
             <div className="border-t-4 border-[#d4302a] pt-7 flex flex-col h-full">
-              <h3 className="font-serif italic font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
+              <h3 className="font-serif font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
                 The spring cohort
               </h3>
               <p className="font-body text-base text-[#3a3a3a] leading-[1.7] mb-4">
@@ -68,14 +62,14 @@ export default function HowIHelp() {
               </p>
               <a
                 href="/learn-the-rules"
-                className="group self-start mb-2 py-2.5 inline-block font-serif italic text-[#1a1a1a] text-[16px] hover:text-[#d4302a] transition-colors"
+                className="group self-start mb-2 py-2.5 inline-block font-body font-bold text-[#1a1a1a] text-[16px] hover:text-[#d4302a] transition-colors"
               >
                 <span className="underline decoration-[#e0ddd5] decoration-1 underline-offset-4 group-hover:decoration-[#d4302a] transition-colors">
                   See how the five weeks work
                 </span>{" "}
                 →
               </a>
-              <p className="font-serif italic text-[#d4302a] text-[16px] mb-6">
+              <p className="font-body font-bold text-[#1a1a1a] text-[16px] mb-6">
                 Enrolment opens in January 2027.
               </p>
               <div className="mt-auto">
@@ -90,7 +84,7 @@ export default function HowIHelp() {
 
           <FadeIn delay={0.2}>
             <div className="border-t-4 border-[#d4302a] pt-7 flex flex-col h-full">
-              <h3 className="font-serif italic font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
+              <h3 className="font-serif font-black text-[28px] text-[#1a1a1a] tracking-[-0.02em] leading-[1.1] mb-4">
                 One to one
               </h3>
               <p className="font-body text-base text-[#3a3a3a] leading-[1.7] mb-4">
@@ -99,7 +93,7 @@ export default function HowIHelp() {
                 Feedback that doesn&apos;t add up. We look at it together,
                 name the rule, and find a move that still sounds like you.
               </p>
-              <p className="font-serif italic text-[#d4302a] text-[16px] mb-6">
+              <p className="font-body font-bold text-[#1a1a1a] text-[16px] mb-6">
                 It&apos;s free.
               </p>
               <div className="mt-auto">

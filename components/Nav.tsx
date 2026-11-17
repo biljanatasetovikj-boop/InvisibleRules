@@ -26,7 +26,7 @@ export default function Nav() {
     <header>
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <nav className="py-6 flex justify-between items-center border-b-2 border-[#1a1a1a]">
-          <a href="/" className="flex items-center" aria-label="Invisible Rules — home">
+          <a href="/" className="flex items-center min-w-[44px] min-h-[44px]" aria-label="Invisible Rules — home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
@@ -37,19 +37,19 @@ export default function Nav() {
             />
           </a>
 
-          <div className="hidden lg:flex items-stretch">
+          <div className="hidden lg:flex items-stretch gap-1 xl:gap-3">
             {links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="font-sans text-[12px] font-bold uppercase tracking-[0.14em] text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-3 flex items-center border-l border-[#e0ddd5]"
+                className="font-sans text-[15px] font-bold text-[#1a1a1a] hover:text-[#d4302a] transition-colors px-3 min-h-[44px] flex items-center"
               >
                 {link.label}
               </a>
             ))}
             <a
               href={cta.href}
-              className="ml-4 bg-[#1a1a1a] text-white font-sans text-[12px] font-bold uppercase tracking-[0.14em] px-4 flex items-center hover:bg-[#d4302a] transition-colors"
+              className="ml-3 bg-[#1a1a1a] text-white font-sans text-[15px] font-bold px-5 min-h-[44px] flex items-center hover:bg-[#d4302a] transition-colors"
             >
               {cta.label}
             </a>
@@ -86,14 +86,14 @@ export default function Nav() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:hidden overflow-hidden border-b border-[#e0ddd5]"
+              className="lg:hidden overflow-hidden"
             >
               <div className="py-3 flex flex-col items-start">
                 {links.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
-                    className="font-sans text-[13px] font-bold uppercase tracking-[0.18em] text-[#1a1a1a] py-3"
+                    className="font-sans text-[18px] font-bold text-[#1a1a1a] py-3 min-h-[48px] flex items-center"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
@@ -101,7 +101,7 @@ export default function Nav() {
                 ))}
                 <a
                   href={cta.href}
-                  className="mt-3 mb-2 bg-[#1a1a1a] text-white font-sans text-[13px] font-bold uppercase tracking-[0.18em] px-5 py-3.5"
+                  className="mt-3 mb-4 bg-[#1a1a1a] text-white font-sans text-[18px] font-bold px-6 py-3.5"
                   onClick={() => setOpen(false)}
                 >
                   {cta.label}

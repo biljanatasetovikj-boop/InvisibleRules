@@ -35,12 +35,6 @@ export default function Interviews() {
     >
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-8">
-            <span className="font-sans text-[12px] font-bold uppercase tracking-[0.28em] text-[#d4302a]">
-              From people like you
-            </span>
-            <span className="w-10 h-px bg-[#e0ddd5]" />
-          </div>
           <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(42px,6vw,82px)] tracking-[-0.025em] leading-[1] mb-16 max-w-[1100px]">
             Stories on career growth, visibility and the{" "}
             <span className="italic text-[#d4302a]">rules nobody named</span>.
@@ -57,16 +51,13 @@ export default function Interviews() {
                 className="group block"
               >
                 <article className="border-t border-[#1a1a1a] pt-6">
-                  <div className="font-sans text-[12px] font-bold uppercase tracking-[0.22em] text-[#d4302a] mb-4">
-                    — {item.category}
-                  </div>
                   <h3 className="font-serif font-bold text-[#1a1a1a] text-[26px] leading-[1.15] tracking-[-0.01em] mb-4 transition-colors group-hover:text-[#d4302a]">
                     {item.title}
                   </h3>
                   <p className="font-body text-[16px] text-[#3a3a3a] leading-[1.6] mb-6">
                     {item.excerpt}
                   </p>
-                  <p className="font-body italic text-[14px] text-[#707070] transition-colors group-hover:text-[#d4302a]">
+                  <p className="font-body text-[15px] text-[#3a3a3a] underline decoration-[#e0ddd5] decoration-1 underline-offset-4 transition-colors group-hover:decoration-[#d4302a]">
                     {item.meta} ↗
                   </p>
                 </article>
