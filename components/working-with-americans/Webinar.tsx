@@ -10,6 +10,7 @@ import {
   type WebinarSession,
 } from "@/lib/working-with-americans";
 import { useNow } from "./useNow";
+import { Checker } from "./Backgrounds";
 import { Container, SectionHead, btnPrimary, h2Cls, leadCls } from "./ui";
 import {
   ConsentBox,
@@ -146,6 +147,7 @@ export default function Webinar() {
 
   return (
     <section id="webinar" className="relative py-20 lg:py-28">
+      <Checker id="wwa-c2" className="absolute hidden lg:block left-[3%] bottom-12 w-[210px]" />
       <Container className="relative">
         <SectionHead no="08" label={`Free webinar · ${WWA.webinar.timeText} · Online`} />
         <div className="grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-16 items-start">

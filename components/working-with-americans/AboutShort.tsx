@@ -2,6 +2,7 @@ import Image from "next/image";
 import FadeIn from "../FadeIn";
 import { WWA } from "@/lib/working-with-americans";
 import { Container, Tape } from "./ui";
+import { Rosettes, Strip } from "./Backgrounds";
 
 // Built from Biljana's "About me" poster.
 
@@ -39,8 +40,9 @@ const link =
 
 export default function AboutShort() {
   return (
-    <section id="about" className="py-20 lg:py-28">
-      <Container>
+    <section id="about" className="relative pt-20 pb-28 lg:py-28">
+      <Rosettes className="absolute hidden xl:block right-[3%] bottom-[190px] w-[260px]" />
+      <Container className="relative">
         <p className={`${mono} text-wip-ink`}>
           <b className="text-wip-red font-bold">07</b>&nbsp;&nbsp;About me
         </p>
@@ -197,6 +199,7 @@ export default function AboutShort() {
           </a>
         </div>
       </Container>
+      <Strip kind="rosettes" id="wwa-s3" className="absolute inset-x-0 bottom-0 lg:hidden" />
     </section>
   );
 }

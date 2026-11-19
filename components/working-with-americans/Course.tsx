@@ -1,5 +1,6 @@
 import { WWA } from "@/lib/working-with-americans";
 import "./posters.css";
+import { Waves } from "./Backgrounds";
 
 // Biljana's "Week by week" and "Your week" posters (styles in posters.css).
 
@@ -41,6 +42,7 @@ const weeks = [
 function WeekByWeek() {
   return (
     <section id="course" className="wbw" aria-labelledby="wbw-title">
+      <Waves id="wwa-w2" className="absolute hidden lg:block right-[3%] bottom-10 w-[300px]" />
       <div className="wbw__inner">
         <p className="wbw__kicker">
           <b>05</b> The course <span className="wbw__date">Starts {WWA.course.startText}</span>

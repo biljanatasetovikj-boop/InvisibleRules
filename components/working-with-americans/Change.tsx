@@ -1,5 +1,6 @@
 import FadeIn from "../FadeIn";
 import { Container, SectionHead, h2Cls } from "./ui";
+import { Checker, Strip } from "./Backgrounds";
 
 // Built from Biljana's "What changes in 4 weeks" design: a paper slip for
 // where you are now, a circled arrow, and a blue card for where you'll be.
@@ -15,9 +16,10 @@ const dots = "bg-[radial-gradient(rgba(54,59,143,0.35)_1px,transparent_1.4px)] [
 
 export default function Change() {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden">
+    <section className="relative pt-20 pb-28 lg:py-28 overflow-hidden">
       <div aria-hidden="true" className={`absolute top-28 right-16 h-40 w-64 hidden md:block ${dots}`} />
       <div aria-hidden="true" className="absolute top-6 -right-20 h-28 w-28 sm:-right-24 sm:h-56 sm:w-56 lg:h-64 lg:w-64 rounded-full bg-wip-red" />
+      <Checker id="wwa-c1" className="absolute hidden xl:block right-[3%] bottom-10 w-[185px]" />
       <Container className="relative">
         <SectionHead no="04" label="What changes" />
         <FadeIn>
@@ -80,6 +82,7 @@ export default function Change() {
           </figure>
         </FadeIn>
       </Container>
+      <Strip kind="waves" id="wwa-s2" className="absolute inset-x-0 bottom-0 lg:hidden" />
     </section>
   );
 }

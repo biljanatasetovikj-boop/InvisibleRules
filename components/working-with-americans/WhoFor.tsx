@@ -1,5 +1,6 @@
 import FadeIn from "../FadeIn";
 import { Container, SectionHead, Tape, h2Cls } from "./ui";
+import { Rosettes, Strip } from "./Backgrounds";
 
 // Five cut-out cards, pinned up like a collage. Colours and tilts vary so
 // they read as separate pieces of paper.
@@ -33,7 +34,8 @@ export const AUDIENCE = [
 
 export default function WhoFor() {
   return (
-    <section className="relative py-20 lg:py-28">
+    <section className="relative pt-20 pb-28 lg:py-28">
+      <Rosettes className="absolute hidden lg:block right-[3%] top-[152px] w-[300px]" />
       <Container className="relative">
         <SectionHead no="02" label="Is this course for you?" />
         <FadeIn>
@@ -58,6 +60,7 @@ export default function WhoFor() {
           ))}
         </ul>
       </Container>
+      <Strip kind="checker" id="wwa-s1" className="absolute inset-x-0 bottom-0 lg:hidden" />
     </section>
   );
 }

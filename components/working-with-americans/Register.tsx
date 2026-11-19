@@ -4,6 +4,7 @@ import { useId } from "react";
 import FadeIn from "../FadeIn";
 import { WWA } from "@/lib/working-with-americans";
 import { Container, SectionHead, btnPrimary } from "./ui";
+import { Waves } from "./Backgrounds";
 import {
   ConsentBox,
   Honeypot,
@@ -96,8 +97,9 @@ function CourseForm() {
 
 export default function Register() {
   return (
-    <section id="register" className="py-20 lg:py-28">
-      <Container>
+    <section id="register" className="relative py-20 lg:pt-28 lg:pb-52">
+      <Waves id="wwa-w1" className="absolute hidden lg:block left-[3%] bottom-8 w-[200px]" />
+      <Container className="relative">
         <SectionHead no="06" label={`Register · ${WWA.course.datesText}`} />
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-start">
           <FadeIn>
