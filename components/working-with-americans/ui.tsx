@@ -1,5 +1,6 @@
-// Small visual pieces borrowed from the zine: the red step circles, the
-// sparkles, the wavy underline, the tilted red sticker and the page counter.
+// Shared pieces for /working-with-americans, styled after worksinprogress.co:
+// warm paper, black ink, one red and one blue, an editorial serif for
+// reading and a plain sans for labels and buttons.
 
 export function Container({
   children,
@@ -9,144 +10,83 @@ export function Container({
   className?: string;
 }) {
   return (
-    <div className={`max-w-[1160px] mx-auto px-5 sm:px-6 lg:px-12 ${className}`}>
+    <div className={`max-w-[1180px] mx-auto px-5 sm:px-8 lg:px-12 ${className}`}>
       {children}
     </div>
   );
 }
 
-// The zine's top row: a red label on the left, a page counter on the right.
-export function PageTop({
+// Section opener, like a magazine contents line: a black rule, the section
+// number in blue and a short label.
+export function SectionHead({
+  no,
   label,
-  right,
   inverted = false,
 }: {
+  no: string;
   label: string;
-  right: string;
   inverted?: boolean;
 }) {
   return (
-    <div className="flex items-baseline justify-between gap-6 mb-8 sm:mb-10">
+    <div
+      className={`flex items-baseline gap-4 border-t-2 pt-4 mb-10 sm:mb-12 ${
+        inverted ? "border-wip-paper" : "border-wip-ink"
+      }`}
+    >
       <span
-        className={`font-sans text-[12px] font-bold uppercase tracking-[0.2em] leading-[1.6] ${
-          inverted ? "text-[#ff8a80]" : "text-[#a8221d]"
+        className={`font-ui text-[15px] font-bold tabular-nums ${
+          inverted ? "text-wip-paper" : "text-wip-blue"
+        }`}
+      >
+        {no}
+      </span>
+      <span
+        className={`font-ui text-[13px] font-semibold uppercase tracking-[0.14em] ${
+          inverted ? "text-wip-paper/85" : "text-wip-ink"
         }`}
       >
         {label}
       </span>
-      <span
-        aria-hidden="true"
-        className={`shrink-0 font-sans text-[12px] font-bold uppercase tracking-[0.2em] ${
-          inverted ? "text-white/70" : "text-[#a8221d]"
-        }`}
-      >
-        {right}
-      </span>
     </div>
   );
 }
 
-export function Sparkle({
-  className = "",
-  outline = false,
-}: {
-  className?: string;
-  outline?: boolean;
-}) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={className}>
-      <path
-        d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z"
-        fill={outline ? "none" : "currentColor"}
-        stroke="currentColor"
-        strokeWidth={outline ? 1.4 : 0}
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
+export const h2Cls =
+  "font-editor font-medium text-wip-ink text-[clamp(36px,5.2vw,64px)] leading-[1.02] tracking-[-0.02em]";
 
-export function Wave({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 300 20"
-      preserveAspectRatio="none"
-      aria-hidden="true"
-      className={className}
-    >
-      <path
-        d="M3 15C55 4 105 3 160 10S255 18 297 5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
-      />
-    </svg>
-  );
-}
+export const leadCls =
+  "font-editor text-[20px] sm:text-[22px] leading-[1.5] text-wip-ink/80";
 
-export function StepDot({
-  n,
-  className = "",
-}: {
-  n: number | string;
-  className?: string;
-}) {
+// A strip of tape, for the collage frames.
+export function Tape({ className = "" }: { className?: string }) {
   return (
     <span
       aria-hidden="true"
-      className={`inline-flex shrink-0 items-center justify-center rounded-full bg-[#d4302a] text-white font-serif font-black italic ${className}`}
-    >
-      {n}
-    </span>
+      className={`absolute h-6 w-20 bg-wip-paper/80 border border-wip-ink/15 shadow-[0_1px_0_rgba(0,0,0,0.08)] ${className}`}
+    />
   );
 }
 
-// Red tilted tag with handwriting, like "my first cultural awareness zine".
-export function Sticker({
+// A photo in a thin black frame, with a flat colour block offset behind it.
+export function FramedPhoto({
   children,
+  block = "bg-wip-blue",
   className = "",
 }: {
   children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <span
-      className={`inline-block -rotate-2 rounded-md bg-[#d4302a] px-4 py-1.5 font-hand text-[22px] leading-none text-white shadow-[0_2px_0_rgba(0,0,0,0.12)] ${className}`}
-    >
-      {children}
-    </span>
-  );
-}
-
-// A photo in a white frame with a strip of tape, tilted slightly.
-export function TapedPhoto({
-  children,
-  tilt = "rotate-2",
-  className = "",
-}: {
-  children: React.ReactNode;
-  tilt?: string;
+  block?: string;
   className?: string;
 }) {
   return (
     <div className={`relative ${className}`}>
-      <div
-        className={`${tilt} bg-white p-3 rounded-[6px] border-2 border-[#1a1a1a] shadow-[6px_6px_0_#1a1a1a]`}
-      >
-        {children}
-      </div>
-      <span
-        aria-hidden="true"
-        className="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-3 h-7 w-28 bg-[#d4302a]/35"
-      />
+      <div aria-hidden="true" className={`absolute inset-0 translate-x-4 translate-y-4 ${block}`} />
+      <div className="relative border-2 border-wip-ink bg-wip-paper p-2.5">{children}</div>
     </div>
   );
 }
 
 export const btnPrimary =
-  "inline-flex items-center justify-center gap-2 rounded-full bg-[#d4302a] text-white px-6 sm:px-8 py-4 font-sans text-[13px] sm:text-[14px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.14em] text-center border-2 border-[#d4302a] hover:bg-[#1a1a1a] hover:border-[#1a1a1a] transition-colors disabled:opacity-60 cursor-pointer";
+  "inline-flex items-center justify-center gap-2 min-h-[52px] rounded-full bg-wip-red text-white px-8 py-3.5 font-ui text-[16px] font-semibold text-center border-2 border-wip-red hover:bg-wip-ink hover:border-wip-ink transition-colors disabled:opacity-60 cursor-pointer";
 
-export const btnDark =
-  "inline-flex items-center justify-center gap-2 rounded-full bg-[#1a1a1a] text-white px-6 sm:px-8 py-4 font-sans text-[13px] sm:text-[14px] font-bold uppercase tracking-[0.1em] sm:tracking-[0.14em] text-center border-2 border-[#1a1a1a] hover:bg-[#d4302a] hover:border-[#d4302a] transition-colors disabled:opacity-60 cursor-pointer";
+export const linkCls =
+  "inline-flex items-center min-h-[44px] underline decoration-2 underline-offset-[5px] hover:decoration-wip-red transition-colors";

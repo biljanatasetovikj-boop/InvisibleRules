@@ -26,8 +26,14 @@
   --font-sans: var(--font-raleway);
   --font-serif: var(--font-playfair);
   --font-body: var(--font-lora);
-  /* Only defined on /working-with-americans, where Caveat Brush is loaded. */
-  --font-hand: var(--font-caveat-brush), "Comic Sans MS", cursive;
+  /* /working-with-americans design tokens, after worksinprogress.co.
+     The fonts are loaded on that page only. */
+  --color-wip-paper: #fff7f4;
+  --color-wip-ink: #000000;
+  --color-wip-red: #e20a39;
+  --color-wip-blue: #363b8f;
+  --font-editor: var(--font-newsreader), Georgia, serif;
+  --font-ui: var(--font-instrument-sans), system-ui, sans-serif;
 }
 
 * {
@@ -64,5 +70,14 @@ body {
   input,
   textarea {
     caret-color: var(--red);
+  }
+
+  /* The course page: a thicker blue ring that shows on red, white and paper. */
+  .wip :focus-visible {
+    outline: 3px solid var(--color-wip-blue);
+    outline-offset: 3px;
+  }
+  .wip .on-dark :focus-visible {
+    outline-color: var(--color-wip-paper);
   }
 }

@@ -10,7 +10,7 @@ import {
   type WebinarSession,
 } from "@/lib/working-with-americans";
 import { useNow } from "./useNow";
-import { Container, PageTop, btnPrimary } from "./ui";
+import { Container, SectionHead, btnPrimary, h2Cls, leadCls } from "./ui";
 import {
   ConsentBox,
   Honeypot,
@@ -78,21 +78,21 @@ function WebinarForm({ sessions }: { sessions: readonly WebinarSession[] }) {
     const s = chosen;
     return (
       <div ref={doneRef} tabIndex={-1} role="status" className={formCard}>
-        <p className="font-serif font-black text-[40px] leading-none text-[#a8221d]">
+        <p className="font-editor font-medium text-[44px] leading-none text-wip-red">
           You&apos;re in!
         </p>
-        <p className="mt-5 font-body text-[18px] leading-[1.6] text-[#1a1a1a]">
+        <p className="mt-5 font-editor text-[20px] leading-[1.5] text-wip-ink">
           {s
             ? `See you on ${s.dayText} at ${WWA.webinar.timeText}. I'll email you the webinar link, and a reminder before the day.`
             : "I'll email you the webinar link and a reminder before the day. See you there."}
         </p>
-        <p className="mt-3 font-hand text-[26px] text-[#a8221d]">– Biljana</p>
+        <p className="mt-3 font-editor italic text-[22px] text-wip-blue">– Biljana</p>
         {s && (
           <a
             href={webinarCalendarUrl(s)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block py-2 font-sans text-[13px] font-bold uppercase tracking-[0.16em] text-[#1a1a1a] underline decoration-[#d4302a] decoration-2 underline-offset-[6px] hover:text-[#a8221d]"
+            className="mt-6 inline-flex items-center min-h-[44px] font-ui text-[16px] font-semibold text-wip-ink underline decoration-wip-red decoration-2 underline-offset-[6px] hover:text-wip-red"
           >
             Add it to my calendar ↗
           </a>
@@ -145,16 +145,16 @@ export default function Webinar() {
   if (sessions.length === 0) return null;
 
   return (
-    <section id="webinar" className="py-20 lg:py-24 border-t-2 border-[#1a1a1a]">
+    <section id="webinar" className="py-20 lg:py-28">
       <Container>
-        <PageTop label={`Free webinar · ${WWA.webinar.timeText} · Online`} right="08 / 08" />
+        <SectionHead no="08" label={`Free webinar · ${WWA.webinar.timeText} · Online`} />
         <div className="grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-16 items-start">
           <FadeIn>
-            <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(32px,4.6vw,52px)] leading-[1.05] tracking-[-0.02em]">
+            <h2 className={h2Cls}>
               Not sure if this is{" "}
-              <span className="italic text-[#a8221d]">for you?</span>
+              <span className="italic text-wip-red">for you?</span>
             </h2>
-            <p className="mt-6 font-body text-[19px] sm:text-[21px] leading-[1.6] text-[#3a3a3a] max-w-[560px]">
+            <p className={`mt-6 max-w-[560px] ${leadCls}`}>
               Join one of the free webinars first. In one hour, I&apos;ll show
               you the unwritten rules of working with Americans. Every date
               starts at {WWA.webinar.timeTextLong}. Can&apos;t join live?

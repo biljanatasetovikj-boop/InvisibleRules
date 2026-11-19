@@ -120,17 +120,17 @@ export function firstNameOf(full: string) {
 // ---------- fields ----------
 
 const labelCls =
-  "block font-sans text-[12px] font-bold uppercase tracking-[0.16em] text-[#1a1a1a] mb-2";
+  "block font-ui text-[15px] font-semibold text-wip-ink mb-2";
 const inputCls =
-  "w-full rounded-xl border-2 bg-white px-4 py-3 font-body text-[16px] text-[#1a1a1a] transition-colors focus:border-[#d4302a]";
+  "w-full min-h-[52px] rounded-lg border-2 bg-white px-4 py-3 font-editor text-[18px] text-wip-ink transition-colors focus:border-wip-blue";
 
 function borderFor(error?: string) {
-  return error ? "border-[#d4302a]" : "border-[#1a1a1a]";
+  return error ? "border-wip-red" : "border-wip-ink";
 }
 
 function Optional() {
   return (
-    <span className="ml-1.5 normal-case tracking-normal font-body italic font-normal text-[13px] text-[#5a5a5a]">
+    <span className="ml-1.5 font-editor italic font-normal text-[14px] text-wip-ink/70">
       (optional)
     </span>
   );
@@ -139,7 +139,7 @@ function Optional() {
 function FieldError({ id, error }: { id: string; error?: string }) {
   if (!error) return null;
   return (
-    <p id={id} className="mt-2 font-body italic text-[14px] text-[#a8221d]">
+    <p id={id} className="mt-2 font-ui font-semibold text-[15px] text-wip-red">
       {error}
     </p>
   );
@@ -206,12 +206,13 @@ export function TextArea({ id, name, label, required, error }: BaseProps) {
   );
 }
 
+// The same five groups as "Is this course for you?" in WhoFor.tsx.
 export const ROLE_OPTIONS = [
-  "Professional working with American teams or managers",
-  "Company owner working with Americans",
-  "Freelancer with American clients",
-  "Work and Travel student",
-  "Graduate student at an American university",
+  "A professional working with American colleagues, managers or clients",
+  "A freelancer working with American clients",
+  "An entrepreneur starting to work with U.S. partners and clients",
+  "A Work & Travel student",
+  "An online student or intern at a U.S. university or program",
   "Other",
 ];
 
@@ -230,14 +231,14 @@ export function RadioGroup({
         {options.map((o) => (
           <label
             key={o.value}
-            className={`flex items-center gap-3 cursor-pointer rounded-xl border-2 bg-white px-4 py-3 font-body text-[16px] text-[#1a1a1a] transition-colors has-[:checked]:border-[#d4302a] has-[:checked]:bg-[#fdf1ef] ${borderFor(error)}`}
+            className={`flex items-center gap-3 min-h-[52px] cursor-pointer rounded-lg border-2 bg-white px-4 py-3 font-editor text-[18px] text-wip-ink transition-colors has-[:checked]:border-wip-blue has-[:checked]:bg-wip-blue/10 has-[:checked]:font-semibold ${borderFor(error)}`}
           >
             <input
               type="radio"
               name={name}
               value={o.value}
               required
-              className="h-5 w-5 shrink-0 cursor-pointer accent-[#d4302a]"
+              className="h-5 w-5 shrink-0 cursor-pointer accent-wip-blue"
               suppressHydrationWarning
             />
             {o.label}
@@ -286,7 +287,7 @@ export function SelectField({
         <svg
           viewBox="0 0 16 16"
           aria-hidden="true"
-          className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#1a1a1a]"
+          className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-wip-ink"
         >
           <path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" />
         </svg>
@@ -309,7 +310,7 @@ export function ConsentBox({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="flex items-start gap-3 cursor-pointer">
+      <label htmlFor={id} className="flex items-start gap-3 min-h-[44px] py-1 cursor-pointer">
         <input
           id={id}
           name={name}
@@ -317,10 +318,10 @@ export function ConsentBox({
           required
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? `${id}-error` : undefined}
-          className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-[#d4302a]"
+          className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-wip-blue"
           suppressHydrationWarning
         />
-        <span className="font-body text-[15px] leading-[1.5] text-[#3a3a3a]">
+        <span className="font-editor text-[17px] leading-[1.5] text-wip-ink/85">
           {label}
         </span>
       </label>
@@ -343,7 +344,7 @@ export function Honeypot() {
 
 export function SendError() {
   return (
-    <p role="alert" className="font-body italic text-[15px] text-[#a8221d]">
+    <p role="alert" className="border-l-4 border-wip-red bg-wip-red/5 px-4 py-3 font-editor text-[17px] text-wip-ink">
       Something went wrong. Please write to me at{" "}
       <a
         href={`mailto:${WWA.contactEmail}`}
@@ -357,4 +358,4 @@ export function SendError() {
 }
 
 export const formCard =
-  "relative rounded-2xl border-2 border-[#1a1a1a] bg-white p-6 sm:p-8";
+  "relative border-2 border-wip-ink bg-white p-6 sm:p-8 shadow-[8px_8px_0_var(--color-wip-blue)]";

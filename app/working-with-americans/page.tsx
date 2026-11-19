@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Caveat_Brush } from "next/font/google";
+import { Instrument_Sans, Newsreader } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Hero from "@/components/working-with-americans/Hero";
@@ -11,17 +11,24 @@ import Register from "@/components/working-with-americans/Register";
 import AboutShort from "@/components/working-with-americans/AboutShort";
 import Webinar from "@/components/working-with-americans/Webinar";
 
-// The handwriting from the zine. Loaded on this page only.
-const hand = Caveat_Brush({
+// Loaded on this page only. Newsreader stands in for Editor (a paid font);
+// swap it here if Editor is ever licensed.
+const editor = Newsreader({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-caveat-brush",
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
   display: "swap",
 });
 
-const title = "Working with Americans – 4-week starter course | Invisible Rules";
+const ui = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-instrument-sans",
+  display: "swap",
+});
+
+const title = "Your First Year Working with Americans – 4-week starter course | Invisible Rules";
 const description =
-  "Stop guessing what Americans expect from you, and start feeling at ease at work. A 4-week starter course from 30 November, in a small group, online.";
+  "Your First Year Working with Americans: a 4-week starter course from 30 November, in a small group, online.";
 
 export const metadata: Metadata = {
   title,
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
         url: "/working-with-americans/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Working with Americans: A 4-Week Starter Course. Starts 30 November, online.",
+        alt: "Your First Year Working with Americans. A 4-week starter course, starts 30 November, online.",
       },
     ],
   },
@@ -51,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function WorkingWithAmericansPage() {
   return (
-    <div className={`${hand.variable} bg-[#fafaf7]`}>
+    <div className={`${editor.variable} ${ui.variable} wip bg-wip-paper text-wip-ink`}>
       <Nav />
       <main>
         <Hero />
@@ -63,9 +70,7 @@ export default function WorkingWithAmericansPage() {
         <AboutShort />
         <Webinar />
       </main>
-      <div className="bg-[#fafaf7]">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

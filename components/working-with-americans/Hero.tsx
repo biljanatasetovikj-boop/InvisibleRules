@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { WWA } from "@/lib/working-with-americans";
-import { Container, PageTop, Sparkle, TapedPhoto, Wave, btnPrimary } from "./ui";
+import { Container, FramedPhoto, btnPrimary } from "./ui";
 
 const glance = [
-  "Build your confidence in 4 weeks",
   "Know the unwritten rules",
   "Make them a habit",
   "Adapt and keep both cultures",
@@ -19,68 +18,60 @@ const facts = [
 
 export default function Hero() {
   return (
-    <section className="relative pt-10 pb-20 sm:pt-14 lg:pt-16 lg:pb-28 overflow-hidden">
+    <section className="pt-10 pb-20 sm:pt-14 lg:pt-16 lg:pb-28">
       <Container>
-        <div className="grid lg:grid-cols-[1.35fr_1fr] gap-14 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-[1.3fr_1fr] gap-14 lg:gap-16 items-center">
           <div>
-            <PageTop label="Working with Americans · 4-week starter course · online" right="" />
+            <p className="font-ui text-[13px] font-semibold uppercase tracking-[0.14em] text-wip-blue">
+              4-week starter course · starts {WWA.course.startText} · online
+            </p>
 
-            <h1 className="font-serif font-black text-[#1a1a1a] text-[clamp(38px,6.2vw,74px)] leading-[1.02] tracking-[-0.025em]">
-              Stop guessing what Americans expect from you, and start feeling{" "}
-              <span className="relative inline-block italic text-[#a8221d] pr-1">
-                at ease
-                <Wave className="absolute -bottom-2 left-0 w-full h-3.5 text-[#d4302a]" />
-              </span>{" "}
-              at work.
+            <h1 className="mt-6 font-editor font-medium text-wip-ink text-[clamp(46px,6vw,84px)] leading-[0.98] tracking-[-0.03em]">
+              Your First Year Working with{" "}
+              <span className="italic text-wip-red">Americans</span>
             </h1>
 
-            <ul className="mt-9 flex flex-wrap gap-x-5 gap-y-3 max-w-[640px]">
+            <ul className="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-1.5 max-w-[600px]">
               {glance.map((g) => (
-                <li key={g} className="flex items-center gap-2 font-body text-[17px] sm:text-[18px] text-[#3a3a3a]">
-                  <Sparkle className="w-3.5 h-3.5 shrink-0 text-[#d4302a]" />
+                <li key={g} className="flex items-center gap-3 font-editor text-[19px] text-wip-ink">
+                  <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 bg-wip-red" />
                   {g}
                 </li>
               ))}
             </ul>
 
-            <dl className="mt-9 grid grid-cols-2 max-w-[560px] rounded-2xl border-2 border-[#1a1a1a] bg-white overflow-hidden">
+            <a href="#course-form" className={`${btnPrimary} mt-9`}>
+              Register for the course
+            </a>
+
+            <dl className="mt-10 grid grid-cols-2 max-w-[560px] border-t-2 border-wip-ink">
               {facts.map((f, i) => (
                 <div
                   key={f.label}
-                  className={`px-4 sm:px-5 py-4 ${i % 2 === 1 ? "border-l-2" : ""} ${i >= 2 ? "border-t-2" : ""} border-[#1a1a1a]`}
+                  className={`py-4 pr-4 border-b border-wip-ink ${i % 2 === 1 ? "pl-5 border-l" : ""}`}
                 >
-                  <dt className="font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-[#a8221d]">
+                  <dt className="font-ui text-[13px] font-semibold uppercase tracking-[0.12em] text-wip-blue">
                     {f.label}
                   </dt>
-                  <dd className="mt-1 font-body text-[16px] leading-[1.35] text-[#1a1a1a]">
+                  <dd className="mt-1 font-editor text-[18px] leading-[1.35] text-wip-ink">
                     {f.value}
                   </dd>
                 </div>
               ))}
             </dl>
-
-            <div className="mt-9">
-              <a href="#course-form" className={btnPrimary}>
-                Register for the course
-              </a>
-            </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[400px]">
-            <Sparkle outline className="absolute -top-8 -right-2 w-12 h-12 text-[#d4302a] z-10" />
-            <Sparkle className="absolute top-10 -left-8 w-6 h-6 text-[#1a1a1a] z-10" />
-            <TapedPhoto tilt="rotate-2">
-              <Image
-                src="/working-with-americans/biljana-teaching.webp"
-                alt="Biljana talking with a group of students in a classroom"
-                width={576}
-                height={830}
-                priority
-                sizes="(min-width: 1024px) 400px, 360px"
-                className="w-full h-auto rounded-[3px]"
-              />
-            </TapedPhoto>
-          </div>
+          <FramedPhoto className="mx-auto w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] rotate-1">
+            <Image
+              src="/working-with-americans/biljana-teaching.webp"
+              alt="Biljana talking with a group of students in a classroom"
+              width={576}
+              height={830}
+              priority
+              sizes="(min-width: 1024px) 420px, 380px"
+              className="w-full h-auto"
+            />
+          </FramedPhoto>
         </div>
       </Container>
     </section>

@@ -1,53 +1,63 @@
 import FadeIn from "../FadeIn";
-import { Container, PageTop } from "./ui";
+import { Container, SectionHead, Tape, h2Cls } from "./ui";
 
-const audience = [
+// Five cut-out cards, pinned up like a collage. Colours and tilts vary so
+// they read as separate pieces of paper.
+export const AUDIENCE = [
   {
-    who: "A professional",
-    text: "you work remotely with American teams or managers, or you own a company that works with Americans.",
-    style: "bg-white text-[#1a1a1a] -rotate-1",
+    text: "A professional working with American colleagues, managers or clients",
+    style: "bg-wip-red text-white -rotate-2",
+    tape: "-top-3 left-6 -rotate-6",
   },
   {
-    who: "A freelancer",
-    text: "you work for American clients on your own.",
-    style: "bg-[#d4302a] text-white rotate-1",
+    text: "A freelancer working with American clients",
+    style: "bg-white text-wip-ink border-2 border-wip-ink rotate-1 lg:translate-y-6",
+    tape: "-top-3 right-8 rotate-3",
   },
   {
-    who: "A student",
-    text: "you are a Work and Travel student preparing for, or already doing, a job in the U.S., or a graduate student in an online programme at an American university.",
-    style: "bg-[#1a1a1a] text-white -rotate-[0.5deg]",
+    text: "An entrepreneur starting to work with U.S. partners and clients",
+    style: "bg-wip-blue text-white rotate-2",
+    tape: "-top-3 left-1/2 -translate-x-1/2 -rotate-2",
+  },
+  {
+    text: "A Work & Travel student, before or during your summer in the U.S.",
+    style: "bg-wip-ink text-wip-paper -rotate-1 lg:col-start-2",
+    tape: "-top-3 left-8 rotate-6",
+  },
+  {
+    text: "An online student or intern at a U.S. university or program",
+    style: "bg-wip-paper text-wip-ink border-2 border-wip-ink rotate-[1.5deg] lg:translate-y-4",
+    tape: "-top-3 right-6 -rotate-3",
   },
 ];
 
 export default function WhoFor() {
   return (
-    <section className="py-20 lg:py-28 border-t-2 border-[#1a1a1a]">
+    <section className="py-20 lg:py-28">
       <Container>
+        <SectionHead no="02" label="Is this course for you?" />
         <FadeIn>
-          <PageTop label="Is this course for you?" right="02 / 08" />
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(32px,4.6vw,54px)] leading-[1.05] tracking-[-0.02em] max-w-[860px]">
+          <h2 className={`${h2Cls} max-w-[860px]`}>
             For people who work with Americans but were never taught the{" "}
-            <span className="italic text-[#a8221d]">rules:</span>
+            <span className="italic text-wip-red">rules:</span>
           </h2>
-          <p className="mt-10 font-hand text-[26px] text-[#a8221d]">
-            this might be you ↓
-          </p>
-          <ul className="mt-4 grid md:grid-cols-3 gap-4 sm:gap-5 max-w-[1000px]">
-            {audience.map((a) => (
-              <li
-                key={a.who}
-                className={`rounded-2xl border-2 border-[#1a1a1a] px-5 py-4 ${a.style}`}
-              >
-                <span className="block font-sans text-[16px] font-bold leading-[1.35]">
-                  {a.who}:
-                </span>
-                <span className="mt-1 block font-body text-[16px] leading-[1.5]">
-                  {a.text}
-                </span>
-              </li>
-            ))}
-          </ul>
         </FadeIn>
+        <ul className="mt-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-x-8 gap-y-12 lg:gap-y-16 px-2">
+          {AUDIENCE.map((a, i) => (
+            <li
+              key={a.text}
+              className={`relative lg:col-span-2 flex flex-col justify-between min-h-[190px] p-7 shadow-[6px_6px_0_rgba(0,0,0,0.9)] ${a.style}`}
+            >
+              <Tape className={a.tape} />
+              <span className="font-ui text-[14px] font-bold tabular-nums">
+                0{i + 1}
+              </span>
+              <span className="mt-6 font-editor font-medium text-[24px] sm:text-[26px] leading-[1.2]">
+                {a.text}
+              </span>
+            </li>
+          ))}
+        </ul>
       </Container>
     </section>
   );

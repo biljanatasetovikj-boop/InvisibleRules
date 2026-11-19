@@ -1,39 +1,40 @@
 import Image from "next/image";
 import FadeIn from "../FadeIn";
 import { WWA } from "@/lib/working-with-americans";
-import { Container, PageTop, Sparkle, StepDot, TapedPhoto } from "./ui";
+import { Container, FramedPhoto, SectionHead, h2Cls, leadCls } from "./ui";
 
+// Each point: the key words (bold) and a short tail.
 const weeks = [
   {
     title: "Say it clearly",
     points: [
-      "You’ll open a call with two easy minutes of small talk: share a hobby or something from your day, and ask about theirs.",
-      "You’ll write and send real requests that lead with the ask, so your American readers act on them instead of skimming past. You keep the template for the next one.",
-      "You’ll spot your own home rule for asking and for small talk, and decide what to keep and where to adapt.",
+      ["Small talk", " that opens a call in two easy minutes"],
+      ["Requests that lead with the ask,", " and a template you keep"],
+      ["Your home rule", " for asking: what to keep, where to adapt"],
     ],
   },
   {
     title: "Find your place in the room",
     points: [
-      "You’ll share your opinion in meetings, which is what Americans are actually waiting for you to do.",
-      "You’ll give your view to managers and senior people before a decision is made, then commit once it is.",
-      "You’ll build trust with your boss or clients by showing your work early, before it is perfect. In American work culture, trust grows from work done well.",
+      ["Your opinion in meetings,", " the thing Americans are waiting for"],
+      ["Your view before the decision,", " your commitment after it"],
+      ["Show work early,", " before it is perfect, to build trust"],
     ],
   },
   {
     title: "Handle the hard conversations",
     points: [
-      "You’ll say when you disagree and still feel part of the team, following “this isn’t working” with “here’s what I suggest”. Americans expect a proposal, not only a problem.",
-      "You’ll read American feedback correctly and hear the real message that often comes after the praise (“Great work! Just one small thing…”).",
-      "You’ll understand work relationships: friendly doesn’t always mean friendship, and asking for an introduction or advice is normal, not pushy.",
+      ["Disagree with a proposal,", " not only a problem"],
+      ["Hear the real message", " that comes after the praise"],
+      ["Friendly isn’t friendship,", " and asking for advice isn’t pushy"],
     ],
   },
   {
     title: "Be seen and valued",
     points: [
-      "You’ll send a short update to the people who make decisions: what you did, with a number, what it means, and what comes next.",
-      "You’ll share one real result and ask for feedback on it.",
-      "You’ll keep a wins log, so your results are ready whenever someone asks what you have been working on.",
+      ["A short update", " with a number and what comes next"],
+      ["One real result,", " shared, with feedback asked for"],
+      ["A wins log,", " ready whenever someone asks"],
     ],
   },
 ];
@@ -61,89 +62,95 @@ const rhythm = [
   },
 ];
 
+const weekColours = ["bg-wip-red", "bg-wip-blue", "bg-wip-ink", "bg-wip-red"];
+
 export default function Course() {
   return (
-    <section id="course" className="py-20 lg:py-28 border-t-2 border-[#1a1a1a]">
+    <section id="course" className="py-20 lg:py-28">
       <Container>
+        <SectionHead no="05" label={`The course · starts ${WWA.course.startText}`} />
         <FadeIn>
-          <PageTop label={`The course · starts ${WWA.course.startText}`} right="05 / 08" />
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(34px,5vw,58px)] leading-[1.02] tracking-[-0.02em] max-w-[900px]">
-            Week by <span className="italic text-[#a8221d]">week.</span>
+          <h2 className={h2Cls}>
+            Week by <span className="italic text-wip-red">week.</span>
           </h2>
-          <p className="mt-6 mb-10 font-body text-[19px] sm:text-[21px] leading-[1.6] text-[#3a3a3a] max-w-[720px]">
+          <p className={`mt-6 mb-12 max-w-[720px] ${leadCls}`}>
             This course is not only about knowing the rules. It is about using
             them. Each week, you also look at your own home rule and decide
             what to keep and where to adapt.
           </p>
         </FadeIn>
-        <ol className="grid md:grid-cols-2 gap-5 lg:gap-6">
+        <ol className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {weeks.map((w, i) => (
-            <li key={w.title} className="flex flex-col rounded-2xl border-2 border-[#1a1a1a] bg-white p-6 sm:p-7">
-              <div className="flex items-center gap-4">
-                <StepDot n={i + 1} className="h-14 w-14 text-[28px]" />
-                <span className="font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-[#a8221d]">
+            <li key={w.title} className="flex flex-col border-2 border-wip-ink bg-white">
+              <div className={`flex items-baseline gap-3 px-6 py-4 sm:px-7 text-white ${weekColours[i]}`}>
+                <span className="font-ui text-[14px] font-bold uppercase tracking-[0.12em]">
                   Week {i + 1}
                 </span>
               </div>
-              <p className="mt-5 font-serif font-black text-[26px] sm:text-[28px] leading-[1.1] text-[#1a1a1a]">
-                {w.title}
-              </p>
-              <ul className="mt-5 space-y-4">
-                {w.points.map((p) => (
-                  <li key={p} className="flex items-start gap-3">
-                    <Sparkle className="mt-1.5 w-3.5 h-3.5 shrink-0 text-[#d4302a]" />
-                    <span className="font-body text-[16px] sm:text-[17px] leading-[1.55] text-[#3a3a3a]">{p}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="px-6 py-6 sm:px-7 sm:py-7">
+                <p className="font-editor font-medium text-[28px] sm:text-[32px] leading-[1.1] text-wip-ink">
+                  {w.title}
+                </p>
+                <ul className="mt-5 space-y-3">
+                  {w.points.map(([key, tail]) => (
+                    <li key={key} className="flex items-start gap-3 font-editor text-[18px] leading-[1.45] text-wip-ink/85">
+                      <span aria-hidden="true" className="mt-[11px] h-2 w-2 shrink-0 bg-wip-red" />
+                      <span>
+                        <strong className="font-semibold text-wip-ink">{key}</strong>
+                        {tail}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
           ))}
         </ol>
 
         <FadeIn>
-          <h3 className="mt-24 font-serif font-black text-[#1a1a1a] text-[clamp(30px,4vw,46px)] leading-[1.05] tracking-[-0.015em]">
-            Your <span className="italic text-[#a8221d]">week.</span>
+          <h3 className="mt-24 font-editor font-medium text-wip-ink text-[clamp(32px,4.2vw,50px)] leading-[1.05] tracking-[-0.015em]">
+            Your <span className="italic text-wip-red">week.</span>
           </h3>
-          <p className="mt-5 font-body text-[19px] sm:text-[21px] leading-[1.6] text-[#3a3a3a] max-w-[700px]">
+          <p className={`mt-5 max-w-[700px] ${leadCls}`}>
             The same rhythm every week, so you always know what comes next.
             Only the rule changes.
           </p>
         </FadeIn>
         <ul className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {rhythm.map((r) => (
-            <li key={r.day} className="flex flex-col rounded-2xl border-2 border-[#1a1a1a] bg-white p-6">
-              <span className="self-start rounded-full border-2 border-[#d4302a] px-3.5 py-1 font-sans text-[12px] font-bold uppercase tracking-[0.14em] text-[#a8221d]">
+            <li key={r.day} className="flex flex-col border-2 border-wip-ink bg-white p-6">
+              <span className="self-start rounded-full border-2 border-wip-blue px-3.5 py-1 font-ui text-[13px] font-semibold uppercase tracking-[0.1em] text-wip-blue">
                 {r.day}
               </span>
-              <p className="mt-5 font-serif font-black text-[24px] leading-[1.15] text-[#1a1a1a]">
+              <p className="mt-5 font-editor font-medium text-[24px] leading-[1.15] text-wip-ink">
                 {r.title}
               </p>
-              <p className="mt-3 font-body text-[16px] leading-[1.55] text-[#3a3a3a]">{r.text}</p>
+              <p className="mt-3 font-editor text-[17px] leading-[1.5] text-wip-ink/80">{r.text}</p>
             </li>
           ))}
         </ul>
 
-        <div className="mt-16 grid lg:grid-cols-[1.4fr_0.8fr] gap-10 lg:gap-12 items-center">
-          <div className="rounded-2xl bg-[#1a1a1a] p-6 sm:p-8 text-white">
-            <h3 className="font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-[#ff8a80]">
+        <div className="mt-20 grid lg:grid-cols-[1.4fr_0.8fr] gap-12 items-center">
+          <div className="on-dark bg-wip-ink p-7 sm:p-9 text-wip-paper">
+            <h3 className="font-ui text-[13px] font-semibold uppercase tracking-[0.14em] text-wip-paper">
               What this course is not
             </h3>
-            <p className="mt-5 font-body text-[18px] leading-[1.6] text-white/90">
+            <p className="mt-5 font-editor text-[21px] sm:text-[24px] leading-[1.45]">
               No lectures on cultural theory. No charts to memorise. Just you,
               practising one real thing each week, with a group of people going
               through the same.
             </p>
           </div>
-          <TapedPhoto tilt="-rotate-2" className="mx-auto w-full max-w-[260px]">
+          <FramedPhoto block="bg-wip-red" className="mx-auto w-full max-w-[260px] -rotate-2">
             <Image
               src="/working-with-americans/laptop.webp"
               alt="Hands on a laptop next to a notebook and a cup of tea"
               width={542}
               height={833}
               sizes="260px"
-              className="w-full h-auto rounded-[3px]"
+              className="w-full h-auto"
             />
-          </TapedPhoto>
+          </FramedPhoto>
         </div>
       </Container>
     </section>

@@ -3,7 +3,7 @@
 import { useId } from "react";
 import FadeIn from "../FadeIn";
 import { WWA } from "@/lib/working-with-americans";
-import { Container, PageTop, Sticker, btnPrimary } from "./ui";
+import { Container, SectionHead, btnPrimary } from "./ui";
 import {
   ConsentBox,
   Honeypot,
@@ -56,14 +56,14 @@ function CourseForm() {
   if (status === "done") {
     return (
       <div ref={doneRef} tabIndex={-1} role="status" className={formCard}>
-        <p className="font-serif font-black text-[40px] leading-none text-[#a8221d]">
+        <p className="font-editor font-medium text-[44px] leading-none text-wip-red">
           Thank you!
         </p>
-        <p className="mt-5 font-body text-[18px] leading-[1.6] text-[#1a1a1a]">
+        <p className="mt-5 font-editor text-[20px] leading-[1.5] text-wip-ink">
           I&apos;ll write to you personally within 2 working days, with the
           payment details and everything else you need to know.
         </p>
-        <p className="mt-3 font-hand text-[26px] text-[#a8221d]">– Biljana</p>
+        <p className="mt-3 font-editor italic text-[22px] text-wip-blue">– Biljana</p>
       </div>
     );
   }
@@ -96,36 +96,36 @@ function CourseForm() {
 
 export default function Register() {
   return (
-    <section id="register" className="py-20 lg:py-28 border-t-2 border-[#1a1a1a]">
+    <section id="register" className="py-20 lg:py-28">
       <Container>
-        <FadeIn>
-          <PageTop label={`Register · ${WWA.course.datesText}`} right="06 / 08" />
-        </FadeIn>
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div>
-            <Sticker>founding price</Sticker>
-            <p className="mt-4 font-serif font-black text-[#1a1a1a] text-[96px] sm:text-[120px] leading-none tracking-[-0.03em]">
+        <SectionHead no="06" label={`Register · ${WWA.course.datesText}`} />
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-start">
+          <FadeIn>
+            <span className="inline-block -rotate-2 bg-wip-red px-4 py-1.5 font-ui text-[14px] font-bold uppercase tracking-[0.12em] text-white">
+              Founding price
+            </span>
+            <p className="mt-5 font-editor font-medium text-wip-ink text-[104px] sm:text-[132px] leading-none tracking-[-0.04em]">
               €{WWA.course.price}
             </p>
-            <p className="mt-3 font-body text-[19px] leading-[1.5] text-[#1a1a1a] max-w-[460px]">
+            <p className="mt-4 font-editor text-[21px] leading-[1.5] text-wip-ink max-w-[460px]">
               This is the founding price for this first group. In the spring,
               the course will cost{" "}
               <span className="whitespace-nowrap">€{WWA.course.springPrice}.</span>
             </p>
-            <p className="mt-2 font-body text-[17px] leading-[1.5] text-[#3a3a3a]">
+            <p className="mt-2 font-editor text-[19px] leading-[1.5] text-wip-ink/80">
               Small group, up to 15 people.
             </p>
-            <p className="mt-5 font-body italic text-[16px] leading-[1.55] text-[#3a3a3a] max-w-[420px]">
+            <p className="mt-6 font-editor italic text-[18px] leading-[1.55] text-wip-ink/80 max-w-[440px]">
               If the price is a stretch right now,{" "}
               <a
                 href={`mailto:${WWA.contactEmail}?subject=Course%20price`}
-                className="underline decoration-[#d4302a] decoration-1 underline-offset-4 hover:text-[#a8221d]"
+                className="inline-block py-2.5 -my-2.5 text-wip-ink underline decoration-wip-red decoration-2 underline-offset-4 hover:text-wip-red"
               >
                 write to me
               </a>
               . I have a few places at a lower price.
             </p>
-          </div>
+          </FadeIn>
           <div id="course-form" className="scroll-mt-6">
             <CourseForm />
           </div>

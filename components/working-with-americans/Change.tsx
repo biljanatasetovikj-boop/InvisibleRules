@@ -1,70 +1,69 @@
 import FadeIn from "../FadeIn";
-import { Container, PageTop, Sparkle } from "./ui";
+import { Container, SectionHead, h2Cls } from "./ui";
 
-const now = [
-  "Watching opportunities go to colleagues who are more visible",
-  "Rereading emails five times before you press send",
-  "Replaying meetings in your head, unsure how you came across",
-  "Taking feedback personally and carrying it for days",
-  "Translating yourself all day and ending the day exhausted",
-];
-
-const after = [
-  "Sending clear requests without the rereading loop",
-  "Leaving meetings knowing you were heard",
-  "Handling feedback calmly, without taking it personally",
-  "Feeling like yourself at work, instead of translating all day",
-  "Being seen for the work you actually do",
+// Short on purpose: one line for where you are, one for where you'll be.
+const rows = [
+  { now: "Rereading every email", after: "Sending clear requests" },
+  { now: "Replaying meetings", after: "Knowing you were heard" },
+  { now: "Carrying feedback for days", after: "Handling it calmly" },
+  { now: "Translating yourself all day", after: "Feeling like yourself" },
+  { now: "Watching others get noticed", after: "Seen for your work" },
 ];
 
 export default function Change() {
   return (
-    <section className="py-20 lg:py-28 border-t-2 border-[#1a1a1a]">
+    <section className="py-20 lg:py-28">
       <Container>
+        <SectionHead no="04" label="What changes" />
         <FadeIn>
-          <PageTop label="What changes" right="04 / 08" />
-          <h2 className="font-serif font-black text-[#1a1a1a] text-[clamp(34px,5vw,58px)] leading-[1.02] tracking-[-0.02em]">
-            What changes in <span className="italic text-[#a8221d]">4 weeks.</span>
+          <h2 className={h2Cls}>
+            What changes in <span className="italic text-wip-red">4 weeks.</span>
           </h2>
         </FadeIn>
 
-        <div className="mt-12 grid lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-          <div className="rounded-2xl border-2 border-dashed border-[#1a1a1a] bg-[#f1efe8] p-6 sm:p-8">
-            <h3 className="font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-[#5a5a5a]">
-              Where you are now
-            </h3>
-            <ul className="mt-5 space-y-4">
-              {now.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span aria-hidden="true" className="mt-[11px] h-[2px] w-3 shrink-0 bg-[#8a8a8a]" />
-                  <span className="font-body text-[17px] leading-[1.5] text-[#3a3a3a]">{item}</span>
-                </li>
-              ))}
-            </ul>
+        <div className="mt-12 max-w-[900px]">
+          <div className="grid grid-cols-[1fr_auto_1fr] gap-x-3 sm:gap-x-6 pb-3 border-b-2 border-wip-ink font-ui text-[13px] font-semibold uppercase tracking-[0.12em]">
+            <span className="text-wip-ink/70">Now</span>
+            <span aria-hidden="true" />
+            <span className="text-wip-blue">In 4 weeks</span>
           </div>
-          <div className="relative rounded-2xl border-2 border-[#1a1a1a] bg-white p-6 sm:p-8 shadow-[6px_6px_0_#d4302a]">
-            <h3 className="font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-[#a8221d]">
-              Where you’ll be
-            </h3>
-            <ul className="mt-5 space-y-4">
-              {after.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <Sparkle className="mt-1.5 w-4 h-4 shrink-0 text-[#d4302a]" />
-                  <span className="font-body text-[17px] leading-[1.5] text-[#1a1a1a]">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul>
+            {rows.map((r) => (
+              <li
+                key={r.now}
+                className="grid grid-cols-[1fr_auto_1fr] items-center gap-x-3 sm:gap-x-6 py-4 border-b border-wip-ink/30"
+              >
+                <span className="font-editor text-[18px] sm:text-[22px] leading-[1.3] text-wip-ink/65">
+                  <span className="sr-only">Now: </span>
+                  {r.now}
+                </span>
+                <span aria-hidden="true" className="font-ui text-[22px] text-wip-red">
+                  →
+                </span>
+                <span className="font-editor font-semibold text-[18px] sm:text-[22px] leading-[1.3] text-wip-ink">
+                  <span className="sr-only">In 4 weeks: </span>
+                  {r.after}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <FadeIn>
-          <div className="mt-12 max-w-[820px]">
-            <p className="font-hand text-[26px] text-[#a8221d]">what this opens for you ↓</p>
-            <p className="mt-2 font-serif font-bold text-[24px] sm:text-[28px] leading-[1.3] text-[#1a1a1a]">
-              More visibility and more trust at work open the door to more
-              responsibility, new projects, referrals and connections.
-            </p>
-          </div>
+          <figure className="relative mt-20 max-w-[860px] -rotate-1">
+            <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3 bg-wip-red" />
+            <div className="relative bg-wip-blue p-3 sm:p-4">
+              <div className="border-2 border-dashed border-white/70 px-6 py-8 sm:px-10 sm:py-10">
+                <p className="font-ui text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
+                  What this opens for you ↓
+                </p>
+                <p className="mt-4 font-editor font-medium text-[24px] sm:text-[32px] leading-[1.3] text-white">
+                  More visibility and more trust at work open the door to more
+                  responsibility, new projects, referrals and connections.
+                </p>
+              </div>
+            </div>
+          </figure>
         </FadeIn>
       </Container>
     </section>
