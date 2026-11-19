@@ -58,19 +58,26 @@ export const metadata: Metadata = {
 
 export default function WorkingWithAmericansPage() {
   return (
-    <div className={`${editor.variable} ${ui.variable} wip bg-wip-paper text-wip-ink`}>
-      <Nav />
-      <main>
-        <Hero />
-        <WhoFor />
-        <Pattern />
-        <Change />
-        <Course />
-        <Register />
-        <AboutShort />
-        <Webinar />
-      </main>
-      <Footer />
+    // On wide screens Biljana's pattern fills the sides and the page reads as
+    // a clean paper column down the middle, like worksinprogress.co. The
+    // pattern only loads when there is room for it.
+    <div
+      className={`${editor.variable} ${ui.variable} wip bg-wip-paper text-wip-ink min-[1240px]:bg-[url(/working-with-americans/pattern.webp)] min-[1240px]:bg-[length:640px] min-[1240px]:bg-repeat`}
+    >
+      <div className="relative mx-auto max-w-[1200px] bg-wip-paper min-[1240px]:border-x-2 min-[1240px]:border-wip-ink">
+        <Nav />
+        <main>
+          <Hero />
+          <WhoFor />
+          <Pattern />
+          <Change />
+          <Course />
+          <Register />
+          <AboutShort />
+          <Webinar />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
