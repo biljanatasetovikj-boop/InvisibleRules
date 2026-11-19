@@ -28,7 +28,7 @@ export default function Hero() {
             </p>
 
             <h1 className="mt-6 font-editor font-medium text-wip-ink text-[clamp(46px,6vw,84px)] leading-[0.98] tracking-[-0.03em]">
-              Your First Year Working with{" "}
+              Your First Years Working with{" "}
               <span className="italic text-wip-red">Americans</span>
             </h1>
 

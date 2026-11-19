@@ -26,9 +26,9 @@ const ui = Instrument_Sans({
   display: "swap",
 });
 
-const title = "Your First Year Working with Americans – 4-week starter course | Invisible Rules";
+const title = "Your First Years Working with Americans – 4-week starter course | Invisible Rules";
 const description =
-  "Your First Year Working with Americans: a 4-week starter course from 30 November, in a small group, online.";
+  "Your First Years Working with Americans: a 4-week starter course from 30 November, in a small group, online.";
 
 export const metadata: Metadata = {
   title,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "/working-with-americans/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Your First Year Working with Americans. A 4-week starter course, starts 30 November, online.",
+        alt: "Your First Years Working with Americans. A 4-week starter course, starts 30 November, online.",
       },
     ],
   },
