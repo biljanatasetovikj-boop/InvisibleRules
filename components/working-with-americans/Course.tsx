@@ -1,9 +1,8 @@
-import Image from "next/image";
-import FadeIn from "../FadeIn";
 import { WWA } from "@/lib/working-with-americans";
-import { Container, FramedPhoto, SectionHead, h2Cls, leadCls } from "./ui";
+import "./posters.css";
 
-// Each point: the key words (bold) and a short tail.
+// Biljana's "Week by week" and "Your week" posters (styles in posters.css).
+
 const weeks = [
   {
     title: "Say it clearly",
@@ -39,120 +38,158 @@ const weeks = [
   },
 ];
 
-const rhythm = [
-  {
-    day: "Monday",
-    title: "Know what is expected, and why",
-    text: "An email and video from Biljana: one unwritten rule of American work culture, the research behind it, and her own story of learning it. Bonus videos from international experts.",
-  },
-  {
-    day: "Every workday",
-    title: "Practise a little every day",
-    text: "One small task, repeated each day in real life, whether you have a job right now or not.",
-  },
-  {
-    day: "Thursday",
-    title: "Speak up with confidence",
-    text: "One hour live online. Share what happened, ask the hard questions, and reflect on how it felt.",
-  },
-  {
-    day: "Friday",
-    title: "Get answers before you act",
-    text: "Open hours, 10:00–12:00 and 17:00–19:00 CET: a private 15-minute conversation with Biljana about anything from your week.",
-  },
-];
+function WeekByWeek() {
+  return (
+    <section id="course" className="wbw" aria-labelledby="wbw-title">
+      <div className="wbw__inner">
+        <p className="wbw__kicker">
+          <b>05</b> The course <span className="wbw__date">Starts {WWA.course.startText}</span>
+        </p>
 
-const weekColours = ["bg-wip-red", "bg-wip-blue", "bg-wip-ink", "bg-wip-red"];
+        <div className="wbw__head">
+          <h2 className="wbw__title" id="wbw-title">
+            Week by <em>week.</em>
+          </h2>
+          <p className="wbw__lede">
+            This course is not only about knowing the rules.{" "}
+            <strong>It is about using them.</strong> Each week, you also look at
+            your own home rule and decide what to keep and where to adapt.
+          </p>
+        </div>
+
+        <div className="wbw__stage">
+          <ol className="wbw__stairs">
+            {weeks.map((w, i) => (
+              <li key={w.title} className="wbw-step">
+                <span className="wbw-step__num" aria-hidden="true">{i + 1}</span>
+                {i === 3 && <span className="wbw-flag" aria-hidden="true">★ Goal</span>}
+                <div className="wbw-step__card">
+                  <div className="wbw-step__tab">Week {i + 1}</div>
+                  <div className="wbw-step__body">
+                    <h3 className="wbw-step__title">{w.title}</h3>
+                    <ul>
+                      {w.points.map(([key, tail]) => (
+                        <li key={key}>
+                          <b>{key}</b>
+                          {tail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <aside className="wbw__home" aria-label="Every week: your home rule">
+          <h3>Every week · Your home rule</h3>
+          <p>Look at the rule you grew up with. Decide what to keep, and where to adapt.</p>
+          <div className="wbw__home-cols" aria-hidden="true">
+            <div>Keep<span></span><span></span></div>
+            <div>Adapt<span></span><span></span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  );
+}
+
+function YourWeek() {
+  return (
+    <section className="yw" aria-labelledby="yw-title">
+      <div className="yw__inner">
+        <div className="yw__head">
+          <h2 className="yw__title" id="yw-title">
+            Your <em>week.</em>
+          </h2>
+          <p className="yw__lede">
+            The same rhythm every week, so you always know what comes next.{" "}
+            <strong>Only the rule changes.</strong>
+          </p>
+        </div>
+
+        <div className="yw__planner">
+          <div className="yw__rings" aria-hidden="true"></div>
+          <div className="yw__grid">
+            {["Mon", "Tue", "Wed", "Thu", "Fri"].map((d) => (
+              <div key={d} className="yw__day" aria-hidden="true">{d}</div>
+            ))}
+            {[1, 2, 3, 4, 5].map((c) => (
+              <div
+                key={c}
+                className={`yw__cell${c === 2 || c === 3 ? " yw__cell--quiet" : ""}`}
+                style={{ gridColumn: c }}
+                aria-hidden="true"
+              />
+            ))}
+
+            <article className="yw__event yw__event--mon">
+              <span className="yw__mob">Monday</span>
+              <h3>Know what is expected, and why</h3>
+              <p>
+                An email and video from Biljana: one unwritten rule of American
+                work culture, the research behind it, and her own story of
+                learning it. Bonus videos from international experts.
+              </p>
+            </article>
+
+            <article className="yw__event yw__event--thu">
+              <span className="yw__mob">Thursday</span>
+              <span className="yw__live">Live · 1 hour</span>
+              <h3>Speak up with confidence</h3>
+              <p>
+                One hour live online. Share what happened, ask the hard
+                questions, and reflect on how it felt.
+              </p>
+            </article>
+
+            <article className="yw__event yw__event--fri">
+              <span className="yw__mob">Friday</span>
+              <h3>Get answers before you act</h3>
+              <div className="yw__chips">
+                <span className="yw__chip">10:00–12:00</span>
+                <span className="yw__chip">17:00–19:00 CET</span>
+              </div>
+              <p>Open hours: a private 15-minute conversation with Biljana about anything from your week.</p>
+            </article>
+
+            <article className="yw__daily">
+              <div>
+                <span className="yw__mob">Every workday</span>
+                <h3>Practise a little every day</h3>
+                <p>One small task, repeated each day in real life, whether you have a job right now or not.</p>
+              </div>
+              <span className="yw__tick">Mon</span>
+              <span className="yw__tick">Tue</span>
+              <span className="yw__tick">Wed</span>
+              <span className="yw__tick">Thu</span>
+              <span className="yw__tick">Fri</span>
+            </article>
+          </div>
+        </div>
+
+        <div className="yw__not">
+          <h3>What this course is not</h3>
+          <div className="yw__not-body">
+            <p className="yw__strike">No <s>lectures on cultural theory</s>.</p>
+            <p className="yw__strike">No <s>charts to memorise</s>.</p>
+            <p className="yw__yes">
+              Just <em>you</em>, practising one real thing each week, with a
+              group of people going through the same.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function Course() {
   return (
-    <section id="course" className="py-20 lg:py-28">
-      <Container>
-        <SectionHead no="05" label={`The course · starts ${WWA.course.startText}`} />
-        <FadeIn>
-          <h2 className={h2Cls}>
-            Week by <span className="italic text-wip-red">week.</span>
-          </h2>
-          <p className={`mt-6 mb-12 max-w-[720px] ${leadCls}`}>
-            This course is not only about knowing the rules. It is about using
-            them. Each week, you also look at your own home rule and decide
-            what to keep and where to adapt.
-          </p>
-        </FadeIn>
-        <ol className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {weeks.map((w, i) => (
-            <li key={w.title} className="flex flex-col border-2 border-wip-ink bg-white">
-              <div className={`flex items-baseline gap-3 px-6 py-4 sm:px-7 text-white ${weekColours[i]}`}>
-                <span className="font-ui text-[14px] font-bold uppercase tracking-[0.12em]">
-                  Week {i + 1}
-                </span>
-              </div>
-              <div className="px-6 py-6 sm:px-7 sm:py-7">
-                <p className="font-editor font-medium text-[28px] sm:text-[32px] leading-[1.1] text-wip-ink">
-                  {w.title}
-                </p>
-                <ul className="mt-5 space-y-3">
-                  {w.points.map(([key, tail]) => (
-                    <li key={key} className="flex items-start gap-3 font-editor text-[18px] leading-[1.45] text-wip-ink/85">
-                      <span aria-hidden="true" className="mt-[11px] h-2 w-2 shrink-0 bg-wip-red" />
-                      <span>
-                        <strong className="font-semibold text-wip-ink">{key}</strong>
-                        {tail}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        <FadeIn>
-          <h3 className="mt-24 font-editor font-medium text-wip-ink text-[clamp(32px,4.2vw,50px)] leading-[1.05] tracking-[-0.015em]">
-            Your <span className="italic text-wip-red">week.</span>
-          </h3>
-          <p className={`mt-5 max-w-[700px] ${leadCls}`}>
-            The same rhythm every week, so you always know what comes next.
-            Only the rule changes.
-          </p>
-        </FadeIn>
-        <ul className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {rhythm.map((r) => (
-            <li key={r.day} className="flex flex-col border-2 border-wip-ink bg-white p-6">
-              <span className="self-start rounded-full border-2 border-wip-blue px-3.5 py-1 font-ui text-[13px] font-semibold uppercase tracking-[0.1em] text-wip-blue">
-                {r.day}
-              </span>
-              <p className="mt-5 font-editor font-medium text-[24px] leading-[1.15] text-wip-ink">
-                {r.title}
-              </p>
-              <p className="mt-3 font-editor text-[17px] leading-[1.5] text-wip-ink/80">{r.text}</p>
-            </li>
-          ))}
-        </ul>
-
-        <div className="mt-20 grid lg:grid-cols-[1.4fr_0.8fr] gap-12 items-center">
-          <div className="on-dark bg-wip-ink p-7 sm:p-9 text-wip-paper">
-            <h3 className="font-ui text-[13px] font-semibold uppercase tracking-[0.14em] text-wip-paper">
-              What this course is not
-            </h3>
-            <p className="mt-5 font-editor text-[21px] sm:text-[24px] leading-[1.45]">
-              No lectures on cultural theory. No charts to memorise. Just you,
-              practising one real thing each week, with a group of people going
-              through the same.
-            </p>
-          </div>
-          <FramedPhoto block="bg-wip-red" className="mx-auto w-full max-w-[260px] -rotate-2">
-            <Image
-              src="/working-with-americans/laptop.webp"
-              alt="Hands on a laptop next to a notebook and a cup of tea"
-              width={542}
-              height={833}
-              sizes="260px"
-              className="w-full h-auto"
-            />
-          </FramedPhoto>
-        </div>
-      </Container>
-    </section>
+    <>
+      <WeekByWeek />
+      <YourWeek />
+    </>
   );
 }

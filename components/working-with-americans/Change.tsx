@@ -1,5 +1,5 @@
 import FadeIn from "../FadeIn";
-import { Container, SectionHead } from "./ui";
+import { Container, SectionHead, h2Cls } from "./ui";
 
 // Built from Biljana's "What changes in 4 weeks" design: a paper slip for
 // where you are now, a circled arrow, and a blue card for where you'll be.
@@ -22,10 +22,9 @@ export default function Change() {
       <Container className="relative">
         <SectionHead no="04" label="What changes" />
         <FadeIn>
-          <h2 className="font-editor font-medium text-wip-ink text-[clamp(52px,8vw,104px)] leading-[0.95] tracking-[-0.03em]">
-            What changes
-            <br />
-            in <span className="italic text-wip-red">4 weeks</span>
+          <h2 className={`${h2Cls} max-w-[900px]`}>
+            When you speak the language and know{" "}
+            <span className="italic text-wip-red">the culture</span>
           </h2>
         </FadeIn>
 

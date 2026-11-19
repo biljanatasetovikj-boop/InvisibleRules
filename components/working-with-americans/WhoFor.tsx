@@ -38,8 +38,7 @@ export default function WhoFor() {
         <SectionHead no="02" label="Is this course for you?" />
         <FadeIn>
           <h2 className={`${h2Cls} max-w-[860px]`}>
-            For people who work with Americans but were never taught the{" "}
-            <span className="italic text-wip-red">rules:</span>
+            This course is <span className="italic text-wip-red">for:</span>
           </h2>
         </FadeIn>
         <ul className="mt-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-x-8 gap-y-12 lg:gap-y-16 px-2">

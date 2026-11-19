@@ -160,20 +160,14 @@ function NoteCard({ note }: { note: Note }) {
 
 export default function Familiar() {
   return (
-    <div className="relative mt-16 pt-8 overflow-hidden pb-4">
+    <div className="relative mt-24 lg:mt-32 pt-16 sm:pt-20 overflow-hidden pb-4">
       {/* The poster's red circle and dotted square, top right. */}
       <div aria-hidden="true" className={`absolute top-10 right-24 h-56 w-72 hidden md:block ${dots}`} />
       <div aria-hidden="true" className="absolute -top-20 -right-16 h-32 w-32 sm:-top-16 sm:-right-24 sm:h-64 sm:w-64 lg:h-80 lg:w-80 rounded-full bg-wip-red" />
 
       <Container className="relative">
         <FadeIn>
-          <h3 className="max-w-[820px] font-editor font-medium text-wip-ink text-[clamp(52px,8vw,108px)] leading-[0.95] tracking-[-0.03em]">
-            Does this sound{" "}
-            <span className="italic text-wip-red underline decoration-[5px] underline-offset-[10px]">
-              familiar?
-            </span>
-          </h3>
-          <p className="mt-8 max-w-[560px] font-editor text-[22px] sm:text-[26px] leading-[1.4] text-wip-ink">
+          <p className="max-w-[640px] font-editor text-[26px] sm:text-[34px] leading-[1.3] text-wip-ink">
             Something at work you can’t read.{" "}
             <b className="font-semibold bg-[linear-gradient(transparent_62%,rgba(226,10,57,0.25)_62%)]">
               Then a pattern starts.

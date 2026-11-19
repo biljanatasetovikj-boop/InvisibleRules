@@ -25,13 +25,17 @@ export default function Pattern() {
       <Container>
         <SectionHead no="03" label="Before you start" />
         <FadeIn>
-          <h2 className={h2Cls}>
-            What might be getting in{" "}
-            <span className="italic text-wip-red">your way.</span>
+          <h2 className={`${h2Cls} max-w-[900px]`}>
+            When you speak the language but not{" "}
+            <span className="italic text-wip-red">the culture</span>
           </h2>
+          <p className="mt-10 font-editor text-[22px] sm:text-[26px] leading-[1.4] text-wip-ink">
+            <b className="font-semibold">Three assumptions</b> that make it
+            harder to adapt:
+          </p>
         </FadeIn>
 
-        <ul className="mt-14 grid md:grid-cols-3 gap-x-8 gap-y-12 px-2 lg:pb-10">
+        <ul className="mt-10 grid md:grid-cols-3 gap-x-8 gap-y-12 px-2 lg:pb-10">
           {limits.map((l, i) => (
             <li
               key={l.text}
