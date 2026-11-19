@@ -58,13 +58,12 @@ export const metadata: Metadata = {
 
 export default function WorkingWithAmericansPage() {
   return (
-    // On wide screens Biljana's pattern fills the sides and the page reads as
-    // a clean paper column down the middle, like worksinprogress.co. The
-    // pattern only loads when there is room for it.
+    // The page is one paper column. A background pattern for the sides can go
+    // on the outer div (see git history for how the earlier ones were done).
     <div
-      className={`${editor.variable} ${ui.variable} wip bg-wip-paper text-wip-ink min-[1240px]:bg-[url(/working-with-americans/pattern-collage.webp)] min-[1240px]:bg-[length:640px] min-[1240px]:bg-repeat`}
+      className={`${editor.variable} ${ui.variable} wip bg-wip-paper text-wip-ink`}
     >
-      <div className="relative mx-auto max-w-[1200px] bg-wip-paper min-[1240px]:border-x-2 min-[1240px]:border-wip-ink">
+      <div className="relative mx-auto max-w-[1200px] bg-wip-paper">
         <Nav />
         <main>
           <Hero />
