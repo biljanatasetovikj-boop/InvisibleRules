@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { WWA } from "@/lib/working-with-americans";
 import { Container, FramedPhoto, btnPrimary } from "./ui";
+import { Skyline } from "./Illustrations";
 
 const glance = [
   "Know the unwritten rules",
@@ -18,7 +19,7 @@ const facts = [
 
 export default function Hero() {
   return (
-    <section className="pt-10 pb-20 sm:pt-14 lg:pt-16 lg:pb-28">
+    <section className="pt-10 sm:pt-14 lg:pt-16">
       <Container>
         <div className="grid lg:grid-cols-[1.3fr_1fr] gap-14 lg:gap-16 items-center">
           <div>
@@ -74,6 +75,7 @@ export default function Hero() {
           </FramedPhoto>
         </div>
       </Container>
+      <Skyline className="pointer-events-none text-wip-blue mt-16 lg:mt-20 block w-full h-auto opacity-45" />
     </section>
   );
 }

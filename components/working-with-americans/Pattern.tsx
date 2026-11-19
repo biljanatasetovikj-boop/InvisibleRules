@@ -1,5 +1,6 @@
 import FadeIn from "../FadeIn";
 import Familiar from "./Familiar";
+import { Liberty } from "./Illustrations";
 import { Container, SectionHead, Tape, h2Cls } from "./ui";
 
 // Three cut-outs, pinned up like the cards in "Is this course for you?".
@@ -21,8 +22,9 @@ const limits = [
 
 export default function Pattern() {
   return (
-    <section className="py-20 lg:py-28">
-      <Container>
+    <section className="relative py-20 lg:py-28">
+      <Liberty className="pointer-events-none text-wip-blue absolute top-24 right-[5%] h-[290px] w-auto opacity-35 hidden lg:block" />
+      <Container className="relative">
         <SectionHead no="03" label="Before you start" />
         <FadeIn>
           <h2 className={`${h2Cls} max-w-[900px]`}>

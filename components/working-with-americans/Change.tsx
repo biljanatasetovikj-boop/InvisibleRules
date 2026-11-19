@@ -1,5 +1,6 @@
 import FadeIn from "../FadeIn";
 import { Container, SectionHead, h2Cls } from "./ui";
+import { GoldenGate } from "./Illustrations";
 
 // Built from Biljana's "What changes in 4 weeks" design: a paper slip for
 // where you are now, a circled arrow, and a blue card for where you'll be.
@@ -19,6 +20,7 @@ export default function Change() {
       <div aria-hidden="true" className={`absolute top-28 right-16 h-40 w-64 hidden md:block ${dots}`} />
       <div aria-hidden="true" className="absolute top-6 -right-20 h-28 w-28 sm:-right-24 sm:h-56 sm:w-56 lg:h-64 lg:w-64 rounded-full bg-wip-red" />
 
+      <GoldenGate className="pointer-events-none text-wip-blue absolute bottom-6 -right-6 w-[460px] opacity-35 hidden lg:block" />
       <Container className="relative">
         <SectionHead no="04" label="What changes" />
         <FadeIn>

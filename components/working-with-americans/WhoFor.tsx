@@ -1,5 +1,6 @@
 import FadeIn from "../FadeIn";
 import { Container, SectionHead, Tape, h2Cls } from "./ui";
+import { Flag } from "./Illustrations";
 
 // Five cut-out cards, pinned up like a collage. Colours and tilts vary so
 // they read as separate pieces of paper.
@@ -33,8 +34,9 @@ export const AUDIENCE = [
 
 export default function WhoFor() {
   return (
-    <section className="py-20 lg:py-28">
-      <Container>
+    <section className="relative py-20 lg:py-28">
+      <Flag className="pointer-events-none text-wip-blue absolute top-40 right-[6%] w-40 xl:w-44 -rotate-3 opacity-40 hidden md:block" />
+      <Container className="relative">
         <SectionHead no="02" label="Is this course for you?" />
         <FadeIn>
           <h2 className={`${h2Cls} max-w-[860px]`}>
