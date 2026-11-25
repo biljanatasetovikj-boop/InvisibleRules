@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { WWA } from "@/lib/working-with-americans";
+import { WWA, SHEET_WEBHOOK_URL } from "@/lib/working-with-americans";
 
 // Shared plumbing for the three forms on /working-with-americans.
 //
@@ -11,6 +11,8 @@ import { WWA } from "@/lib/working-with-americans";
 // formsubmit to send the _autoresponse confirmation to the person.
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+
 
 type Status = "idle" | "sending" | "done" | "error";
 export type Payload = Record<string, string>;
@@ -75,28 +77,35 @@ export function useRegistrationForm(build: (data: FormData) => Payload) {
     }
 
     setStatus("sending");
-    try {
-      const res = await fetch(`https://formsubmit.co/ajax/${WWA.contactEmail}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...build(data),
-          _template: "table",
-          _captcha: "false",
-        }),
-      });
+    const payload = build(data);
+    // Two routes, so one blocked route never loses a registration. formsubmit
+    // emails Biljana and sends the confirmation; the Google Sheet keeps a
+    // record. Some networks block formsubmit.co, which is why the sheet is
+    // there. It counts as sent if either route got through.
+    const viaFormsubmit = fetch(`https://formsubmit.co/ajax/${WWA.contactEmail}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ ...payload, _template: "table", _captcha: "false" }),
+    }).then(async (res) => {
       const json = await res.json().catch(() => null);
-      if (res.ok && String(json?.success) !== "false") {
-        setStatus("done");
-        return;
-      }
-      setStatus("error");
-    } catch {
-      setStatus("error");
-    }
+      if (!(res.ok && String(json?.success) !== "false")) throw new Error("formsubmit");
+    });
+    const { _subject, _autoresponse, _honey, email, ...details } = payload;
+    void _autoresponse;
+    void _honey;
+    const viaSheet = fetch(SHEET_WEBHOOK_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        timestamp: new Date().toISOString(),
+        name: details["First name"] ?? "",
+        email,
+        result: [_subject, ...Object.entries(details).map(([k, v]) => `${k}: ${v}`)].join(" | "),
+      }),
+    }).then(() => undefined);
+    const [a, b] = await Promise.allSettled([viaFormsubmit, viaSheet]);
+    setStatus(a.status === "fulfilled" || b.status === "fulfilled" ? "done" : "error");
   }
 
   function onInput(e: React.FormEvent<HTMLFormElement>) {
@@ -305,7 +314,7 @@ export function ConsentBox({
 }: {
   id: string;
   name: string;
-  label: string;
+  label: React.ReactNode;
   error?: string;
 }) {
   return (

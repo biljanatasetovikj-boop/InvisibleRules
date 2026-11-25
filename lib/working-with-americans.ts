@@ -100,3 +100,7 @@ export function webinarCalendarUrl(session: WebinarSession) {
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
+
+// Google Sheet backup for registrations (same Apps Script as the archetype quiz).
+export const SHEET_WEBHOOK_URL =
+  "https://script.google.com/macros/s/AKfycbx5qfSRTe6gpoNDD2SVXhQr3ZTOMItd4U2eZlA4VNflEqTm4FJCe5O-UjDCJf9e3dP4/exec";

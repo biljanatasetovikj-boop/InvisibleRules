@@ -47,6 +47,7 @@ function CourseForm() {
         "First name": name,
         email: String(data.get("email")).trim(),
         "Agreed to emails": "Yes",
+        "Agreed to course terms": "Yes",
         _subject: `Course registration (€${WWA.course.price}): ${name}`,
         _autoresponse: confirmationEmail(name),
         _honey: String(data.get("_honey") ?? ""),
@@ -86,6 +87,25 @@ function CourseForm() {
         name="consent"
         label="I agree to receive emails from Biljana about the course."
         error={errors.consent}
+      />
+      <ConsentBox
+        id={`${id}-terms`}
+        name="terms"
+        label={
+          <>
+            I have read and agree to the{" "}
+            <a
+              href="/working-with-americans/terms"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-wip-red decoration-2 underline-offset-4 hover:text-wip-red"
+            >
+              course terms
+            </a>
+            .
+          </>
+        }
+        error={errors.terms}
       />
       {status === "error" && <SendError />}
       <button type="submit" disabled={status === "sending"} className={`${btnPrimary} w-full sm:w-auto`}>
